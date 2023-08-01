@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Larsvanderlaan.github.io//sitemap.xml
+Sitemap: https://Larsvanderlaan.github.io/sitemap.xml
