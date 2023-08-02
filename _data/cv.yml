@@ -53,4 +53,21 @@
         - Developed code pipelines for a unified statistical analysis of several US Government-sponsored COVID-19 vaccine trials, including those from Moderna and Johnson & Johnson.
         - Co-authored several theoretical and applied publications appearing in journals including Biometrics, Science, and Nature.
 
- 
+- title: Skills and Open Source Projects
+  type: bullet_points
+  contents:
+    - Programming Languages:
+      - Proficient in Batch, Python, R, SQL, Java, and C++ for software development, data manipulation, and analysis.
+      - Proficient with object-oriented and functional programming paradigms and committed to adhering to quality coding practices.
+      - Proficient in parallel computing techniques and cluster management, enabling efficient and scalable data processing.
+    - Software Development: Experienced in developing statistical software and data tools to support research and analysis activities.
+    - Ensemble Learning and Causal Inference Software Ecosystems:
+      - title: Proficient in the [tlverse](https://tlverse.org) machine learning and causal inference R ecosystem, which includes:
+        contents:
+          - Ensemble Superlearning Framework: [sl3](http://tlverse.org/sl3/)
+          - Dependent Task Parallelization Framework: [delayed](https://tlverse.org/delayed/)
+          - Highly Adaptive Lasso Spline Estimator Package: [hal9001](https://tlverse.org/hal9001/)
+          - Generalized Targeted/Debiased Machine Learning Package: [tmle3](https://tlverse.org/tmle3/)
+      - title: Experienced with the causal machine learning Python ecosystem [PyWhy](https://github.com/py-why), including EconML and doWhy.
+    - Communication: Demonstrated ability in effectively conveying complex findings to diverse audiences through excellent written and verbal communication skills. Capable of presenting technical information in a clear and understandable manner.
+
