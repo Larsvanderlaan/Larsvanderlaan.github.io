@@ -2,7 +2,7 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Lars van der Laan
     - name: Date of Birth
       value: 14th March 1879
     - name: Languages
@@ -16,19 +16,18 @@
       year: 2021 - Current
       description:
         - Advised by Professors Marco Carone and Alex Luedtke.
-        - Conducting advanced research in several areas, including causal inference, semiparametric statistics, debiased machine learning, statistical learning theory, and calibration for heterogeneous treatment effects, and causal inference after data-driven model-selection.
-        - Actively collaborating with researchers at the Fred Hutchinson Research Center on projects related to causal inference and debiased machine learning with a specific focus on randomized and observational COVID-19 vaccine trials.
+        - Conducting advanced research in causal inference, semiparametric statistics, debiased machine learning, statistical learning theory, calibration for heterogeneous treatment effects, and causal inference after data-driven model-selection.
+        - Actively collaborating with researchers at the Fred Hutchinson Research Center on projects related to causal inference and debiased machine learning with a focus on randomized and observational COVID-19 vaccine trials.
     - title: MA in Statistics
       institution: University of California, Berkeley
-      year: 2019-2020
+      year: 2019 - 2020
       description:
-        - Completed coursework on both theoretical and applied statistics at the PhD level.
-        - Completed several courses on object oriented programming and software development in Python and Java.
+        - Completed coursework on theoretical and applied statistics at the PhD level.
+        - Successfully completed courses on object-oriented programming and software development in Python and Java.
         - Completed an industry application-oriented capstone project.
-    - title: Double Bsc in Mathematics and Physics
+    - title: Double BSc in Mathematics and Physics
       institution: University of Groningen, Netherlands
-      year: 2016-2019
-
+      year: 2016 - 2019
 
 - title: Experience
   type: time_table
@@ -46,14 +45,13 @@
         - Developed statistical analysis software in R for nonparametric causal inference in survival analysis using machine learning tools.
         - Extracted, cleaned, and analyzed observational cancer survival data from the Flatiron database using SQL, R, and Python.
         - Leveraged debiased machine learning and causal inference techniques to drive data-driven decision-making.
-
     - title: Intern in Causal Inference for Covid-19 Vaccine Trials
       institution: Fred Hutchinson Research Center
       year: 2020 - 2021
       description:
-      - Collaborated with Professor Peter B. Gilbert on research projects related to causal inference and debiased/targeted machine learning with applications to the US-sponsored COVID-19 vaccine trials.
-      - Developed code pipelines for a unified statistical analysis of several US Government-sponsored COVID-19 vaccine trials, including those from Moderna and Johnson & Johnson.
-      - Co-authored several theoretical and applied publications appearing in journals including Biometrics, Science, and Nature.
+        - Collaborated with Professor Peter B. Gilbert on research projects related to causal inference and debiased/targeted machine learning with applications to the US-sponsored COVID-19 vaccine trials.
+        - Developed code pipelines for a unified statistical analysis of several US Government-sponsored COVID-19 vaccine trials, including those from Moderna and Johnson & Johnson.
+        - Co-authored several theoretical and applied publications appearing in journals including Biometrics, Science, and Nature.
 
 - title: Skills and Open Source Projects
   type: bullet_points
@@ -73,22 +71,17 @@
         - EconML
         - doWhy
     - Communication: Demonstrated ability in effectively conveying complex findings to diverse audiences through excellent written and verbal communication skills. Capable of presenting technical information in a clear and understandable manner.
-    
-    
- 
-
- 
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: Semiparametric Statistics and Debiased Machine Learning
       items:
-        - Description 1.
-        - Description 2.
-
- 
+        - Causal Inference
+        - Statistical Learning Theory
+        - Calibration for Heterogeneous Treatment Effects
+        - Inference After Model Selection
+    - title: Nonparametric Survival Analysis and Shape-Constrained Inference
+      items:
+        - Survival Analysis
+        - Shape-constrained Inference
