@@ -19,8 +19,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a third-year Ph.D. student in Statistics at the University of Washington. My research interests include semiparametric statistics and debiased machine learning, causal inference, statistical learning and calibration, and inference after model selection. I also am interested in nonparametric survival analysis and shape-constrained inference.
+## Personal Statement
+
+I am a third-year Ph.D. student in Statistics at the University of Washington, with a strong passion for exploring the intersections of semiparametric statistics and debiased machine learning. My research interests encompass a wide range of areas, including causal inference, statistical learning, calibration, and inference after model selection. Additionally, I have a keen interest in nonparametric survival analysis and shape-constrained inference with causal inference applications.
+
+For the latest updates on my research and academic endeavors, you can follow me on Twitter at [@Larsvanderlaan3](https://twitter.com/LarsvanderLaan3). To explore a selection of my works, please visit the publications tab. For a comprehensive list of my academic contributions, refer to my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en) profile.
 
  
-
-For my latest updates, follow me on twitter at [@Larsvanderlaan3](https://twitter.com/LarsvanderLaan3). Please see the publications tab for a selection of my works. For a complete list, please see my [google scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en) profile.
