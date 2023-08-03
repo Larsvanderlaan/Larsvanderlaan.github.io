@@ -14,17 +14,21 @@
   abstract={Debiased machine learning estimators for nonparametric inference of smooth functionals of the data-generating distribution can suffer from excessive variability and instability. For this reason, practitioners may resort to simpler models based on parametric or semiparametric assumptions. However, such simplifying assumptions may fail to hold, and estimates may then be biased due to model misspecification. To address this problem, we propose Adaptive Debiased Machine Learning (ADML), a nonparametric framework that combines data-driven model selection and debiased machine learning techniques to construct asymptotically linear, adaptive, and superefficient estimators for pathwise differentiable functionals. By learning model structure directly from data, ADML avoids the bias introduced by model misspecification and remains free from the restrictions of parametric and semiparametric models. While they may exhibit irregular behavior for the target parameter in a nonparametric statistical model, we demonstrate that ADML estimators provides regular and locally uniformly valid inference for a projection-based oracle parameter. Importantly, this oracle parameter agrees with the original target parameter for distributions within an unknown but correctly specified oracle statistical submodel that is learned from the data. This finding implies that there is no penalty, in a local asymptotic sense, for conducting data-driven model selection compared to having prior knowledge of the oracle submodel and oracle parameter. To demonstrate the practical applicability of our theory, we provide a broad class of ADML estimators for estimating the average treatment effect in adaptive partially linear regression models.}
 }
 
-@article{van2023causal,
+@inproceedings{van2023causal,
   title={Causal isotonic calibration for heterogeneous treatment effects},
   author={{van der Laan}, Lars and Ulloa-P{\'e}rez, Ernesto and Carone, Marco and Luedtke, Alex},
-  journal={arXiv preprint arXiv:2302.14011},
+  booktitle={Proceedings of the 40th International Conference on Machine Learning},
   year={2023},
-  selected={true},
-  pdf={https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf},
+  address={Honolulu, Hawaii, USA},
+  publisher={PMLR},
+  volume={202},
+    pdf={https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf},
   poster={https://icml.cc/media/PosterPDFs/ICML%202023/24460.png?t=1690505587.8818903},
   abstract={We propose causal isotonic calibration, a novel nonparametric method for calibrating predictors of heterogeneous treatment effects. Furthermore, we introduce cross-calibration, a data-efficient variant of calibration that eliminates the need for hold-out calibration sets. Cross-calibration leverages cross-fitted predictors and generates a single calibrated predictor using all available data. Under weak conditions that do not assume monotonicity, we establish that both causal isotonic calibration and cross-calibration achieve fast doubly-robust calibration rates, as long as either the propensity score or outcome regression is estimated accurately in a suitable sense. The proposed causal isotonic calibrator can be wrapped around any black-box learning algorithm, providing robust and distribution-free calibration guarantees while preserving predictive performance.}
 }
 
+
+ 
  
 
 
