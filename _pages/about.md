@@ -24,6 +24,8 @@ social: true  # includes social icons at the bottom of the page
 
 I am a third-year Ph.D. student in Statistics at the University of Washington, with a strong passion for exploring the intersections of causal inference and debiased machine learning. 
 
+I am advised by Professors [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com).
+
 My research interests encompass a wide range of areas, including semiparametric statistics, survival analysis, shape-constrained inference, supervised statistical learning, distribution-free calibration, and inference after model selection. 
  
 
