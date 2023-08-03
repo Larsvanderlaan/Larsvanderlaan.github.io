@@ -24,6 +24,7 @@
       description:
         - Completed coursework on theoretical and applied statistics at the PhD level.
         - Successfully completed courses on object-oriented programming and software development in Python and Java.
+        - Successfully completed coursework on data analysis and statistical computing in Python using NumPy, Pandas, and Dask.
         - Completed an industry application-oriented capstone project.
     - title: Double BSc in Mathematics and Physics
       institution: University of Groningen, Netherlands
@@ -59,10 +60,16 @@
   contents:
     - title: Programming Languages
       description:
-        - Proficient in Batch, Python, R, SQL, Java, and C++ for software development, data manipulation, and analysis.
+        - Proficient in Batch, Python, R, SQL, Java, and C++ for software development, data manipulation, and data analysis.
         - Proficient with object-oriented and functional programming paradigms and committed to adhering to quality coding practices.
         - Proficient in parallel computing techniques and cluster management, enabling efficient and scalable data processing.
-        - Experienced in developing statistical software and data tools to support research and analysis activities.
+        - Experienced in developing statistical software and data tools to support research and analytics.
+    - title: Data Analysis and Statistical Computing
+      description:
+        - Proficient in data analysis and statistical computing in R and Python.
+        - Experienced in parallel computing in R and Python using future and Dask.
+        - Skilled in data cleaning and manipulation in SQL, R (using dplyr and data.table), and Python (using NumPy and Pandas).
+        - Experienced in high-performance computing using C++ in R (using Rcpp).
     - title: Ensemble Learning and Causal Inference Software Ecosystems
       maindescription: Proficient in the causal machine learning ecosystems for R and Python (tlverse and pyWhy), including
       description:
