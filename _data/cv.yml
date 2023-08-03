@@ -55,7 +55,7 @@
         - Co-authored several theoretical and applied publications appearing in journals including Biometrics, Science, and Nature.
 
 - title: Skills and Open Source Projects
-  type: bullet_points
+  type: nested_list
   contents:
     - title: Programming Languages
       description:
