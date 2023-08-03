@@ -12,6 +12,7 @@ profile:
     <p>B313</p>
     <p>Padelford Hall, Northeast Stevens Way</p>
     <p>Seattle, WA 98103</p>
+    <p>lvdlaan@uw.edu</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
