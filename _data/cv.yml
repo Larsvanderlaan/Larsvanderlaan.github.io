@@ -69,7 +69,7 @@
         - Proficient in data analysis and statistical computing in SQL, R, and Python.
         - Experienced in parallel computing in R and Python using future and Dask.
         - Skilled in data cleaning and manipulation in SQL, R (using dplyr and data.table), and Python (using NumPy and Pandas).
-        - Experienced in high-performance computing and software development using C++ backends in R (using Rcpp).
+        - Experienced in high-performance computing in C++ (using Rcpp).
     - title: Ensemble Learning and Causal Inference Software Ecosystems
       maindescription: Proficient in the causal machine learning ecosystems for R and Python (tlverse and pyWhy), including
       description:
