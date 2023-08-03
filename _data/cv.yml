@@ -33,22 +33,22 @@
 - title: Experience
   type: time_table
   contents:
-    - title: Research Assistant in Statistics
+    - title: Research Assistant and Statistical Consultant
       institution: School of Public Health, UC Berkeley
       year: 2020 - 2021
       description:
         - Led statistical analysis in an epigenetics research group under the guidance of Professor Andres Cardenas.
         - Collaborated on impactful research projects and made significant contributions to published papers.
-    - title: Summer Intern in Causal Inference
+    - title: Summer Internship (causal Inference and survival analysis)
       institution: Genentech
       year: 2020
       description:
         - Developed statistical analysis software in R for nonparametric causal inference in survival analysis using machine learning tools.
         - Extracted, cleaned, and analyzed observational cancer survival data from the Flatiron database using SQL, R, and Python.
         - Leveraged debiased machine learning and causal inference techniques to drive data-driven decision-making.
-    - title: Intern in Causal Inference for Covid-19 Vaccine Trials
+    - title: Internship (causal inference for covid-19 vaccines)
       institution: Fred Hutchinson Research Center
-      year: 2020 - 2021
+      year: 2020 - 2022
       description:
         - Collaborated with Professor Peter B. Gilbert on research projects related to causal inference and debiased/targeted machine learning with applications to the US-sponsored COVID-19 vaccine trials.
         - Developed code pipelines for a unified statistical analysis of several US Government-sponsored COVID-19 vaccine trials, including those from Moderna and Johnson & Johnson.
