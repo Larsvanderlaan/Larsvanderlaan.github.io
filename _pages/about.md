@@ -2,12 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. University of Washington, Seattle, Department of Statistics
+subtitle: <a href='#'>University of Washington, Seattle</a>. Department of Statistics
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   address: >
     <p>B313</p>
     <p>Padelford Hall, Northeast Stevens Way</p>
@@ -26,6 +26,8 @@ I am a third-year Ph.D. student in Statistics at the University of Washington, w
 My research interests encompass a wide range of areas, including semiparametric statistics, survival analysis, shape-constrained inference, supervised statistical learning, distribution-free calibration, and inference after model selection. 
  
 
-For the latest updates on my research and academic endeavors, you can follow me on Twitter at [@Larsvanderlaan3](https://twitter.com/LarsvanderLaan3). To explore a selection of my works, please visit the publications tab. For a comprehensive list of my academic contributions, refer to my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en) profile.
+For the latest updates on my research and academic endeavors, you can follow me on Twitter at [@Larsvanderlaan3](https://twitter.com/LarsvanderLaan3).
+
+ All my research publications can found on my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en) profile. To explore a selection of my works, please visit the publications tab.  
 
  
