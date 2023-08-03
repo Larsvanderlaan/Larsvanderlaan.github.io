@@ -26,7 +26,7 @@ I am a third-year Ph.D. student in Statistics at the University of Washington, w
 
 I am advised by Professors [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com).
 
-My research interests encompass a wide range of areas, including semiparametric statistics, survival analysis, shape-constrained inference, supervised statistical learning, distribution-free calibration, and inference after model selection. 
+My research interests encompass a wide range of areas, including semiparametric statistics, targeted learning, survival analysis, shape-constrained inference, supervised causal statistical learning, distribution-free calibration, and causal inference after model selection. 
  
 
 For the latest updates on my research and academic endeavors, you can follow me on Twitter at [@Larsvanderlaan3](https://twitter.com/LarsvanderLaan3).
