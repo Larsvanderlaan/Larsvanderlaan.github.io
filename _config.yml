@@ -75,9 +75,9 @@ github_username: Larsvanderlaan # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: Larsvanderlaan3 # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: https://www.linkedin.com/in/lars-van-der-laan-32367615b/ # your LinkedIn user name
+linkedin_username: lars-van-der-laan-32367615b/ # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en # your Google Scholar ID
+scholar_userid: 0bwP0i4AAAAJ&hl=en # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
