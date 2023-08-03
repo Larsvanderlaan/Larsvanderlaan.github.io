@@ -40,8 +40,8 @@
       institution: School of Public Health, UC Berkeley
       year: 2020 - 2021
       description:
-        - Led statistical analysis in an epigenetics research group under the guidance of Professor Andres Cardenas.
-        - Collaborated on impactful research projects and made significant contributions to published papers.
+        - Lead several statistical analyses as part of an environmental epigenetics research group under the guidance of Professor Andres Cardenas.
+        - Collaborated on impactful research projects and made significant contributions to numerous published papers.
     - title: Summer Internship (causal Inference and survival analysis)
       institution: Genentech
       year: 2020
@@ -62,17 +62,17 @@
   contents:
     - title: Programming Languages
       description:
-        - Proficient in Batch, Python, R, SQL, Java, and C++ for software development, data manipulation, and data analysis.
+        - Proficient in Batchscript, Python, R, SQL, Java, and C++ for software development, data manipulation, and data analysis.
         - Proficient with object-oriented and functional programming paradigms and committed to adhering to quality coding practices.
         - Proficient in parallel computing techniques and cluster management, enabling efficient and scalable data processing.
         - Experienced in developing statistical software and data tools to support research and analytics.
     - title: Data Analysis and Statistical Computing
       description:
         - Proficient in data analysis and statistical computing in SQL, R, and Python.
-        - Experienced in parallel computing in R and Python using future and Dask.
+        - Experienced in parallel computing in R and Python using Future and Dask.
         - Skilled in data cleaning and manipulation in SQL, R (using dplyr and data.table), and Python (using NumPy and Pandas).
-        - Experienced in high-performance computing in C++ (using Rcpp).
-    - title: Ensemble Learning and Causal Inference Software Ecosystems
+        - Experienced in high-performance computing in C++ with integration into R through Rcpp.
+    - title: Software Ecosystems for Ensemble Learning and Causal Inference
       maindescription: Proficient in the causal machine learning ecosystems for R and Python (tlverse and pyWhy), including
       description:
         - Ensemble Superlearning with [sl3](http://tlverse.org/sl3/)
