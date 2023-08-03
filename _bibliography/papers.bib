@@ -10,7 +10,8 @@
   journal={arXiv preprint arXiv:2307.12544},
   year={2023},
   selected={true},
-  link={https://arxiv.org/pdf/2307.12544}
+  pdf={https://arxiv.org/pdf/2307.12544},
+  abstract={Debiased machine learning estimators for nonparametric inference of smooth functionals of the data-generating distribution can suffer from excessive variability and instability. For this reason, practitioners may resort to simpler models based on parametric or semiparametric assumptions. However, such simplifying assumptions may fail to hold, and estimates may then be biased due to model misspecification. To address this problem, we propose Adaptive Debiased Machine Learning (ADML), a nonparametric framework that combines data-driven model selection and debiased machine learning techniques to construct asymptotically linear, adaptive, and superefficient estimators for pathwise differentiable functionals. By learning model structure directly from data, ADML avoids the bias introduced by model misspecification and remains free from the restrictions of parametric and semiparametric models. While they may exhibit irregular behavior for the target parameter in a nonparametric statistical model, we demonstrate that ADML estimators provides regular and locally uniformly valid inference for a projection-based oracle parameter. Importantly, this oracle parameter agrees with the original target parameter for distributions within an unknown but correctly specified oracle statistical submodel that is learned from the data. This finding implies that there is no penalty, in a local asymptotic sense, for conducting data-driven model selection compared to having prior knowledge of the oracle submodel and oracle parameter. To demonstrate the practical applicability of our theory, we provide a broad class of ADML estimators for estimating the average treatment effect in adaptive partially linear regression models.}
 }
 
 @article{van2023causal,
@@ -20,7 +21,7 @@
   year={2023},
   selected={true},
   pdf={https://arxiv.org/pdf/2302.14011},
-  abstract={A little about this.}
+  abstract={We propose causal isotonic calibration, a novel nonparametric method for calibrating predictors of heterogeneous treatment effects. Furthermore, we introduce cross-calibration, a data-efficient variant of calibration that eliminates the need for hold-out calibration sets. Cross-calibration leverages cross-fitted predictors and generates a single calibrated predictor using all available data. Under weak conditions that do not assume monotonicity, we establish that both causal isotonic calibration and cross-calibration achieve fast doubly-robust calibration rates, as long as either the propensity score or outcome regression is estimated accurately in a suitable sense. The proposed causal isotonic calibrator can be wrapped around any black-box learning algorithm, providing robust and distribution-free calibration guarantees while preserving predictive performance.}
 }
 
  
@@ -30,7 +31,11 @@
   title={Semiparametric inference for relative heterogeneous vaccine efficacy between strains in observational case-only studies},
   author={{van der Laan}, Lars and Gilbert, Peter B},
   journal={arXiv preprint arXiv:2303.11462},
-  year={2023}
+  year={2023},
+  pdf={https://arxiv.org/pdf/2303.11462},
+  abstract={
+  The aim of this manuscript is to explore semiparametric methods for inferring subgroup-specific relative vaccine efficacy in a partially vaccinated population against multiple strains of a virus. We consider methods for observational case-only studies with informative missingness in viral strain type due to vaccination status, pre-vaccination variables, and also post-vaccination factors such as viral load. We establish general causal conditions under which the relative conditional vaccine efficacy between strains can be identified nonparametrically from the observed data-generating distribution. Assuming that the relative strain-specific conditional vaccine efficacy has a known parametric form, we propose semiparametric asymptotically linear estimators of the parameters based on targeted (debiased) machine learning estimators for partially linear logistic regression models. Finally, we apply our methods to estimate the relative strain-specific conditional vaccine efficacy in the ENSEMBLE COVID-19 vaccine trial.
+}
 }
 
 
@@ -38,7 +43,9 @@
   title={Nonparametric estimation of the causal effect of a stochastic threshold-based intervention},
   author={{van der Laan}, Lars and Zhang, Wenbo and Gilbert, Peter B},
   journal={Biometrics},
-  year={2022}
+  year={2022},
+  pdf={https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13690},
+  abstract={Identifying a biomarker or treatment-dose threshold that marks a specified level of risk is an important problem, especially in clinical trials. In view of this goal, we consider a covariate-adjusted threshold-based interventional estimand, which happens to equal the binary treatment–specific mean estimand from the causal inference literature obtained by dichotomizing the continuous biomarker or treatment as above or below a threshold. The unadjusted version of this estimand was considered in Donovan et al.. Expanding upon Stitelman et al., we show that this estimand, under conditions, identifies the expected outcome of a stochastic intervention that sets the treatment dose of all participants above the threshold. We propose a novel nonparametric efficient estimator for the covariate-adjusted threshold-response function for the case of informative outcome missingness, which utilizes machine learning and targeted minimum-loss estimation (TMLE). We prove the estimator is efficient and characterize its asymptotic distribution and robustness properties. Construction of simultaneous 95% confidence bands for the threshold-specific estimand across a set of thresholds is discussed. In the Supporting Information, we discuss how to adjust our estimator when the biomarker is missing at random, as occurs in clinical trials with biased sampling designs, using inverse probability weighting. Efficiency and bias reduction of the proposed estimator are assessed in simulations. The methods are employed to estimate neutralizing antibody thresholds for virologically confirmed dengue risk in the CYD14 and CYD15 dengue vaccine trials.}
 }
 
 
@@ -47,12 +54,24 @@
   title={Targeted Maximum Likelihood Based Estimation for Longitudinal Mediation Analysis},
   author={Wang, Zeyi and {van der Laan}, Lars and Petersen, Maya and Gerds, Thomas and Kvist, Kajsa and {van der Laan}, Mark},
   journal={arXiv preprint arXiv:2304.04904},
-  year={2023}
+  year={2023},
+  pdf={https://arxiv.org/pdf/2304.04904.pdf}
 }
 
 @article{van2021higher,
   title={Higher order targeted maximum likelihood estimation},
   author={{van der Laan}, Mark and Wang, Zeyi and {van der Laan}, Lars},
   journal={arXiv preprint arXiv:2101.06290},
-  year={2021}
+  year={2021},
+  pdf={https://arxiv.org/pdf/2101.06290}
 }
+
+@article{coyle10hal9001,
+  title={hal9001: The scalable highly adaptive lasso, 2022},
+  author={Coyle, Jeremy R and Hejazi, Nima S and Phillips, Rachael V and van der Laan, Lars WP and van der Laan, Mark J},
+  journal={URL https://doi. org/10.5281/zenodo},
+  volume={3558313},
+  selected={true}
+}
+
+
