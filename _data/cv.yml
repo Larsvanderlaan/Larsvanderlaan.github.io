@@ -46,6 +46,7 @@
       institution: Genentech
       year: 2020
       description:
+        - Advised by Dr. Jonathan Levy.
         - Developed statistical analysis software in R for nonparametric causal inference in survival analysis using machine learning tools.
         - Extracted, cleaned, and analyzed observational cancer survival data from the Flatiron database using SQL, R, and Python.
         - Leveraged debiased machine learning and causal inference techniques to drive data-driven decision-making.
