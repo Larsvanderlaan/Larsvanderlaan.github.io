@@ -27,7 +27,7 @@ I am a third-year Ph.D. student in Statistics at the University of Washington, w
 
 My research interests encompass a wide range of areas, including semi/nonparametric statistics, shape-constrained inference, distribution-free statistical learning and calibration, and inference after data-driven model selection. I am enthusiastic about applying these methodologies to various domains, such as survival and longitudinal data analysis, inference on heterogeneous treatment effects, and personalized decision-making.
 
-For the latest updates on my research and academic endeavors, you can follow me on Twitter at [@Larsvanderlaan3](https://twitter.com/LarsvanderLaan3). Additionally, you can access all my research publications on my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en) profile. To explore a curated selection of my works, please visit the [publications](https://larsvanderlaan.github.io/publications/) tab.
+For the latest updates on my research and academic endeavors, you can follow me on Twitter at [@Larsvanderlaan3](https://twitter.com/LarsvanderLaan3) and connect with me on [LinkedIn](https://www.linkedin.com/in/lars-van-der-laan-32367615b/). Additionally, you can access all my research publications on my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en) profile. To explore a curated selection of my works, please visit the [publications](https://larsvanderlaan.github.io/publications/) tab. 
 
  
  
