@@ -77,7 +77,7 @@ p <- ggplot(data = data.frame( tau.hat, tau.BLP.oracle, cate, W), aes(y = tau.ha
   scale_color_manual(
     name = "Legend",
     values = c("Original Predictor" = "blue", "Best Linear Meta-Predictor" = "red",
-               "True CATE" = "grey")
+               "True CATE" = "black")
   ) +
   theme_minimal()
  
