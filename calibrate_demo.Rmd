@@ -10,35 +10,55 @@ date: '2023-08-09'
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## data
-Generate covariate, treatment, outcome data-structure
+---
+title: "Calibration demo"
+output:
+  html_document: default
+  pdf_document: default
+date: '2023-08-09'
+---
+
+## Introduction
+
+This document presents a demonstration of calibration methods for treatment effect predictors. We generate synthetic data with covariates, treatment assignments, and outcomes.
+We explore two calibration methods: the Best Linear Predictor (BLP) and causal isotonic calibration.
+
+The BLP method provides a linear calibration gaurantees by learning an optimal linear transformation of the original predictor, so that the linearly calibrated predictor cannot be improved by applying any linear transformation (i.e., scaling and shifting).
+
+Isotonic calibration offers non-parametric (distribution-free) calibration gaurantees by (1) an optimal monotone transformation of the original predictor and (2) providing a calibrated predictor that cannot be improved by applying any transformation (linear or nonlinear).
+
+
+## Data Generation
+We begin by generating synthetic data for the demonstration. We set the seed for reproducibility and create variables for covariates, treatment assignments, potential outcomes, observed outcomes, and the conditional average treatment effect (CATE).
 
 ```{r}
+# Set random seed for reproducibility
 set.seed(12345)
 n <- 2000
-# covariate
+
+# Generate covariate W from a uniform distribution between -1 and 1
 W <- runif(n, -1, 1)
 
-# treatment
-pi <- plogis(0.5*W)
+# Calculate treatment assignment probabilities using logistic function
+pi <- plogis(0.5 * W)
 A <- rbinom(n, size = 1, pi)
 
-# outcome regression and cate
+# Define outcome regression functions and CATE
 mu0 <- plogis(W)
-mu1 <- plogis(1 + 2*W)
+mu1 <- plogis(1 + 2 * W)
 cate <- mu1 - mu0
 
-# potential outcomes
+# Generate potential outcomes based on treatment assignment
 Y0 <- rbinom(n, size = 1, mu0)
-Y1 <- rbinom(n, size = 1, plogis(1 + 2*W))
- 
-# observed outcome
-Y <- ifelse(A==1, Y1, Y0)
+Y1 <- rbinom(n, size = 1, plogis(1 + 2 * W))
+
+# Create observed outcomes based on treatment assignment
+Y <- ifelse(A == 1, Y1, Y0)
 ```
 
+## Initial predictor and calibration plot
 
-## train initial predictor and make calibration plot (predictor vs CATE)
-
+We first create an initial predictor of the Individual Treatment Effect (ITE), denoted as tau.hat, which is a fixed function for simplicity.
 
 ```{r, echo = TRUE}
 
@@ -49,7 +69,7 @@ tau.hat <- plogis(1 + W  ) - 0.45
   
 ```
 
-Lets plot the predictor, the BLP, and the true CATE as a function of the covariate.
+We visualize the initial predictor, the Best Linear Predictor (BLP), and the true CATE as functions of the covariate.
 
 ```{r, echo = FALSE}
 library(ggplot2)
@@ -85,6 +105,10 @@ p <- ggplot(data = data.frame( tau.hat, tau.BLP.oracle, cate, W), aes(y = tau.ha
 p
 
 ```
+
+ 
+
+
 
 Now, lets make a calibrate plot. This is a scatter plot of the true CATE values vs the predicted CATE values. 
 
@@ -128,7 +152,8 @@ print(p)
 
 ## Linear calibration with Victor's BLP method 
 
-Now lets use Victor's BLP method to linearly calibrate our original predictor.
+We apply the Best Linear Predictor (BLP) method to linearly calibrate the original predictor.
+
 
 
 ```{r}
@@ -158,7 +183,8 @@ tau.BLP.oracle <- intercept + tau.hat * slope
 ```
 
 
-Plot as a function of the covariate.
+We visualize the linearly calibrated predictor as a function of the covariate.
+
 
 
 ```{r, echo = FALSE}
@@ -282,7 +308,9 @@ However, we see that the BLP approach is unable to correct for the poor calibrat
 
 ## Causal isotonic calibration
 
-Now lets use causal isotonic calibration to nonparametrically calibrate our original predictor. Causal isotonic calibration is able to correct for any monotone transformations of the original predictor. Since linear transformations (with positive slope) are monotone, this method is strictly more powerful than the BLP approach.
+Next, we introduce causal isotonic calibration, a nonparametric method that can correct for any monotone transformations of the original predictor and provides distribution-free calibration gaurantees.
+
+ Since linear transformations (with positive slope) are monotone, this method is strictly more powerful than the BLP approach.
 
 
 ```{r}
@@ -297,7 +325,9 @@ tau.iso.hat <- pmin(pmax(tau.iso.hat, min(cate)), max(cate))
 
 ```
 
-Plot as a function of the covariate.
+We visualize the isotonic calibrated predictor as a function of the covariate.
+
+
 
 ```{r, echo = FALSE}
 
