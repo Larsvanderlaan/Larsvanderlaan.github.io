@@ -72,8 +72,8 @@ tau.BLP.oracle <- intercept + tau.hat * slope
 p <- ggplot(data = data.frame( tau.hat, tau.BLP.oracle, cate, W), aes(y = tau.hat, x = W)) +
   geom_line(aes(color = "Original Predictor"), show.legend = TRUE, size = 1) +
   labs(x = "Covariate", y = "Predictor") +
-  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, size = 0.7, alpha = 0.75) +
-   geom_line(aes(y = cate, color = "True CATE"), show.legend = TRUE, size = 0.7, alpha = 0.75) +
+  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, size = 0.7, alpha = 1) +
+   geom_line(aes(y = cate, color = "True CATE"), show.legend = TRUE, size = 0.7, alpha = 1) +
   scale_color_manual(
     name = "Legend",
     values = c("Original Predictor" = "blue", "Best Linear Meta-Predictor" = "red",
@@ -169,9 +169,9 @@ tau.iso.oracle <- as.stepfun(isoreg(tau.hat, cate))(tau.hat)
 p <- ggplot(data = data.frame(tau.BLP.hat, tau.hat, tau.BLP.oracle, W, cate), aes(x = W, y = tau.BLP.hat)) +
   geom_line(aes(color = "Linearly Calibrated Predictor"), show.legend = TRUE, size = 1) +
   labs(x = "Covariate", y = "Predictor") +
-  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 0.75,  size = 0.7)+ 
+  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 1,  size = 0.7)+ 
   geom_line(aes(y = tau.hat, color = "Original Predictor"), show.legend = TRUE, alpha = 1,  size = 1)+ 
-  geom_line(aes(y = cate, color = "True CATE"), show.legend = TRUE, alpha = 0.75,  size = 0.7)+  
+  geom_line(aes(y = cate, color = "True CATE"), show.legend = TRUE, alpha = 1,  size = 0.7)+  
   scale_color_manual(
     name = "Legend",
     values = c("Linearly Calibrated Predictor" = "red", 
@@ -195,7 +195,7 @@ We see that the linearly calibrated predictor is a linear transformation of the 
 p <- ggplot(data = data.frame(tau.BLP.hat, tau.hat, tau.BLP.oracle), aes(x = tau.hat, y = tau.BLP.hat)) +
   geom_line(aes(color = "Linearly Calibrated Predictor"), show.legend = TRUE, size = 1) +
   labs(x = "Original Predictor", y = "Calibrated Predictor") +
-  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 0.75,  size = 0.7)+ 
+  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 1,  size = 0.7)+ 
   scale_color_manual(
     name = "Legend",
     values = c(
@@ -236,7 +236,7 @@ slope <- coef(fit)[2]
 p <- ggplot(data = data.frame(tau.BLP.hat, tau.hat,  tau.BLP.oracle, cate), aes(y = tau.BLP.hat, x = cate)) +
   geom_point(aes(color = "Linearly Calibrated Predictor"), show.legend = TRUE, size = 1) +
   labs(y = "Calibrated Predictor", x = "CATE") +
-  geom_point(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 0.75,  size = 0.7)+ 
+  geom_point(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 1,  size = 0.7)+ 
   scale_color_manual(
     name = "Legend",
     values = c("Linearly Calibrated Predictor" = "red", 
@@ -307,10 +307,10 @@ tau.iso.oracle <- as.stepfun(isoreg(tau.hat, cate))(tau.hat)
 p <- ggplot(data = data.frame(tau.iso.hat, tau.hat, tau.iso.oracle, tau.BLP.oracle, W, cate), aes(x = W, y = tau.iso.hat)) +
   geom_line(aes(color = "Isotonic Calibrated Predictor"), show.legend = TRUE, size = 1) +
   labs(x = "Covariate", y = "Predictor") +
-  geom_line(aes(y = tau.iso.oracle, color = "Best Isotonic Meta-Predictor", alpha = 0.75), show.legend = TRUE, alpha = 0.75, size = 0.7) +
-  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 0.75,  size = 0.7)+ 
+  geom_line(aes(y = tau.iso.oracle, color = "Best Isotonic Meta-Predictor", alpha = 1), show.legend = TRUE, alpha = 1, size = 0.7) +
+  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 1,  size = 0.7)+ 
   geom_line(aes(y = tau.hat, color = "Original Predictor"), show.legend = TRUE, alpha = 1,  size = 1)+ 
-  geom_line(aes(y = cate, color = "True CATE"), show.legend = TRUE, alpha = 0.75,  size = 0.7)+  
+  geom_line(aes(y = cate, color = "True CATE"), show.legend = TRUE, alpha = 1,  size = 0.7)+  
   scale_color_manual(
     name = "Legend",
     values = c("Isotonic Calibrated Predictor" = "red", 
@@ -344,8 +344,8 @@ tau.iso.oracle <- as.stepfun(isoreg(tau.hat, cate))(tau.hat)
 p <- ggplot(data = data.frame(tau.iso.hat, tau.hat, tau.iso.oracle, tau.BLP.oracle), aes(x = tau.hat, y = tau.iso.hat)) +
   geom_line(aes(color = "Isotonic Calibrated Predictor"), show.legend = TRUE, size = 1) +
   labs(x = "Original Predictor", y = "Calibrated Predictor") +
-  geom_line(aes(y = tau.iso.oracle, color = "Best Isotonic Meta-Predictor", alpha = 0.75), show.legend = TRUE, alpha = 0.75, size = 0.7) +
-  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 0.75,  size = 0.7)+ 
+  geom_line(aes(y = tau.iso.oracle, color = "Best Isotonic Meta-Predictor", alpha = 1), show.legend = TRUE, alpha = 1, size = 0.7) +
+  geom_line(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 1,  size = 0.7)+ 
   scale_color_manual(
     name = "Legend",
     values = c("Isotonic Calibrated Predictor" = "red", 
@@ -385,8 +385,8 @@ p <- ggplot(data = data.frame(tau.iso.hat, cate), aes(x = cate, y = tau.iso.hat)
 p <- ggplot(data = data.frame(tau.iso.hat, tau.hat, tau.iso.oracle, tau.BLP.oracle, cate), aes(y = tau.iso.hat, x = cate)) +
   geom_point(aes(color = "Isotonic Calibrated Predictor"), show.legend = TRUE, size = 1) +
   labs(x = "CATE", y = "Calibrated Predictor") +
-  geom_point(aes(y = tau.iso.oracle, color = "Best Isotonic Meta-Predictor", alpha = 0.75), show.legend = TRUE, alpha = 0.75, size = 0.7) +
-  geom_point(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 0.75,  size = 0.7)+ 
+  geom_point(aes(y = tau.iso.oracle, color = "Best Isotonic Meta-Predictor", alpha = 1), show.legend = TRUE, alpha = 1, size = 0.7) +
+  geom_point(aes(y = tau.BLP.oracle, color = "Best Linear Meta-Predictor"), show.legend = TRUE, alpha = 1,  size = 0.7)+ 
   scale_color_manual(
     name = "Legend",
      values = c("Isotonic Calibrated Predictor" = "red", 
