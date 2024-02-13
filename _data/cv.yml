@@ -18,6 +18,13 @@
         - Advised by Marco Carone, PhD and Alex Luedtke, PhD.
         - Conducting research in semi/nonparametric statistics and debiased machine learning with a focus on applications to causal inference. Additionally, researching supervised statistical learning and calibration methods for heterogeneous treatment effects and investigating causal inference techniques after data-driven model selection.
         - Actively collaborating with researchers at the Fred Hutchinson Research Center on projects related to causal inference and debiased machine learning with a focus on randomized and observational COVID-19 vaccine trials.
+    - title: Visting Student Researcher, Computational Precision Health
+      institution: University of Berkeley, California
+      year: 2023 - Current
+      description:
+        - Advised by Ahmed Alaa, PhD.
+        - Developing distribution-free methods for predictive inference using machine learning tools.
+        - Research Focuses include conformal prediction/inference, distribution-free prediction intervals with conditional validity, and Venn-Abers and isotonic calibration of point-predictions.
     - title: MA in Statistics
       institution: University of California, Berkeley
       year: 2019 - 2020
