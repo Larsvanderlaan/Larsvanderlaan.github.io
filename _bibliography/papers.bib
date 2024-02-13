@@ -5,7 +5,7 @@
 
 @article{vanderlaan2024selfconsistent,
       title={Self-Consistent Conformal Prediction},
-      author={Lars van der Laan and Ahmed M. Alaa},
+      author={{van der Laan}, Lars and {M. Alaa}, Ahmed,
       year={2024},
       eprint={2402.07307},
       archivePrefix={arXiv},
@@ -19,11 +19,11 @@ pdf={https://arxiv.org/pdf/2402.07307.pdf}
 
 @article{van2024combining,
   title={Combining T-learning and DR-learning: a framework for oracle-efficient estimation of causal contrasts},
-  author={van der Laan, Lars and Carone, Marco and Luedtke, Alex},
+  author={{van der Laan}, Lars and Carone, Marco and Luedtke, Alex},
   journal={arXiv preprint arXiv:2402.01972},
   year={2024},
     selected={true},
-    pdf={https://arxiv.org/pdf/2402.01972.pdf}
+    pdf={https://arxiv.org/pdf/2402.01972.pdf},
     abstract={
     We introduce efficient plug-in (EP) learning, a novel framework for the estimation of heterogeneous causal contrasts, such as the conditional average treatment effect and conditional relative risk. The EP-learning framework enjoys the same oracle-efficiency as Neyman-orthogonal learning strategies, such as DR-learning and R-learning, while addressing some of their primary drawbacks, including that (i) their practical applicability can be hindered by loss function non-convexity; and (ii) they may suffer from poor performance and instability due to inverse probability weighting and pseudo-outcomes that violate bounds. To avoid these drawbacks, EP-learner constructs an efficient plug-in estimator of the population risk function for the causal contrast, thereby inheriting the stability and robustness properties of plug-in estimation strategies like T-learning. Under reasonable conditions, EP-learners based on empirical risk minimization are oracle-efficient, exhibiting asymptotic equivalence to the minimizer of an oracle-efficient one-step debiased estimator of the population risk function. In simulation experiments, we illustrate that EP-learners of the conditional average treatment effect and conditional relative risk outperform state-of-the-art competitors, including T-learner, R-learner, and DR-learner. Open-source implementations of the proposed methods are available in our R package hte3.
 }
@@ -31,9 +31,10 @@ pdf={https://arxiv.org/pdf/2402.07307.pdf}
 
 @article{dutta2023estimating,
   title={Estimating Uncertainty in Multimodal Foundation Models using Public Internet Data},
-  author={Dutta, Shiladitya and Wei, Hongbo and van der Laan, Lars and Alaa, Ahmed M},
+  author={Dutta, Shiladitya and Wei, Hongbo and {van der Laan}, Lars and Alaa, {Ahmed M}},
   journal={arXiv preprint arXiv:2310.09926},
   year={2023},
+  pdf={https://arxiv.org/pdf/2310.09926.pdf},
   abstract={
   Foundation models are trained on vast amounts of data at scale using self-supervised learning, enabling adaptation to a wide range of downstream tasks. At test time, these models exhibit zero-shot capabilities through which they can classify previously unseen (user-specified) categories. In this paper, we address the problem of quantifying uncertainty in these zero-shot predictions. We propose a heuristic approach for uncertainty estimation in zero-shot settings using conformal prediction with web data. Given a set of classes at test time, we conduct zero-shot classification with CLIP-style models using a prompt template, e.g., "an image of a ", and use the same template as a search query to source calibration data from the open web. Given a web-based calibration set, we apply conformal prediction with a novel conformity score that accounts for potential errors in retrieved web data. We evaluate the utility of our proposed method in Biomedical foundation models; our preliminary results show that web-based conformal prediction sets achieve the target coverage with satisfactory efficiency on a variety of biomedical datasets.
 }
