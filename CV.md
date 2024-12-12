@@ -21,8 +21,7 @@ output:
 - **Institution**: University of Washington, Seattle
 - **Year**: 2021 - Current
 - **Advisors**: Marco Carone, PhD; Alex Luedtke, PhD
-- **Research Focus**: Semi/nonparametric statistics, debiased machine learning, shape-constrained inference, statistical learning and calibration theory for heterogeneous treatment effects.
-- **Collaborations**: Actively collaborating with researchers at the Fred Hutchinson Research Center on projects related to causal inference and debiased machine learning.
+- **Research Focus**: Causal inference, statistical learning theory, debiased machine learning
 
 #### MA in Statistics
 - **Institution**: University of California, Berkeley
@@ -38,6 +37,15 @@ output:
 ---
 
 ### Professional Experience
+
+#### Machine Learning Research Intern 
+- **Company**: Netflix, Los Gatos
+- **Year**: Summer 2024
+- **Mentors**: Aurelien Bibaut and Nathan Kallus
+- **Responsibilities**: Intern at core research team at Netflix, Machine Learning and Inference Research (MLIR). 
+    Developed debiased machine learning methods for estimating long-term causal effects in short-term experiments using reinforcement learning and markov decision processes.
+    Implemented software in Python of gradient-boosted fitted value iteration for large-scale data to estimate long-term treatment effects in Markov chains.
+    Implemented methods for calibration of machine learning models for classification, regression, and conditional treatment effect estimation and policy learning.
 
 #### Research Assistant and Statistical Consultant
 - **Institution**: School of Public Health, UC Berkeley
@@ -65,7 +73,8 @@ output:
 - Electronic Journal of Statistics (EJS)
 - Journal of Machine Learning Research (JMLR)
 - Journal of Causal Inference (JCI)
-
+- Journal of Royal Statistical Society (JRSS)
+- Journal of American Statistical Society (JASA)
 
 ---
 
