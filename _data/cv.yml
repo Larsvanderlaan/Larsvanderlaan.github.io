@@ -1,107 +1,116 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Lars van der Laan
-    - name: Address
-      value: Seattle, Washington, USA
-    - name: Phone
-      value: (925) 257-3339
-    - name: Email
-      value: lvdlaan@uw.edu
-    - name: Homepage
-      value: larsvanderlaan.github.io
+    - name: "Full Name"
+      value: "Lars van der Laan"
+    - name: "Address"
+      value: "Seattle, Washington, USA"
+    - name: "Phone"
+      value: "(925) 257-3339"
+    - name: "Email"
+      value: "lvdlaan@uw.edu"
+    - name: "Homepage"
+      value: "https://larsvanderlaan.github.io"
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Statistics
-      institution: University of Washington, Seattle
-      year: 2021 - Present
+    - title: "PhD in Statistics"
+      institution: "University of Washington, Seattle"
+      year: "2021 - Present"
       description:
-        - Advised by Marco Carone, PhD and Alex Luedtke, PhD.
-        - Research on semiparametric statistics, causal inference, and debiased/targeted machine learning.
-        - Collaboration with Fred Hutchinson Research Center on COVID-19 vaccine trials.
-    - title: MA in Statistics
-      institution: University of California, Berkeley
-      year: 2019 - 2020
+        - "Advised by Marco Carone, PhD and Alex Luedtke, PhD."
+        - "Research on semiparametric statistics, causal inference, and debiased/targeted machine learning."
+        - "Collaboration with Fred Hutchinson Research Center on COVID-19 vaccine trials."
+    - title: "MA in Statistics"
+      institution: "University of California, Berkeley"
+      year: "2019 - 2020"
       description:
-        - Coursework in theoretical and applied statistics, programming, and data analysis.
-        - Completed an industry-oriented capstone project.
-    - title: Double BSc in Mathematics and Physics
-      institution: University of Groningen, Netherlands
-      year: 2016 - 2019
+        - "Coursework in theoretical and applied statistics, programming, and data analysis."
+        - "Completed an industry-oriented capstone project."
+    - title: "Double BSc in Mathematics and Physics"
+      institution: "University of Groningen, Netherlands"
+      year: "2016 - 2019"
       description:
-        - Coursework in theoretical and applied physics and mathematics.
-        - Graduated cum laude.
+        - "Coursework in theoretical and applied physics and mathematics."
+        - "Graduated cum laude."
 
 - title: Experience
   type: time_table
   contents:
-    - title: Netflix PhD Research Fellowship
-      institution: Netflix
-      year: 2024 - 2025
+    - title: "Netflix PhD Research Fellowship"
+      institution: "Netflix"
+      year: "2024 - 2025"
       description:
-        - Awarded to support advanced research in machine learning and causal inference.
-    - title: Machine Learning Research Intern
-      institution: Netflix
-      year: Summer 2024
+        - "Awarded to support advanced research in machine learning and causal inference."
+    - title: "Machine Learning Research Intern"
+      institution: "Netflix"
+      year: "Summer 2024"
       description:
-        - Developed debiased ML methods for estimating long-term causal effects in experiments using RL and MDPs.
-        - Implemented gradient-boosted fitted value iteration software for large-scale data.
-        - Built calibration methods for ML models for classification, regression, and policy learning.
-    - title: Visiting Student Researcher
-      institution: University of California, Berkeley
-      year: 2023 - Current
+        - "Developed debiased ML methods for estimating long-term causal effects in experiments using RL and MDPs."
+        - "Implemented gradient-boosted fitted value iteration software for large-scale data."
+        - "Built calibration methods for ML models for classification, regression, and policy learning."
+    - title: "Visiting Student Researcher"
+      institution: "University of California, Berkeley"
+      year: "2023 - Current"
       description:
-        - Advisor: Ahmed Alaa, PhD.
-        - Focused on distribution-free methods for predictive inference using ML tools.
-    - title: Research Assistant
-      institution: University of Washington, Statistics
-      year: 2021 - Current
+        - "Advisor: Ahmed Alaa, PhD."
+        - "Focused on distribution-free methods for predictive inference using ML tools."
+    - title: "Research Assistant"
+      institution: "University of Washington, Statistics"
+      year: "2021 - Current"
       description:
-        - Conducted research on causal inference and debiased machine learning.
-    - title: Research Assistant
-      institution: Fred Hutchinson Research Center
-      year: 2021 - 2024
+        - "Conducted research on causal inference and debiased machine learning."
+    - title: "Research Assistant"
+      institution: "Fred Hutchinson Research Center"
+      year: "2021 - 2024"
       description:
-        - Collaborated with Dr. Peter B. Gilbert on causal inference for COVID-19 vaccine trials.
+        - "Collaborated with Dr. Peter B. Gilbert on causal inference for COVID-19 vaccine trials."
 
 - title: Skills
   type: time_table
   contents:
-    - title: Programming Languages
+    - title: "Programming Languages"
       description:
-        - Batchscript, Python, R, SQL, Java, C++. Proficient in object-oriented and functional programming paradigms.
-    - title: Data Analysis
+        - "Batchscript, Python, R, SQL, Java, C++. Proficient in object-oriented and functional programming paradigms."
+    - title: "Data Analysis"
       description:
-        - Proficient in SQL, R, Python, data cleaning/manipulation, and high-performance computing in C++ with Rcpp.
-    - title: Ensemble Learning & Causal Inference
+        - "Proficient in SQL, R, Python, data cleaning/manipulation, and high-performance computing in C++ with Rcpp."
+    - title: "Ensemble Learning & Causal Inference"
       description:
-        - Experienced with causal ML ecosystems like tlverse and pyWhy.
+        - "Experienced with causal ML ecosystems like tlverse and pyWhy."
 
 - title: Journals Reviewed/Refereed For
   type: list
   contents:
-    - Journal of Royal Statistical Society (Series B)
-    - Journal of American Statistical Society
-    - Electronic Journal of Statistics
-    - Journal of Machine Learning Research
-    - Journal of Causal Inference
+    - "Journal of the Royal Statistical Society (Series B)"
+    - "Journal of the American Statistical Association"
+    - "Electronic Journal of Statistics"
+    - "Journal of Machine Learning Research"
+    - "Journal of Causal Inference"
 
 - title: Invited Talks
   type: list
   contents:
-    - "Long-term causal inference from short-term experiments in semiparametric Markov decision processes" - Conference on Digital Experimentation (CODE), 2024
-    - "Combining T-learning and DR-learning: a framework for oracle-efficient estimation of causal contrasts" - American Causal Inference Conference (ACIC), 2024
-    - "Highly Adaptive Lasso and Adaptive TMLE in Causal Inference" - American Causal Inference Conference (ACIC), 2024
-    - "Recent advances in highly adaptive lasso (HAL) and its crucial role in causal inference" - International Symposium on Biopharmaceutical Statistics (ISBS), 2024
-    - "Self-Consistent Conformal Prediction" - International Seminar on Selective Inference, 2024
-    - "Super-Efficient Estimation of Average Treatment Effect based on Randomized Controlled Trial Augmented with External Controls or Observational Study" - Interactive Causal Learning, 2024
-    - "Adaptive debiased machine learning using data-driven model selection techniques" - CMStatistics, 2023
-    - "Causal Isotonic Calibration for Heterogeneous Treatment Effects" - International Conference of Machine Learning (ICML), 2023
+    - name: "Long-term causal inference from short-term experiments in semiparametric Markov decision processes"
+      event: "Conference on Digital Experimentation (CODE), 2024"
+    - name: "Combining T-learning and DR-learning: a framework for oracle-efficient estimation of causal contrasts"
+      event: "American Causal Inference Conference (ACIC), 2024"
+    - name: "Highly Adaptive Lasso and Adaptive TMLE in Causal Inference"
+      event: "American Causal Inference Conference (ACIC), 2024"
+    - name: "Recent advances in highly adaptive lasso (HAL) and its crucial role in causal inference"
+      event: "International Symposium on Biopharmaceutical Statistics (ISBS), 2024"
+    - name: "Self-Consistent Conformal Prediction"
+      event: "International Seminar on Selective Inference, 2024"
+    - name: "Super-Efficient Estimation of Average Treatment Effect based on Randomized Controlled Trial Augmented with External Controls or Observational Study"
+      event: "Interactive Causal Learning, 2024"
+    - name: "Adaptive debiased machine learning using data-driven model selection techniques"
+      event: "CMStatistics, 2023"
+    - name: "Causal Isotonic Calibration for Heterogeneous Treatment Effects"
+      event: "International Conference of Machine Learning (ICML), 2023"
 
 - title: Publications
-  type: link
+  type: link_list
   contents:
-    - [Google Scholar profile](https://scholar.google.com/citations?hl=en&user=0bwP0i4AAAAJ)
+    - name: "Google Scholar profile"
+      url: "https://scholar.google.com/citations?hl=en&user=0bwP0i4AAAAJ"
