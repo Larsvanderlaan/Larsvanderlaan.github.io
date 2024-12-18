@@ -22,7 +22,8 @@ social: true  # includes social icons at the bottom of the page
 
 ## About me
 
-I am a fourth-year Ph.D. student in Statistics at the University of Washington, working on causal inference and debiased machine learning. I am advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html), PhD and [Alex Luedtke](http://www.alexluedtke.com), PhD. For more detail on my background, please check out my [CV](https://larsvanderlaan.github.io/cv/).
+I am a fourth-year Ph.D. student in Statistics at the University of Washington, specializing in causal inference and debiased machine learning. I am advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html), PhD and [Alex Luedtke](http://www.alexluedtke.com), PhD. I also collaborate with [Ahmed Alaa](https://vcresearch.berkeley.edu/faculty/ahmed-alaa) on model calibration and conformal prediction. My research is supported by a Netflix Graduate Research Fellowship, through which I work with Nathan Kallus and Aurelien Bibaut.
+For more detail on my background, please check out my [CV](https://larsvanderlaan.github.io/cv/).
 
 
 My research interests encompass a wide range of areas, including semiparametric statistics, statistical learning and calibration theory, debiased machine learning, and causal inference. I am enthusiastic about applying these methodologies to various domains, such as survival and longitudinal data analysis, inference on heterogeneous treatment effects, and personalized decision-making.
