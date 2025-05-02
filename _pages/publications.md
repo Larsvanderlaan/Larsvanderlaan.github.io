@@ -13,19 +13,19 @@ For a complete list of publications, including applied work, see my [Google Scho
 <div class="publications">
 
 
-<h3>Causal inference: calibration and learning theory</h3>
+<h3>Calibration for Causal Inference</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causalcal] %}
 
-<h3>Debiased and efficient estimation</h3>
+<h3>Debiased and Efficient Estimation</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=effest] %}
 
-<h3>Causal inference: methodological contributions</h3>
+<h3>Causal Inference Methodology</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=methods] %}
 
-<h3>Calibration and distribution-free uncertainty quantification</h3>
+<h3>Conformal Prediction and Predictive Uncertainty</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
 
-<h3>Software</h3>
+<h3>Software and Computational Tools</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=software] %}
 
 
