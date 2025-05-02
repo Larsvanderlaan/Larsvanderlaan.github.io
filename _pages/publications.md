@@ -21,7 +21,7 @@ nav_order: 1
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=effest] %}
 
 <h3>Causal Inference: Methods</h3>
-{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causalmethods] %}
+{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=methods] %}
 
 <h3>Calibration and Distribution-Free Uncertainty Quantification</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
