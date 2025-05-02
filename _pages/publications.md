@@ -9,11 +9,15 @@ nav_order: 1
 
 [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en)
 
-### Causal Inference
+<div class="publications">
+
+<h3>Causal Inference</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causal] %}
 
-### Calibration Methods
+<h3>Calibration Methods</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causalcalibration] %}
 
-### Conference papers
+<h3>Conference Papers</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
+
+</div>
