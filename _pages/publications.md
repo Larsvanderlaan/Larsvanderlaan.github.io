@@ -11,10 +11,10 @@ nav_order: 1
 
 <div class="publications">
 
-<h3>Calibration Papers</h3>
+<h3>Calibration and uncertainty quantification</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
 
-<h3>Causal learning</h3>
-{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causal] %}
+<h3>Calibration in causal inference</h3>
+{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causalcal] %}
 
 </div>
