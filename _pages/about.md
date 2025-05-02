@@ -6,7 +6,7 @@ subtitle: <a href='#'>University of Washington, Seattle</a>. Department of Stati
 
 profile:
   align: right
-  image: prof_pic1.jpeg
+  image: prof_pic1.jpg 
   image_circular: true # crops the image to make it circular
   address: >
     <p>B313</p>
