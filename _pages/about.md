@@ -32,4 +32,4 @@ A key theme in my work is bridging calibration—traditionally used in predictio
 
 I also study distribution-free [uncertainty quantification](https://arxiv.org/pdf/2502.05676) in predictive contexts and collaborate with [Ahmed Alaa](https://vcresearch.berkeley.edu/faculty/ahmed-alaa) at UC Berkeley—where I am a Visiting Student Researcher—on [conformal prediction](https://proceedings.neurips.cc/paper_files/paper/2024/file/c1c49aba08e6c90f2b1f85751f497a2f-Paper-Conference.pdf).
 
-I am currently supported by a Netflix Graduate Research Fellowship, and work with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en) on [offline policy evaluation and long-term causal inference](https://arxiv.org/pdf/2501.06926) and instrumental variables.
+I am currently supported by a Netflix Graduate Research Fellowship, and work with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en) on [offline policy evaluation](https://arxiv.org/pdf/2501.06926)  and long-term causal inference and instrumental variables.
