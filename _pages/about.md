@@ -34,4 +34,4 @@ I also study distribution-free [uncertainty quantification](https://arxiv.org/pd
 
 I am currently supported by a Netflix Graduate Research Fellowship, and work with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en) on [offline policy evaluation](https://arxiv.org/pdf/2501.06926) and long-term causal inference.
 
-I’ve applied my research in causal inference and machine learning to problems in both biomedical and technology domains, including internships at Genentech, the Fred Hutchinson Cancer Center, and Netflix.
+I’ve applied my research in causal inference and machine learning to problems in both biomedical and technology domains, including internships at Genentech, the Fred Hutchinson Cancer Center, and Netflix. I am also a contributor to the [tlverse](https://tlverse.org) software ecosystem and consult on software development for [TLRevolution](https://www.tlrevolution.com).
