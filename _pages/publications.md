@@ -13,13 +13,13 @@ nav_order: 1
 <div class="publications">
 
 
-<h3>Causal inference: Calibration and learning theory</h3>
+<h3>Causal inference: calibration and learning theory</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causalcal] %}
 
 <h3>Debiased and efficient estimation</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=effest] %}
 
-<h3>Causal inference: Methodological contributions</h3>
+<h3>Causal inference: methodological contributions</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=methods] %}
 
 <h3>Calibration and distribution-free uncertainty quantification</h3>
