@@ -8,7 +8,7 @@ nav_order: 1
 ---
 
 
-For a complete list of publications, including applied work, see my [Google Scholar](https://scholar.google.com) profile.
+For a complete list of publications, including applied work, see my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en&authuser=1) profile.
 
 <div class="publications">
 
