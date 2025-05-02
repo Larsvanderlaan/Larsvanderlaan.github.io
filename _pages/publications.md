@@ -2,8 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Below are selected methodological and theoretical contributions.  
-For a complete list of publications, including applied work, see my [Google Scholar](https://scholar.google.com) profile.
+description: Below are selected methodological and theoretical contributions. For a complete list of publications, including applied work, see my [Google Scholar](https://scholar.google.com) profile.
 
 nav: true
 nav_order: 1
