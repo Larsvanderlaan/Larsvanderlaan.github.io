@@ -11,7 +11,10 @@ nav_order: 1
 
 <div class="publications">
 
-### Calibration Methods
-{% bibliography -f research.bib --query @*[keywords~=calibration] %}
+{% bibliography
+   -f research.bib
+   --group-by=keywords
+%}
+
 
 </div>
