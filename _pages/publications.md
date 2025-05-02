@@ -9,8 +9,6 @@ nav_order: 1
 
 [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en)
 
-<div class="publications">
-
 ### Causal Inference
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causal] %}
 
@@ -19,7 +17,3 @@ nav_order: 1
 
 ### Conference papers
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
-
-
-
-</div>
