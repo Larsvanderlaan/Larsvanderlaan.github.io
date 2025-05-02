@@ -11,12 +11,6 @@ nav_order: 1
 
 <div class="publications">
 
-<h3>Causal Inference</h3>
-{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causal] %}
-
-<h3>Calibration Methods</h3>
-{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causalcalibration] %}
-
 <h3>Conference Papers</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
 
