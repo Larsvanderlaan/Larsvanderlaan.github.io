@@ -14,16 +14,16 @@ nav_order: 1
 <div class="publications">
 
 
-<h3>Calibration for Causal Inference</h3>
+<h3>Causal inference: calibration and learning theory</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causalcal] %}
 
-<h3>Semiparametric Inference and Efficiency Theory</h3>
+<h3>Semiparametric statistics</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=effest] %}
 
-<h3>Causal Inference: Methods</h3>
+<h3>Causal inference: Methods</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=methods] %}
 
-<h3>Calibration and Distribution-Free Uncertainty Quantification</h3>
+<h3>Calibration and distribution-free uncertainty quantification</h3>
 {% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
 
 <h3>Software</h3>
