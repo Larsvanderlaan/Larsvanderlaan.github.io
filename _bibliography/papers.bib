@@ -9,7 +9,7 @@
   journal={arXiv preprint arXiv:2502.05676},
   year={2025},
 abstract={Ensuring model calibration is critical for reliable predictions, yet popular distribution-free methods, such as histogram binning and isotonic regression, provide only asymptotic guarantees. We introduce a unified framework for Venn and Venn-Abers calibration, generalizing Vovk's binary classification approach to arbitrary prediction tasks and loss functions. Venn calibration leverages binning calibrators to construct prediction sets that contain at least one marginally perfectly calibrated point prediction in finite samples, capturing epistemic uncertainty in the calibration process. The width of these sets shrinks asymptotically to zero, converging to a conditionally calibrated point prediction. Furthermore, we propose Venn multicalibration, a novel methodology for finite-sample calibration across subpopulations. For quantile loss, group-conditional and multicalibrated conformal prediction arise as special cases of Venn multicalibration, and Venn calibration produces novel conformal prediction intervals that achieve quantile-conditional coverage. As a separate contribution, we extend distribution-free conditional calibration guarantees of histogram binning and isotonic calibration to general losses.},
-selected={true},
+selected={false},
 keywords={calibration},
 pdf={https://arxiv.org/pdf/2502.05676}}
 
@@ -98,7 +98,7 @@ pdf={https://openreview.net/pdf?id=BJ6HkT7qIk}
   journal={arXiv preprint arXiv:2405.07186},
   year={2024},
   keywords={methods},
-	selected={true},
+	selected={false},
           abstract={
           We consider the problem of estimating the average treatment effect (ATE) when both randomized control trial (RCT) data and real-world data (RWD) are available. We decompose the ATE estimand as the difference between a pooled-ATE estimand that integrates RCT and RWD and a bias estimand that captures the conditional effect of RCT enrollment on the outcome. We introduce an adaptive targeted minimum loss-based estimation (A-TMLE) framework to estimate them. We prove that the A-TMLE estimator is root-n-consistent and asymptotically normal. Moreover, in finite sample, it achieves the super-efficiency one would obtain had one known the oracle model for the conditional effect of the RCT enrollment on the outcome. Consequently, the smaller the working model of the bias induced by the RWD is, the greater our estimator's efficiency, while our estimator will always be at least as efficient as an efficient estimator that uses the RCT data only. A-TMLE outperforms existing methods in simulations by having smaller mean-squared-error and 95% confidence intervals. A-TMLE could help utilize RWD to improve the efficiency of randomized trial results without biasing the estimates of intervention effects. This approach could allow for smaller, faster trials, decreasing the time until patients can receive effective treatments.
 },
@@ -141,7 +141,7 @@ pdf={https://arxiv.org/pdf/2405.07186}
   author={{van der Laan}, Lars and Carone, Marco and Luedtke, Alex and {van der Laan}, Mark},
   journal={arXiv preprint arXiv:2307.12544},
   year={2023},
-  selected={true},
+  selected={false},
   keywords={effest},
   pdf={https://arxiv.org/pdf/2307.12544},
   abstract={Debiased machine learning estimators for nonparametric inference of smooth functionals of the data-generating distribution can suffer from excessive variability and instability. For this reason, practitioners may resort to simpler models based on parametric or semiparametric assumptions. However, such simplifying assumptions may fail to hold, and estimates may then be biased due to model misspecification. To address this problem, we propose Adaptive Debiased Machine Learning (ADML), a nonparametric framework that combines data-driven model selection and debiased machine learning techniques to construct asymptotically linear, adaptive, and superefficient estimators for pathwise differentiable functionals. By learning model structure directly from data, ADML avoids the bias introduced by model misspecification and remains free from the restrictions of parametric and semiparametric models. While they may exhibit irregular behavior for the target parameter in a nonparametric statistical model, we demonstrate that ADML estimators provides regular and locally uniformly valid inference for a projection-based oracle parameter. Importantly, this oracle parameter agrees with the original target parameter for distributions within an unknown but correctly specified oracle statistical submodel that is learned from the data. This finding implies that there is no penalty, in a local asymptotic sense, for conducting data-driven model selection compared to having prior knowledge of the oracle submodel and oracle parameter. To demonstrate the practical applicability of our theory, we provide a broad class of ADML estimators for estimating the average treatment effect in adaptive partially linear regression models.},
@@ -233,7 +233,7 @@ vaccine trial.}
       url = {https://tlverse.org/hal9001/},
       pdf={https://www.theoj.org/joss-papers/joss.02526/10.21105.joss.02526.pdf},
       note = {{R} package version 0.4.2},
-      selected={true}
+      selected={false}
     }
 
 

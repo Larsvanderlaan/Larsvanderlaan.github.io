@@ -26,7 +26,7 @@ I am a fourth-year Ph.D. student in Statistics at the University of Washington, 
 
 My research focuses on causal inference, statistical learning, and semiparametric efficiency theory. I develop methods for debiased and efficient estimation using modern machine learning tools, including doubly robust inference, automatic debiasing, valid inference after model selection, and calibration in causal settings.
 
-I also study model calibration and distribution-free uncertainty quantification more broadly—particularly in causal inference and predictive settings—and collaborate with [Ahmed Alaa](https://vcresearch.berkeley.edu/faculty/ahmed-alaa) (UC Berkeley) on conformal prediction methods.
+I also study model calibration and distribution-free uncertainty quantification more broadly in predictive contexts, and collaborate with [Ahmed Alaa](https://vcresearch.berkeley.edu/faculty/ahmed-alaa) (UC Berkeley) on conformal prediction methods.
 
 I am currently supported by a Netflix Graduate Research Fellowship, working with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en) on methods for offline policy evaluation, long-term causal inference from short-term experiments, surrogate endpoints, and causal inference in ill-posed inverse problems.
 
