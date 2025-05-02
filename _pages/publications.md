@@ -11,7 +11,7 @@ nav_order: 1
 
 <div class="publications">
 
-<h3>Conference Papers</h3>
-{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
+### Calibration Methods
+{% bibliography -f research.bib --query @*[keywords~=calibration] %}
 
 </div>
