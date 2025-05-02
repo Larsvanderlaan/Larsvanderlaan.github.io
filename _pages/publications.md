@@ -2,11 +2,11 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Below are selected methodological and theoretical contributions.  
-
+description: "Below are selected methodological and theoretical contributions."
 nav: true
 nav_order: 1
 ---
+
 
 For a complete list of publications, including applied work, see my [Google Scholar](https://scholar.google.com) profile.
 
