@@ -26,7 +26,7 @@ I am a fourth-year Ph.D. student in Statistics at the University of Washington, 
 
 My research focuses on causal inference, statistical learning, and semiparametric efficiency theory.  
 
-I develop methods for debiased and efficient estimation using modern machine learning tools, including [doubly robust inference](https://arxiv.org/pdf/2411.02771), [automatic debiasing](https://arxiv.org/pdf/2501.11868), inference after [model selection](https://arxiv.org/pdf/2307.12544), and [heterogeneous treatment effects](https://arxiv.org/pdf/2402.01972) (HTEs).  
+I develop methods for debiased and efficient estimation using modern machine learning tools, including [doubly robust inference](https://arxiv.org/pdf/2411.02771), simplifying inference via [automatic debiasing](https://arxiv.org/pdf/2501.11868), inference after [model selection](https://arxiv.org/pdf/2307.12544), and estimation of [heterogeneous treatment effects](https://arxiv.org/pdf/2402.01972).
 
 A key theme in my work is bridging calibration—traditionally used in prediction—with causal inference, including [causal isotonic calibration](https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf) for HTEs, [stabilized inverse probability weighting](https://arxiv.org/pdf/2411.06342), [Bellman calibration](https://arxiv.org/pdf/2501.06926) for reinforcement learning, and [calibrated debiased machine learning](https://arxiv.org/pdf/2411.02771).
 
