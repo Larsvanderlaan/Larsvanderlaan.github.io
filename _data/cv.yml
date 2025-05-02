@@ -106,6 +106,7 @@
 - title: Invited Talks – Poster Presentations
   type: list
   contents:
+    - "Generalized Venn and Venn-Abers Calibration with Applications in Conformal Prediction – International Conference on Machine Learning (ICML), 2025"
     - "Doubly robust inference via calibration – American Causal Inference Conference (ACIC), Detroit, Michigan, 2025"
     - "Self-Calibrating Conformal Prediction – The Thirty-Eighth Annual Conference on Neural Information Processing Systems (NeurIPS), 2024"
     - "Combining T-learning and DR-learning: a framework for oracle-efficient estimation of causal contrasts – American Causal Inference Conference (ACIC), 2024"
