@@ -2,18 +2,17 @@
 
 @string{aps = {American Physical Society,}}
 
-
-@article{van2025generalized,
+@inproceedings{van2025generalized,
   title={Generalized Venn and Venn-Abers Calibration with Applications in Conformal Prediction},
   author={{van der Laan}, Lars and Alaa, Ahmed},
-  journal={arXiv preprint arXiv:2502.05676},
+  booktitle={Proceedings of the 42nd International Conference on Machine Learning (ICML)},
   year={2025},
-abstract={Ensuring model calibration is critical for reliable predictions, yet popular distribution-free methods, such as histogram binning and isotonic regression, provide only asymptotic guarantees. We introduce a unified framework for Venn and Venn-Abers calibration, generalizing Vovk's binary classification approach to arbitrary prediction tasks and loss functions. Venn calibration leverages binning calibrators to construct prediction sets that contain at least one marginally perfectly calibrated point prediction in finite samples, capturing epistemic uncertainty in the calibration process. The width of these sets shrinks asymptotically to zero, converging to a conditionally calibrated point prediction. Furthermore, we propose Venn multicalibration, a novel methodology for finite-sample calibration across subpopulations. For quantile loss, group-conditional and multicalibrated conformal prediction arise as special cases of Venn multicalibration, and Venn calibration produces novel conformal prediction intervals that achieve quantile-conditional coverage. As a separate contribution, we extend distribution-free conditional calibration guarantees of histogram binning and isotonic calibration to general losses.},
-selected={false},
-keywords={calibration},
-pdf={https://arxiv.org/pdf/2502.05676}}
+  note={To appear},
+  abstract={Ensuring model calibration is critical for reliable predictions, yet popular distribution-free methods, such as histogram binning and isotonic regression, provide only asymptotic guarantees. We introduce a unified framework for Venn and Venn-Abers calibration, generalizing Vovk's binary classification approach to arbitrary prediction tasks and loss functions. Venn calibration leverages binning calibrators to construct prediction sets that contain at least one marginally perfectly calibrated point prediction in finite samples, capturing epistemic uncertainty in the calibration process. The width of these sets shrinks asymptotically to zero, converging to a conditionally calibrated point prediction. Furthermore, we propose Venn multicalibration, a novel methodology for finite-sample calibration across subpopulations. For quantile loss, group-conditional and multicalibrated conformal prediction arise as special cases of Venn multicalibration, and Venn calibration produces novel conformal prediction intervals that achieve quantile-conditional coverage. As a separate contribution, we extend distribution-free conditional calibration guarantees of histogram binning and isotonic calibration to general losses.},
+  keywords={calibration},
+  pdf={https://arxiv.org/pdf/2502.05676}
+}
 
- 
 
 @misc{vanderlaan2025automaticdebiasedmachinelearning,
       title={Automatic Debiased Machine Learning for Smooth Functionals of Nonparametric M-Estimands}, 
@@ -61,17 +60,19 @@ pdf={https://arxiv.org/pdf/2501.06926}
 }
 
 
-@article{van2024stabilized,
-   selected={true},
+@inproceedings{van2024stabilized,
   title={Stabilized Inverse Probability Weighting via Isotonic Calibration},
   author={{van der Laan}, Lars and Lin, Ziming and Carone, Marco and Luedtke, Alex},
-  journal={arXiv preprint arXiv:2411.06342},
+  booktitle={Proceedings of the 3rd Conference on Causal Learning and Reasoning (CLeaR)},
+  year={2025},
+  note={To appear},
   abstract={Inverse weighting with an estimated propensity score is widely used by estimation methods in causal inference to adjust for confounding bias. However, directly inverting propensity score estimates can lead to instability, bias, and excessive variability due to large inverse weights, especially when treatment overlap is limited. In this work, we propose a post-hoc calibration algorithm for inverse propensity weights that generates well-calibrated, stabilized weights from user-supplied, cross-fitted propensity score estimates. Our approach employs a variant of isotonic regression with a loss function specifically tailored to the inverse propensity weights. Through theoretical analysis and empirical studies, we demonstrate that isotonic calibration improves the performance of doubly robust estimators of the average treatment effect.},
   pdf={https://arxiv.org/pdf/2411.06342},
   code={https://ngreifer.github.io/WeightIt/reference/calibrate.html},
   keywords={causalcal},
-  year={2024}
+  selected={true}
 }
+
 
 
 
