@@ -11,10 +11,10 @@ nav_order: 1
 
 <div class="publications">
 
-{% bibliography
-   -f research.bib
-   --group-by=keywords
-%}
+<h3>Calibration Papers</h3>
+{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=calibration] %}
 
+<h3>Causal learning</h3>
+{% bibliography -f {{ site.scholar.bibliography }} --query @*[keywords~=causal] %}
 
 </div>
