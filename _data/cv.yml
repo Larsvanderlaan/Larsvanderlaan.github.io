@@ -93,6 +93,7 @@
 - title: Invited Talks
   type: list
   contents:
+    - "Combining T-learning and DR-learning: a framework for oracle-efficient estimation of causal contrasts – Missing Data & Causal Inference Seminar Series, Julie Josse Group, University of Montpellier"
     - "Self-Calibrating Conformal Prediction - The Thirty-Eighth Annual Conference on Neural Information Processing Systems (Neurips), 2024"
     - "Long-term causal inference from short-term experiments in semiparametric Markov decision processes - Conference on Digital Experimentation (CODE), 2024"
     - "Combining T-learning and DR-learning: a framework for oracle-efficient estimation of causal contrasts - American Causal Inference Conference (ACIC), 2024"
@@ -101,5 +102,9 @@
     - "Self-Consistent Conformal Prediction - International Seminar on Selective Inference, 2024"
     - "Super-Efficient Estimation of Average Treatment Effect based on Randomized Controlled Trial Augmented with External Controls or Observational Study - Interactive Causal Learning, 2024"
     - "Adaptive debiased machine learning using data-driven model selection techniques - CMStatistics, 2023"
+    - "Adaptive debiased machine learning using data-driven model selection techniques – Forum on the Integration of Observational and Randomized Data (FIORD), Center for Targeted Machine Learning and Causal Inference (CTML), UC Berkeley, 2023"
+    - "Adaptive debiased machine learning using data-driven model selection techniques – Stanford University, Department of Statistics, 2023"
+    - "Causal Isotonic Calibration for Heterogeneous Treatment Effects – Center for Causal Inference Seminar Series, University of Pennsylvania, 2023"
     - "Causal Isotonic Calibration for Heterogeneous Treatment Effects - International Conference of Machine Learning (ICML), 2023"
+    - "Nonparametric inference on the causal effect of a stochastic threshold-based intervention – Western North American Region of the International Biometric Society, 2023"
 
