@@ -76,11 +76,9 @@
 - title: Awards
   type: list
   contents:
-    - Netflix Graduate Research Fellowship  
-      Awarded to support advanced research in machine learning and causal inference.  
-      Mentors: Aurelien Bibaut and Nathan Kallus.
-    - Best Paper Award, Conference on Causal Learning and Reasoning (CLeaR), 2025  
-      For "Stabilized Inverse Probability Weighting via Isotonic Calibration," Lausanne, Switzerland.
+    - "Netflix Graduate Research Fellowship – awarded to support advanced research in machine learning and causal inference. Mentors: Aurelien Bibaut and Nathan Kallus."
+    - "Best Paper Award, Conference on Causal Learning and Reasoning (CLeaR), 2025 – for 'Stabilized Inverse Probability Weighting via Isotonic Calibration,' Lausanne, Switzerland."
+
 
 - title: Skills
   type: time_table
