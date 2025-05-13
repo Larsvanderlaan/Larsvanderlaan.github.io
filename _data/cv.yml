@@ -109,12 +109,13 @@
   type: list
   contents:
     - "Automatic Double Reinforcement Learning in Semiparametric Markov Decision Processes with Applications to Long-Term Causal Inference – American Causal Inference Conference (ACIC), Detroit, Michigan, 2025"
--  "Stabilized Inverse Probability Weighting via Isotonic Calibration" – *Best Paper Award*, Conference on Causal Learning and Reasoning (CLeaR), Lausanne, Switzerland, 2025
+    - "\"Stabilized Inverse Probability Weighting via Isotonic Calibration\" – Best Paper Award, Conference on Causal Learning and Reasoning (CLeaR), Lausanne, Switzerland, 2025"
     - "Long-term causal inference from short-term experiments in semiparametric Markov decision processes – Conference on Digital Experimentation (CODE), 2024"
     - "Super-Efficient Estimation of Average Treatment Effect based on Randomized Controlled Trial Augmented with External Controls or Observational Study – Interactive Causal Learning, 2024"
     - "Adaptive debiased machine learning using data-driven model selection techniques – CMStatistics, 2023"
     - "Adaptive debiased machine learning using data-driven model selection techniques – Forum on the Integration of Observational and Randomized Data (FIORD), Center for Targeted Machine Learning and Causal Inference (CTML), UC Berkeley, 2023"
     - "Nonparametric inference on the causal effect of a stochastic threshold-based intervention – Western North American Region of the International Biometric Society, 2023"
+
 
 - title: Invited Talks – Poster Presentations
   type: list
