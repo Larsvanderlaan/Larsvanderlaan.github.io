@@ -22,21 +22,16 @@ social: true  # includes social icons at the bottom of the page
 
 ## About me
 
-I am a fourth-year Ph.D. student in Statistics at the University of Washington, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com).
+I am a fifth-year Ph.D. student in Statistics at the University of Washington, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com).  
 
-My research focuses on causal inference, statistical learning, and semiparametric efficiency theory.  
+My research focuses on **causal inference, statistical learning, and semiparametric efficiency theory**. I develop methods for debiased and efficient estimation leveraging modern machine learning, including [doubly robust inference](https://arxiv.org/pdf/2411.02771), [automatic debiasing](https://arxiv.org/pdf/2501.11868), inference after [model selection](https://arxiv.org/pdf/2307.12544), and estimation of [heterogeneous treatment effects](https://arxiv.org/pdf/2402.01972).  
 
-I develop methods for debiased and efficient estimation using modern machine learning tools, including [doubly robust inference](https://arxiv.org/pdf/2411.02771), simplifying inference via [automatic debiasing](https://arxiv.org/pdf/2501.11868), inference after [model selection](https://arxiv.org/pdf/2307.12544), and estimation of [heterogeneous treatment effects](https://arxiv.org/pdf/2402.01972).
+More broadly, I integrate machine learning with rigorous inference in applications to treatment effects, policy learning and reinforcement learning, instrumental variables and surrogate-based causal inference, and predictive inference with distribution-free uncertainty quantification.  
 
-A central theme of my research is bridging **calibration**—a tool traditionally used in prediction—with **causal inference**. This includes methods such as [causal isotonic calibration](https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf) for heterogeneous treatment effects, [stabilized inverse probability weighting](https://arxiv.org/pdf/2411.06342), [Bellman calibration](https://arxiv.org/pdf/2501.06926) for reinforcement learning, and [calibrated debiased machine learning](https://arxiv.org/pdf/2411.02771).
+I am supported by a Netflix Graduate Research Fellowship, where I collaborate with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en) on **reinforcement learning and dynamic decision making** ([paper](https://arxiv.org/pdf/2501.06926)) and **nonparametric instrumental variables inference** ([paper](https://arxiv.org/pdf/2505.07729)). Much of this work is motivated by industry applications, such as estimating long-term causal effects from short-term experiments using surrogates or Markovian dynamics.  
 
-I also work on **distribution-free uncertainty quantification** in predictive settings. As a Visiting Student Researcher at UC Berkeley, I collaborate with [Ahmed Alaa](https://vcresearch.berkeley.edu/faculty/ahmed-alaa), with peer-reviewed work presented at NeurIPS and ICML. This includes integrating calibration into [conformal prediction](https://proceedings.neurips.cc/paper_files/paper/2024/file/c1c49aba08e6c90f2b1f85751f497a2f-Paper-Conference.pdf) and developing [generalized Venn–Abers calibration](https://arxiv.org/pdf/2502.05676) for uncertainty-aware prediction.
+Another line of my research connects **calibration** with **causal inference**, including [causal isotonic calibration](https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf) for CATE predictors, [stabilized weighting](https://arxiv.org/pdf/2411.06342), [Bellman calibration](https://arxiv.org/pdf/2501.06926) for reinforcement learning, and [calibrated debiased machine learning](https://arxiv.org/pdf/2411.02771).  
 
+I also study **distribution-free uncertainty quantification** in predictive settings, with projects on [conformal prediction](https://proceedings.neurips.cc/paper_files/paper/2024/file/c1c49aba08e6c90f2b1f85751f497a2f-Paper-Conference.pdf) and [generalized Venn–Abers calibration](https://arxiv.org/pdf/2502.05676) (with [Ahmed Alaa](https://vcresearch.berkeley.edu/faculty/ahmed-alaa), UC Berkeley).  
 
-I am currently supported by a Netflix Graduate Research Fellowship, and work with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en) on [sequential and long-term causal inference](https://arxiv.org/pdf/2501.06926) and [nonparametric instrumental variables inference](https://arxiv.org/pdf/2505.07729).
-
-
-I’ve applied my research in causal inference and machine learning to problems in both biomedical and technology domains, including internships at Genentech, the Fred Hutchinson Cancer Center, and Netflix. I am also a contributor to the [tlverse](https://tlverse.org) software ecosystem and consult on software development for [TLRevolution](https://www.tlrevolution.com). 
-
-I have also served as a teaching assistant for graduate-level courses in theoretical statistics and I enjoy mentoring students through research projects.
-
+Beyond methodology, I have applied my research in biomedical and technology domains through internships at Genentech, the Fred Hutchinson Cancer Center, and Netflix. I also contribute to the [tlverse](https://tlverse.org) open-source software ecosystem and consult on software development for [TLRevolution](https://www.tlrevolution.com).  

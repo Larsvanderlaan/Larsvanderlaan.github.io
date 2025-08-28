@@ -20,29 +20,22 @@
       year: "2021 - Present"
       description:
         - "Advised by Marco Carone, PhD and Alex Luedtke, PhD."
-        - "Research on semiparametric statistics, causal inference, and debiased/targeted machine learning."
-        - "Collaboration with Fred Hutchinson Research Center on COVID-19 vaccine trials."
+        - "Research on semiparametric statistics, causal inference, and debiased machine learning."
     - title: "MA in Statistics"
       institution: "University of California, Berkeley"
       year: "2019 - 2020"
-      description:
-        - "Coursework in theoretical and applied statistics, programming, and data analysis."
-        - "Completed an industry-oriented capstone project."
     - title: "Double BSc in Mathematics and Physics"
       institution: "University of Groningen, Netherlands"
       year: "2016 - 2019"
-      description:
-        - "Coursework in theoretical and applied physics and mathematics."
-        - "Graduated cum laude."
 
 - title: Experience
   type: time_table
   contents:
     - title: "Netflix PhD Research Fellowship"
       institution: "Netflix"
-      year: "2024 - 2025"
+      year: "2024 - Current"
       description:
-        - "Awarded to support advanced research in machine learning and causal inference. Current projects include double reinforcement learning and policy evaluation, long-term causal inference from short-term experiments, and the automation of debiased machine learning techniques."
+        - "Awarded to support research in machine learning and causal inference, including reinforcement learning and policy evaluation, long-term causal inference, instrumental variables, and automatic debiasing."
     - title: "Machine Learning Research Intern"
       institution: "Netflix"
       year: "Summer 2024"
@@ -52,7 +45,7 @@
         - "Built calibration methods for ML models for classification, regression, and policy learning."
     - title: "Visiting Student Researcher"
       institution: "University of California, Berkeley, Computational Precision Health"
-      year: "2023 - Current"
+      year: "2023 - 2024"
       description:
         - "Advisor: Ahmed Alaa, PhD."
         - "Research on distribution-free machine learning methods for model calibration, uncertainty quantification, predictive inference, and conformal prediction."
