@@ -11,7 +11,7 @@ layout: default
   /* Hide the page header to maximize space (optional) */
   .post-header { display: none; }
 
-  /* Make the viewer fill the whole window below the navbar */
+  /* Fullscreen embed container */
   .cv-fullscreen {
     position: fixed;
     top: var(--nav-h);
@@ -26,6 +26,25 @@ layout: default
     height: 100%;
     border: 0;
   }
+
+  /* On small screens, hide the embed and show buttons instead */
+  @media (max-width: 768px) {
+    .cv-fullscreen { display: none; }
+    .cv-actions { margin: var(--nav-h) auto 2rem auto; text-align: center; }
+    .cv-actions a {
+      display: inline-block;
+      margin: 0.25rem 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #007bff;
+      border-radius: 4px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .cv-actions a:hover {
+      background: #007bff;
+      color: #fff;
+    }
+  }
 </style>
 
 {% assign pdf_url = page.cv_pdf_url %}
@@ -34,8 +53,15 @@ layout: default
 {% endif %}
 
 {% if pdf_url %}
+  <!-- Buttons for mobile -->
+  <div class="cv-actions">
+    <a href="{{ pdf_url }}" target="_blank" rel="noopener">Open full CV</a>
+    <a href="{{ pdf_url }}" download>Download CV</a>
+  </div>
+
+  <!-- Embed for desktop -->
   <div class="cv-fullscreen">
-    <iframe src="{{ pdf_url }}" title="CV PDF" loading="eager"></iframe>
+    <iframe src="{{ pdf_url }}#view=FitH" title="CV PDF" loading="eager"></iframe>
   </div>
 {% else %}
   <div class="container my-4">
