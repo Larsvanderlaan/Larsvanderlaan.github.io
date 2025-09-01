@@ -1,11 +1,13 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# Only the main Sass file needs front matter; empty YAML is fine.
 ---
+
 @charset "utf-8";
 
 // Dimensions
-$max-content-width: {{ site.max_width }};
+$max-content-width: {{ site.max_width | default: "900px" }};
 
+// Your partials (assumes _sass/ contains these)
 @import
   "variables",
   "themes",
@@ -15,20 +17,42 @@ $max-content-width: {{ site.max_width }};
   "cv"
 ;
 
-
-/* Publications dropdown */
-.pub-list.collapsed .bibliography > *:nth-of-type(n+3),
-.pub-list.collapsed > li:nth-of-type(n+3),
-.pub-list.collapsed > .csl-entry:nth-of-type(n+3),
-.pub-list.collapsed > .entry:nth-of-type(n+3) {
-  display: none;
+// -----------------------------
+// Publications dropdown
+// -----------------------------
+// Hide everything after the second item for common outputs:
+//
+// 1) <ol class="bibliography"><li>…</li></ol>
+// 2) Direct children (e.g., .csl-entry / .entry)
+// 3) Rare: <ul> structures
+.pub-list.collapsed {
+  .bibliography > *:nth-of-type(n + 3),
+  > li:nth-of-type(n + 3),
+  > .csl-entry:nth-of-type(n + 3),
+  > .entry:nth-of-type(n + 3),
+  > ul > li:nth-of-type(n + 3) {
+    display: none;
+  }
 }
 
 .toggle-btn {
   margin-top: 0.5em;
+  padding: 0; // keeps it link-like
   background: none;
   border: none;
   color: #007bff;
   cursor: pointer;
+  font: inherit; // inherit styling from surrounding text
+  text-decoration: underline;
 }
 
+.toggle-btn:hover {
+  text-decoration: none;
+}
+
+.toggle-btn:focus,
+.toggle-btn:focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
