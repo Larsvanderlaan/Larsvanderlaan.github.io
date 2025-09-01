@@ -2,45 +2,43 @@
 layout: default
 ---
 
-<!-- _layouts/cv.html — minimal “PDF-only” CV page -->
+<!-- _layouts/cv.html — fullscreen PDF under navbar -->
 
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {{ page.title | default: "Curriculum Vitae" }}
-      {% if page.cv_pdf_url %}
-        <a href="{{ page.cv_pdf_url }}" target="_blank" rel="noopener noreferrer" class="float-right" aria-label="Download PDF">
-          <i class="fas fa-file-pdf"></i>
-        </a>
-      {% endif %}
-    </h1>
-    {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
-  </header>
+<style>
+  :root { --nav-h: 56px; }               /* tweak if your navbar is taller */
+  @media (min-width: 576px) { :root { --nav-h: 64px; } }
 
-  {% comment %}
-    Accept either:
-    - page.cv_pdf_url: a full URL (e.g., https://raw.githubusercontent.com/you/repo/branch/cv.pdf)
-    - page.cv_pdf: a path we’ll resolve under /assets/pdf/
-  {% endcomment %}
-  {% assign pdf_url = page.cv_pdf_url %}
-  {% if pdf_url == nil and page.cv_pdf %}
-    {% assign pdf_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
-  {% endif %}
+  /* Hide the page header to maximize space (optional) */
+  .post-header { display: none; }
 
-  {% if pdf_url %}
-    <div class="pdf-embed" style="position:relative; width:100%; min-height:85vh;">
-      <iframe
-        src="{{ pdf_url }}"
-        style="border:0; width:100%; height:100%;"
-        loading="eager"
-        title="CV PDF">
-      </iframe>
-    </div>
+  /* Make the viewer fill the whole window below the navbar */
+  .cv-fullscreen {
+    position: fixed;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: #fff;
+  }
+  .cv-fullscreen iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>
 
-    <p style="margin-top:0.75rem;">
-      Can’t see the PDF? <a href="{{ pdf_url }}" target="_blank" rel="noopener noreferrer">Open it in a new tab</a>.
-    </p>
-  {% else %}
+{% assign pdf_url = page.cv_pdf_url %}
+{% if pdf_url == nil and page.cv_pdf %}
+  {% assign pdf_url = page.cv_pdf | prepend: 'assets/pdf/' | relative_url %}
+{% endif %}
+
+{% if pdf_url %}
+  <div class="cv-fullscreen">
+    <iframe src="{{ pdf_url }}" title="CV PDF" loading="eager"></iframe>
+  </div>
+{% else %}
+  <div class="container my-4">
     <p><em>No PDF specified. Add <code>cv_pdf_url</code> (full URL) or <code>cv_pdf</code> (path under <code>assets/pdf/</code>) to the page front matter.</em></p>
-  {% endif %}
-</div>
+  </div>
+{% endif %}
