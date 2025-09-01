@@ -1,16 +1,12 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
+// Custom styles for publication dropdowns
+.pub-list.collapsed > li:nth-child(n+4) {
+  display: none; /* hide everything after the 3rd item */
+}
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
-
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv"
-;
+.toggle-btn {
+  margin-top: 0.5em;
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
