@@ -11,7 +11,7 @@
       primaryClass={stat.ME},
       pdf={https://arxiv.org/abs/2505.07729}, 
       abstract={We study inference on linear functionals in the nonparametric instrumental variable (NPIV) problem with a discretely-valued instrument under a many-weak-instruments asymptotic regime, where the number of instrument values grows with the sample size. A key motivating example is estimating long-term causal effects in a new experiment with only short-term outcomes, using past experiments to instrument for the effect of short- on long-term outcomes. Here, the assignment to a past experiment serves as the instrument: we have many past experiments but only a limited number of units in each. Since the structural function is nonparametric but constrained by only finitely many moment restrictions, point identification typically fails. To address this, we consider linear functionals of the minimum-norm solution to the moment restrictions, which is always well-defined. As the number of instrument levels grows, these functionals define an approximating sequence to a target functional, replacing point identification with a weaker asymptotic notion suited to discrete instruments. Extending the Jackknife Instrumental Variable Estimator (JIVE) beyond the classical parametric setting, we propose npJIVE, a nonparametric estimator for solutions to linear inverse problems with many weak instruments. We construct automatic debiased machine learning estimators for linear functionals of both the structural function and its minimum-norm projection, and establish their efficiency in the many-weak-instruments regime.},
-      keywords={effest},
+      keywords={methods},
       selected={true}
 }
 
@@ -53,7 +53,7 @@ We propose a unified framework for automatic debiased machine learning (autoDML)
       archivePrefix={arXiv},
       primaryClass={stat.ML},
       url={https://arxiv.org/abs/2501.06926}, 
-      keywords={effest},
+      keywords={dynamic},
       selected={true},
       abstract={Long-term causal effects often must be estimated from short-term data due to limited follow-up in healthcare, economics, and online platforms. Markov Decision Processes (MDPs) provide a natural framework for capturing such long-term dynamics through sequences of states, actions, and rewards. Double Reinforcement Learning (DRL) enables efficient inference on policy values in MDPs, but nonparametric implementations require strong intertemporal overlap assumptions and often exhibit high variance and instability. We propose a semiparametric extension of DRL for efficient inference on linear functionals of the Q-function--such as policy values--in infinite-horizon, time-homogeneous MDPs. By imposing structural restrictions on the Q-function, our approach relaxes the strong overlap conditions required by nonparametric methods and improves statistical efficiency. Under model misspecification, our estimators target the functional of the best-approximating Q-function, with only second-order bias. We provide conditions for valid inference using sieve methods and data-driven model selection. A central challenge in DRL is the estimation of nuisance functions, such as density ratios, which often involve difficult minimax optimization. To address this, we introduce a novel plug-in estimator based on isotonic Bellman calibration, which combines fitted Q-iteration with an isotonic regression adjustment. The estimator is debiased without requiring estimation of additional nuisance functions and reduces high-dimensional overlap assumptions to a one-dimensional condition. Bellman calibration extends isotonic calibration--widely used in prediction and classification--to the MDP setting and may be of independent interest.},
 pdf={https://arxiv.org/pdf/2501.06926},
@@ -71,7 +71,7 @@ poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/p
   pdf={https://arxiv.org/pdf/2411.02771},
   code={https://github.com/Larsvanderlaan/CDML},
   poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/pdfs_papers/posterDoublyRobustCalibration.pdf},
-  keywords={causalcal},
+  keywords={effest},
   year={2024}
 }
 
@@ -85,7 +85,7 @@ poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/p
   abstract={Inverse weighting with an estimated propensity score is widely used by estimation methods in causal inference to adjust for confounding bias. However, directly inverting propensity score estimates can lead to instability, bias, and excessive variability due to large inverse weights, especially when treatment overlap is limited. In this work, we propose a post-hoc calibration algorithm for inverse propensity weights that generates well-calibrated, stabilized weights from user-supplied, cross-fitted propensity score estimates. Our approach employs a variant of isotonic regression with a loss function specifically tailored to the inverse propensity weights. Through theoretical analysis and empirical studies, we demonstrate that isotonic calibration improves the performance of doubly robust estimators of the average treatment effect.},
   pdf={https://arxiv.org/pdf/2411.06342},
   code={https://ngreifer.github.io/WeightIt/reference/calibrate.html},
-  keywords={causalcal},
+  keywords={effest},
   selected={true}
 }
 
@@ -134,7 +134,7 @@ pdf={https://arxiv.org/pdf/2405.07186}
     pdf={https://arxiv.org/pdf/2402.01972.pdf},
     code={https://github.com/Larsvanderlaan/hte3},
     poster={https://pbs.twimg.com/media/GN4OvShakAABC4T?format=jpg&name=4096x4096},
-      keywords={effest},
+      keywords={dynamic},
     abstract={
     We introduce efficient plug-in (EP) learning, a novel framework for the estimation of heterogeneous causal contrasts, such as the conditional average treatment effect and conditional relative risk. The EP-learning framework enjoys the same oracle-efficiency as Neyman-orthogonal learning strategies, such as DR-learning and R-learning, while addressing some of their primary drawbacks, including that (i) their practical applicability can be hindered by loss function non-convexity; and (ii) they may suffer from poor performance and instability due to inverse probability weighting and pseudo-outcomes that violate bounds. To avoid these drawbacks, EP-learner constructs an efficient plug-in estimator of the population risk function for the causal contrast, thereby inheriting the stability and robustness properties of plug-in estimation strategies like T-learning. Under reasonable conditions, EP-learners based on empirical risk minimization are oracle-efficient, exhibiting asymptotic equivalence to the minimizer of an oracle-efficient one-step debiased estimator of the population risk function. In simulation experiments, we illustrate that EP-learners of the conditional average treatment effect and conditional relative risk outperform state-of-the-art competitors, including T-learner, R-learner, and DR-learner. Open-source implementations of the proposed methods are available in our R package hte3.
 }
@@ -174,7 +174,7 @@ pdf={https://arxiv.org/pdf/2405.07186}
   address={Honolulu, Hawaii, USA},
   publisher={PMLR},
   volume={202},
-    keywords={causalcal},
+    keywords={dynamic},
     pdf={https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf},
   poster={https://icml.cc/media/PosterPDFs/ICML%202023/24460.png?t=1690505587.8818903},
   abstract={We propose causal isotonic calibration, a novel nonparametric method for calibrating predictors of heterogeneous treatment effects. Furthermore, we introduce cross-calibration, a data-efficient variant of calibration that eliminates the need for hold-out calibration sets. Cross-calibration leverages cross-fitted predictors and generates a single calibrated predictor using all available data. Under weak conditions that do not assume monotonicity, we establish that both causal isotonic calibration and cross-calibration achieve fast doubly-robust calibration rates, as long as either the propensity score or outcome regression is estimated accurately in a suitable sense. The proposed causal isotonic calibrator can be wrapped around any black-box learning algorithm, providing robust and distribution-free calibration guarantees while preserving predictive performance.},
