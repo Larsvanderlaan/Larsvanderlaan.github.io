@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
 
-          {# ---------- EDIT 1: avoid shadowing the global `page` ---------- #}
+          {% comment %} find About page title without shadowing global `page` {% endcomment %}
           {%- for pg in site.pages -%}
             {% if pg.permalink == '/' %}
               {% assign about_title = pg.title %}
@@ -63,8 +63,7 @@
           </li>
           {%- endif %}
 
-          <!-- Other pages -->
-          {# ---------- EDIT 2: include the `_pages` collection in the nav ---------- #}
+          {% comment %} include pages from both site.pages and the `_pages` collection {% endcomment %}
           {%- assign nav_pages = site.pages -%}
           {%- if site.collections and site.collections.pages -%}
             {%- assign nav_pages = nav_pages | concat: site.collections.pages.docs -%}
@@ -103,7 +102,7 @@
           {% endfor -%}
 
           {%- if site.enable_darkmode %}
-          <!-- Toogle theme mode -->
+          <!-- Toggle theme mode -->
           <li class="toggle-container">
             <button id="light-toggle" title="Change theme">
               <i class="fas fa-moon"></i>
