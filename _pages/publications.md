@@ -53,9 +53,22 @@ Below are selected methodological and theoretical contributions. For a complete 
 </div>
 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.pub-section').forEach(sec => {
+    const list = sec.querySelector('.pub-list');
+    const btn  = sec.querySelector('.toggle-btn');
+    const items = list.querySelectorAll(
+      '.bibliography > * , :scope > li, :scope > .csl-entry, :scope > .entry'
+    );
+    // hide button if 2 or fewer pubs
+    if (items.length <= 2) btn.style.display = 'none';
+  });
+});
+
 function toggleSection(button) {
   const list = button.previousElementSibling;
-  list.classList.toggle("collapsed");
-  button.textContent = list.classList.contains("collapsed") ? "Show more" : "Show less";
+  list.classList.toggle('collapsed');
+  button.textContent = list.classList.contains('collapsed') ? 'Show more' : 'Show less';
 }
 </script>
+
