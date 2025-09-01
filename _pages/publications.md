@@ -16,6 +16,13 @@ Below are selected methodological and theoretical contributions. For a complete 
       {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=effest] %}
     </div>
   </div>
+  
+    <h3>Dynamic decision-making and heterogeneous treatment effects</h3>
+  <div class="pub-section">
+    <div class="pub-list">
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=dynamic] %}
+    </div>
+  </div>
 
   <h3>Causal inference methodology</h3>
   <div class="pub-section">
@@ -24,12 +31,6 @@ Below are selected methodological and theoretical contributions. For a complete 
     </div>
   </div>
 
-  <h3>Dynamic decision-making and heterogeneous treatment effects</h3>
-  <div class="pub-section">
-    <div class="pub-list">
-      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=dynamic] %}
-    </div>
-  </div>
 
   <h3>Conformal prediction and predictive uncertainty</h3>
   <div class="pub-section">
