@@ -2,6 +2,73 @@
 
 @string{aps = {American Physical Society,}}
 
+
+
+
+@article{van2025efficient,
+  title={Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models},
+  author={{van der Laan}, Lars and Bibaut, Aurelien and Kallus, Nathan},
+  journal={arXiv preprint arXiv:2512.24407},
+     keywords={dynamic},
+   selected={true},
+  year={2025},
+  abstract={Inverse reinforcement learning (IRL) and dynamic discrete choice (DDC) models explain
+sequential decision-making by recovering reward functions that rationalize observed behaviour.
+Flexible IRL methods typically rely on machine learning but provide no guarantees for valid
+inference, while classical DDC approaches impose restrictive parametric specifications and often
+require repeated dynamic programming. We develop a semiparametric framework for debiased
+inverse reinforcement learning that yields statistically efficient inference for a broad class of
+reward-dependent functionals in maximum-entropy IRL and Gumbel-shock DDC models. We
+show that the log–behaviour policy acts as a pseudo-reward that point-identifies policy value
+differences and, under a simple normalization, the reward itself. We then formalize these tar-
+gets—including policy values under known and counterfactual softmax policies and functionals
+of the normalized reward—as smooth functionals of the behaviour policy and transition ker-
+nel, establish pathwise differentiability, and derive their efficient influence functions. Building
+on this characterization, we construct automatic debiased machine-learning estimators that al-
+low flexible nonparametric estimation of nuisance components while achieving √n-consistency,
+asymptotic normality, and semiparametric efficiency. Our framework extends classical inference
+for DDC models to nonparametric rewards and modern machine-learning tools, providing a
+unified and computationally tractable approach to statistical inference in IRL.},
+pdf={https://arxiv.org/pdf/2512.24407}
+}
+
+@article{van2025FQI,
+  title={Stationary reweighting yields local convergence of soft fitted q-iteration},
+  author={{van der Laan}, Lars and Kallus, Nathan},
+           keywords={dynamic},
+   selected={true},
+  journal={arXiv preprint arXiv:2512.23927},
+  year={2025},
+  abstract={Fitted Q-iteration (FQI) and its entropy-regularized variant, soft FQI, are central tools for value-based model-free offline reinforcement learning, but can behave poorly under function approximation and distribution shift. In the entropy-regularized setting, we show that the soft Bellman operator is locally contractive in the stationary norm of the soft-optimal policy, rather than in the behavior norm used by standard FQI. This geometric mismatch explains the instability of soft Q-iteration with function approximation in the absence of Bellman completeness. To restore contraction, we introduce stationary-reweighted soft FQI, which reweights each regression update using the stationary distribution of the current policy. We prove local linear convergence under function approximation with geometrically damped weight-estimation errors, assuming approximate realizability. Our analysis further suggests that global convergence may be recovered by gradually reducing the softmax temperature, and that this continuation approach can extend to the hardmax limit under a mild margin condition.},
+  pdf={https://arxiv.org/pdf/2512.23927}
+}
+
+
+@article{van2025FQE,
+  title={Fitted q evaluation without bellman completeness via stationary weighting},
+  author={{van der Laan}, Lars and Kallus, Nathan},
+         keywords={dynamic},
+   selected={true},
+  journal={arXiv preprint arXiv:2512.23805},
+  year={2025},
+  abstract={Fitted Q-evaluation (FQE) is a central method for off-policy evaluation in reinforcement learning, but it generally requires Bellman completeness: that the hypothesis class is closed under the evaluation Bellman operator. This requirement is challenging because enlarging the hypothesis class can worsen completeness. We show that the need for this assumption stems from a fundamental norm mismatch: the Bellman operator is gamma-contractive under the stationary distribution of the target policy, whereas FQE minimizes Bellman error under the behavior distribution. We propose a simple fix: reweight each regression step using an estimate of the stationary density ratio, thereby aligning FQE with the norm in which the Bellman operator contracts. This enables strong evaluation guarantees in the absence of realizability or Bellman completeness, avoiding the geometric error blow-up of standard FQE in this setting while maintaining the practicality of regression-based evaluation.},
+     pdf={https://arxiv.org/pdf/2512.23805}
+}
+
+
+@article{van2025bellman,
+  title={Bellman Calibration for V-Learning in Offline Reinforcement Learning},
+  author={{{van der Laan}}, Lars and Kallus, Nathan},
+  journal={arXiv preprint arXiv:2512.23694},
+  year={2025},
+       keywords={dynamic},
+   selected={true},
+   abstract={We introduce Iterated Bellman Calibration, a simple, model-agnostic, post-hoc procedure for calibrating off-policy value predictions in infinite-horizon Markov decision processes. Bellman calibration requires that states with similar predicted long-term returns exhibit one-step returns consistent with the Bellman equation under the target policy. We adapt classical histogram and isotonic calibration to the dynamic, counterfactual setting by repeatedly regressing fitted Bellman targets onto a model's predictions, using a doubly robust pseudo-outcome to handle off-policy data. This yields a one-dimensional fitted value iteration scheme that can be applied to any value estimator. Our analysis provides finite-sample guarantees for both calibration and prediction under weak assumptions, and critically, without requiring Bellman completeness or realizability.},
+   pdf={https://arxiv.org/pdf/2512.23694}
+}
+
+
+
 @misc{vanderlaan2025nonparametricinstrumentalvariableinference,
       title={Nonparametric Instrumental Variable Inference with Many Weak Instruments}, 
       author={Lars {van der Laan} and Nathan Kallus and Aurélien Bibaut},
@@ -239,7 +306,7 @@ vaccine trial.}
 
 @article{van2025inverse,
   title={Inverse Reinforcement Learning Using Just Classification and a Few Regressions},
-  author={van der Laan, Lars and Kallus, Nathan and Bibaut, Aur{\'e}lien},
+  author={{van der Laan}, Lars and Kallus, Nathan and Bibaut, Aur{\'e}lien},
   journal={arXiv preprint arXiv:2509.21172},
   year={2025},
    pdf={https://arxiv.org/pdf/2509.21172},
@@ -248,69 +315,7 @@ vaccine trial.}
    abstract={Inverse reinforcement learning (IRL) aims to explain observed behavior by uncovering an underlying reward. In the maximum-entropy or Gumbel-shocks-to-reward frameworks, this amounts to fitting a reward function and a soft value function that together satisfy the soft Bellman consistency condition and maximize the likelihood of observed actions. While this perspective has had enormous impact in imitation learning for robotics and understanding dynamic choices in economics, practical learning algorithms often involve delicate inner-loop optimization, repeated dynamic programming, or adversarial training, all of which complicate the use of modern, highly expressive function approximators like neural nets and boosting. We revisit softmax IRL and show that the population maximum-likelihood solution is characterized by a linear fixed-point equation involving the behavior policy. This observation reduces IRL to two off-the-shelf supervised learning problems: probabilistic classification to estimate the behavior policy, and iterative regression to solve the fixed point. The resulting method is simple and modular across function approximation classes and algorithms. We provide a precise characterization of the optimal solution, a generic oracle-based algorithm, finite-sample error bounds, and empirical results showing competitive or superior performance to MaxEnt IRL.}
 }
 
-
-@article{van2025efficient,
-  title={Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models},
-  author={van der Laan, Lars and Bibaut, Aurelien and Kallus, Nathan},
-  journal={arXiv preprint arXiv:2512.24407},
-     keywords={dynamic},
-   selected={true},
-  year={2025},
-  abstract={Inverse reinforcement learning (IRL) and dynamic discrete choice (DDC) models explain
-sequential decision-making by recovering reward functions that rationalize observed behaviour.
-Flexible IRL methods typically rely on machine learning but provide no guarantees for valid
-inference, while classical DDC approaches impose restrictive parametric specifications and often
-require repeated dynamic programming. We develop a semiparametric framework for debiased
-inverse reinforcement learning that yields statistically efficient inference for a broad class of
-reward-dependent functionals in maximum-entropy IRL and Gumbel-shock DDC models. We
-show that the log–behaviour policy acts as a pseudo-reward that point-identifies policy value
-differences and, under a simple normalization, the reward itself. We then formalize these tar-
-gets—including policy values under known and counterfactual softmax policies and functionals
-of the normalized reward—as smooth functionals of the behaviour policy and transition ker-
-nel, establish pathwise differentiability, and derive their efficient influence functions. Building
-on this characterization, we construct automatic debiased machine-learning estimators that al-
-low flexible nonparametric estimation of nuisance components while achieving √n-consistency,
-asymptotic normality, and semiparametric efficiency. Our framework extends classical inference
-for DDC models to nonparametric rewards and modern machine-learning tools, providing a
-unified and computationally tractable approach to statistical inference in IRL.},
-pdf={https://arxiv.org/pdf/2512.24407}
-}
-
-@article{van2025FQI,
-  title={Stationary reweighting yields local convergence of soft fitted q-iteration},
-  author={van der Laan, Lars and Kallus, Nathan},
-           keywords={dynamic},
-   selected={true},
-  journal={arXiv preprint arXiv:2512.23927},
-  year={2025},
-  abstract={Fitted Q-iteration (FQI) and its entropy-regularized variant, soft FQI, are central tools for value-based model-free offline reinforcement learning, but can behave poorly under function approximation and distribution shift. In the entropy-regularized setting, we show that the soft Bellman operator is locally contractive in the stationary norm of the soft-optimal policy, rather than in the behavior norm used by standard FQI. This geometric mismatch explains the instability of soft Q-iteration with function approximation in the absence of Bellman completeness. To restore contraction, we introduce stationary-reweighted soft FQI, which reweights each regression update using the stationary distribution of the current policy. We prove local linear convergence under function approximation with geometrically damped weight-estimation errors, assuming approximate realizability. Our analysis further suggests that global convergence may be recovered by gradually reducing the softmax temperature, and that this continuation approach can extend to the hardmax limit under a mild margin condition.},
-  pdf={https://arxiv.org/pdf/2512.23927}
-}
-
-
-@article{van2025FQE,
-  title={Fitted q evaluation without bellman completeness via stationary weighting},
-  author={van der Laan, Lars and Kallus, Nathan},
-         keywords={dynamic},
-   selected={true},
-  journal={arXiv preprint arXiv:2512.23805},
-  year={2025},
-  abstract={Fitted Q-evaluation (FQE) is a central method for off-policy evaluation in reinforcement learning, but it generally requires Bellman completeness: that the hypothesis class is closed under the evaluation Bellman operator. This requirement is challenging because enlarging the hypothesis class can worsen completeness. We show that the need for this assumption stems from a fundamental norm mismatch: the Bellman operator is gamma-contractive under the stationary distribution of the target policy, whereas FQE minimizes Bellman error under the behavior distribution. We propose a simple fix: reweight each regression step using an estimate of the stationary density ratio, thereby aligning FQE with the norm in which the Bellman operator contracts. This enables strong evaluation guarantees in the absence of realizability or Bellman completeness, avoiding the geometric error blow-up of standard FQE in this setting while maintaining the practicality of regression-based evaluation.},
-     pdf={https://arxiv.org/pdf/2512.23805}
-}
-
-
-@article{van2025bellman,
-  title={Bellman Calibration for V-Learning in Offline Reinforcement Learning},
-  author={van der Laan, Lars and Kallus, Nathan},
-  journal={arXiv preprint arXiv:2512.23694},
-  year={2025},
-       keywords={dynamic},
-   selected={true},
-   abstract={We introduce Iterated Bellman Calibration, a simple, model-agnostic, post-hoc procedure for calibrating off-policy value predictions in infinite-horizon Markov decision processes. Bellman calibration requires that states with similar predicted long-term returns exhibit one-step returns consistent with the Bellman equation under the target policy. We adapt classical histogram and isotonic calibration to the dynamic, counterfactual setting by repeatedly regressing fitted Bellman targets onto a model's predictions, using a doubly robust pseudo-outcome to handle off-policy data. This yields a one-dimensional fitted value iteration scheme that can be applied to any value estimator. Our analysis provides finite-sample guarantees for both calibration and prediction under weak assumptions, and critically, without requiring Bellman completeness or realizability.},
-   pdf={https://arxiv.org/pdf/2512.23694}
-}
-
+ 
  
 
 @article{van2021higher,
