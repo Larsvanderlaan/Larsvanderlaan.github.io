@@ -23,7 +23,7 @@ social: true  # includes social icons at the bottom of the page
 
 ## About me  
 
-I am a final-year Ph.D. candidate in Statistics at the University of Washington, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com). Starting in Fall 2026, I will be a postdoctoral researcher at Stanford.
+I am a final-year Ph.D. candidate in Statistics at the University of Washington, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com).  
 
 My research focuses on **causal inference, semiparametric statistics, and reinforcement learning**. I develop methods for debiased and efficient estimation with machine learning, including [doubly robust inference](https://arxiv.org/pdf/2411.02771), [automatic debiasing](https://arxiv.org/pdf/2501.11868), inference after [model selection](https://arxiv.org/pdf/2307.12544), and [heterogeneous treatment effects](https://arxiv.org/pdf/2402.01972).
 
