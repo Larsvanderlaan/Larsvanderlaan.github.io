@@ -46,7 +46,7 @@ Below are selected methodological and theoretical contributions. For a complete 
     </div>
   </div>
   
-<h3>Notes and teaching Materials</h3>
+<h3>Notes and teaching materials</h3>
   <div class="pub-section">
     <div class="pub-list">
       {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=notes] %}
