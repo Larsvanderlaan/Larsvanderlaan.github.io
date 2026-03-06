@@ -35,3 +35,5 @@ Another line of my research adapts **calibration**—a post-hoc technique from p
 I also develop **methods for predictive uncertainty quantification**, focusing on **finite-sample, distribution-free guarantees** for black-box models. This includes [self-calibrating conformal prediction](https://proceedings.neurips.cc/paper_files/paper/2024/file/c1c49aba08e6c90f2b1f85751f497a2f-Paper-Conference.pdf) and [generalized Venn–Abers calibration](https://arxiv.org/pdf/2502.05676) (with [Ahmed Alaa](https://vcresearch.berkeley.edu/faculty/ahmed-alaa), UC Berkeley), with applications to regression, quantile estimation, and prediction intervals.
 
 Beyond methodology, I apply these ideas in biomedical and technology domains through research internships at Genentech, the Fred Hutchinson Cancer Center, and Netflix. I also contribute to the [tlverse](https://tlverse.org) open-source software ecosystem and consult for [TLRevolution](https://www.tlrevolution.com).
+
+I’m also interested in pedagogy and teaching, and I enjoy mentoring students. Recently, I wrote a guide on [empirical risk minimization](https://arxiv.org/pdf/2602.21501).

@@ -45,5 +45,12 @@ Below are selected methodological and theoretical contributions. For a complete 
       {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=software] %}
     </div>
   </div>
+  
+<h3>Notes &amp; Teaching Materials</h3>
+  <div class="pub-section">
+    <div class="pub-list">
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=notes] %}
+    </div>
+  </div>
 
 </div>

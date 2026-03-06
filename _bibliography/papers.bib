@@ -3,6 +3,37 @@
 @string{aps = {American Physical Society,}}
 
 
+@article{van2026researcher,
+  title={A Researcher's Guide to Empirical Risk Minimization},
+  author={van der Laan, Lars},
+  journal={arXiv preprint arXiv:2602.21501},
+  year={2026},
+  pdf={https://arxiv.org/pdf/2602.21501},
+  abstract={This guide provides a reference for high-probability regret bounds in empirical risk minimiza-
+tion (ERM). The presentation is modular: we begin with intuition and general proof strategies,
+then state broadly applicable guarantees under high-level conditions and provide tools for verify-
+ing them for specific losses and function classes. We emphasize that many ERM rate derivations
+can be organized around a three-step recipe—a basic inequality, a uniform local concentration
+bound, and a fixed-point argument—which yields regret bounds in terms of a critical radius, de-
+fined via localized Rademacher complexity, under a mild Bernstein-type variance–risk condition
+(Bartlett et al., 2005; Wainwright, 2019). To make these bounds concrete, we upper bound the
+critical radius using local maximal inequalities and metric-entropy integrals, thereby recovering
+familiar rates for VC-subgraph, Sobolev/H¨older, and bounded-variation classes.
+We also study ERM with nuisance components—including weighted ERM and Neyman-
+orthogonal losses—as they arise in causal inference, missing data, and domain adaptation. Fol-
+lowing Foster and Syrgkanis (2023), we highlight that these problems often admit regret-transfer
+bounds linking regret under an estimated loss to population regret under the target loss. These
+bounds typically decompose the regret into (i) statistical error under the estimated loss and
+(ii) approximation error due to nuisance estimation. Under sample splitting or cross-fitting,
+the first term can be controlled using standard fixed-loss ERM regret bounds, while the second
+depends only on nuisance-estimation accuracy. As a novel contribution, we also treat the in-
+sample regime, in which the nuisances and the ERM are fit on the same data, deriving regret
+bounds and showing that fast oracle rates remain attainable under suitable smoothness and
+Donsker-type conditions.},
+     keywords={notes},
+   selected={true}
+}
+
 
 
 @article{van2025efficient,
