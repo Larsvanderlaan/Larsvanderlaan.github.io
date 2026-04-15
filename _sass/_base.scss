@@ -721,6 +721,37 @@ footer.sticky-bottom {
   }
 }
 
+// Software
+
+.software-list {
+  margin-top: 2rem;
+}
+
+.software-item {
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--global-divider-color);
+
+  &:last-child {
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  h2 {
+    margin-bottom: 0.35rem;
+    font-size: 1.35rem;
+  }
+
+  p {
+    margin-bottom: 0.65rem;
+  }
+}
+
+.software-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+}
+
 // Rouge Color Customization
 figure.highlight {
   margin: 0 0 1rem;
