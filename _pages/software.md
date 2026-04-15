@@ -7,13 +7,13 @@ nav: true
 nav_order: 2
 ---
 
-This page collects software accompanying some of my recent work in causal inference, semiparametric statistics, and calibrated machine learning. The focus is on lightweight research software: each package implements a specific methodological contribution and links directly to the corresponding paper.
+This page highlights selected research software accompanying my work in causal inference, semiparametric statistics, and calibrated machine learning. Each package is tied to a methodological paper and is intended to make the underlying ideas easier to inspect, reproduce, and use.
 
 <div class="software-list">
   <section class="software-item">
     <h2><a href="https://larsvanderlaan.github.io/causalCalibration/">causalCalibration</a></h2>
     <p>
-      An R package implementing causal isotonic calibration and cross-calibration for heterogeneous treatment effect predictors. It wraps black-box CATE learners with post-hoc calibration procedures that improve reliability while preserving the original prediction pipeline.
+      <code>causalCalibration</code> accompanies <em>Causal isotonic calibration for heterogeneous treatment effects</em>. It provides post-hoc calibration and cross-calibration for black-box heterogeneous treatment effect estimators, improving reliability while preserving the original learning pipeline.
     </p>
     <div class="software-links">
       <a href="https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf">paper</a>
@@ -25,7 +25,7 @@ This page collects software accompanying some of my recent work in causal infere
   <section class="software-item">
     <h2><a href="https://larsvanderlaan.github.io/hte3/">hte3</a></h2>
     <p>
-      An R package for efficient plug-in learning of heterogeneous causal contrasts, including the conditional average treatment effect and conditional relative risk. It implements stable, oracle-efficient alternatives to standard DR- and R-learning style workflows.
+      <code>hte3</code> accompanies <em>Combining T-learning and DR-learning: a framework for oracle-efficient estimation of causal contrasts</em>. It implements efficient plug-in learning for heterogeneous causal contrasts, including the conditional average treatment effect and conditional relative risk.
     </p>
     <div class="software-links">
       <a href="https://arxiv.org/pdf/2402.01972.pdf">paper</a>
@@ -37,7 +37,7 @@ This page collects software accompanying some of my recent work in causal infere
   <section class="software-item">
     <h2><a href="https://github.com/Larsvanderlaan/ppi-aipw">ppi-aipw</a></h2>
     <p>
-      A Python package for prediction-powered and semisupervised mean inference with AIPW-style estimators and post-hoc calibration. It is designed for settings with limited labels, abundant unlabeled covariates, and potentially miscalibrated prediction scores.
+      <code>ppi-aipw</code> accompanies <em>Prediction-Powered Inference via Calibration</em>. It provides semisupervised mean inference with AIPW-style estimators and calibrated prediction scores for settings with limited labels and abundant unlabeled covariates.
     </p>
     <div class="software-links">
       <a href="https://larsvanderlaan.github.io/ppi-aipw/paper.pdf">paper</a>
@@ -49,7 +49,7 @@ This page collects software accompanying some of my recent work in causal infere
   <section class="software-item">
     <h2><a href="https://larsvanderlaan.github.io/calibratedDML/index.html">calibratedDML</a></h2>
     <p>
-      An R package implementing calibrated debiased machine learning for doubly robust inference on linear functionals. The package adds a simple calibration step to standard DML pipelines to improve robustness and finite-sample performance.
+      <code>calibratedDML</code> accompanies <em>Doubly robust inference via calibration</em>. It adds a calibration step to standard debiased machine learning pipelines for inference on linear functionals, with the goal of improving robustness and finite-sample performance.
     </p>
     <div class="software-links">
       <a href="https://arxiv.org/pdf/2411.02771">paper</a>
