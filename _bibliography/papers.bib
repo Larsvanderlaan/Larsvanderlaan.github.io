@@ -35,6 +35,26 @@ Donsker-type conditions.},
 }
 
 
+@article{van2026calibeating,
+  title={Calibeating Prediction-Powered Inference},
+  author={{van der Laan}, Lars and {van der Laan}, Mark},
+  journal={arXiv preprint arXiv:2604.21260},
+  year={2026},
+  eprint={2604.21260},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML},
+  doi={10.48550/arXiv.2604.21260},
+  url={https://arxiv.org/abs/2604.21260},
+  pdf={https://arxiv.org/pdf/2604.21260},
+  website={https://larsvanderlaan.github.io/ppi-aipw/},
+  selected={true},
+  abstract={We study semisupervised mean estimation with a small labeled sample, a large unlabeled sample, and a black-box prediction model whose output may be miscalibrated. A standard approach in this setting is augmented inverse-probability weighting (AIPW) [Robins et al., 1994], which protects against prediction-model misspecification but can be inefficient when the prediction score is poorly aligned with the outcome scale.
+We introduce Calibrated Prediction-Powered Inference, which post-hoc calibrates the prediction score on the labeled sample before using it for semisupervised estimation. This simple step requires no retraining and can improve the original score both as a predictor of the outcome and as a regression adjustment for semisupervised inference. We study both linear and isotonic calibration.
+For isotonic calibration, we establish first-order optimality guarantees: isotonic post-processing can improve predictive accuracy and estimator efficiency relative to the original score and simpler post-processing rules, while no further post-processing of the fitted isotonic score yields additional first-order gains. For linear calibration, we show first-order equivalence to PPI++.
+We also clarify the relationship among existing estimators, showing that the original PPI estimator is a special case of AIPW and can be inefficient when the prediction model is accurate, while PPI++ is AIPW with empirical efficiency maximization [Rubin et al., 2008]. In simulations and real-data experiments, our calibrated estimators often outperform PPI and are competitive with, or outperform, AIPW and PPI++.}
+}
+
+
 
 @article{van2025efficient,
   title={Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models},
@@ -118,8 +138,12 @@ pdf={https://arxiv.org/pdf/2512.24407}
   title={Generalized Venn and Venn-Abers Calibration with Applications in Conformal Prediction},
   author={{van der Laan}, Lars and Alaa, Ahmed},
   booktitle={Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  volume={267},
+  series={Proceedings of Machine Learning Research},
+  address={Vancouver, Canada},
+  publisher={PMLR},
   year={2025},
-  note={To appear},
+  url={https://openreview.net/forum?id=kl2SA1N03E},
   abstract={Ensuring model calibration is critical for reliable predictions, yet popular distribution-free methods, such as histogram binning and isotonic regression, provide only asymptotic guarantees. We introduce a unified framework for Venn and Venn-Abers calibration, generalizing Vovk's binary classification approach to arbitrary prediction tasks and loss functions. Venn calibration leverages binning calibrators to construct prediction sets that contain at least one marginally perfectly calibrated point prediction in finite samples, capturing epistemic uncertainty in the calibration process. The width of these sets shrinks asymptotically to zero, converging to a conditionally calibrated point prediction. Furthermore, we propose Venn multicalibration, a novel methodology for finite-sample calibration across subpopulations. For quantile loss, group-conditional and multicalibrated conformal prediction arise as special cases of Venn multicalibration, and Venn calibration produces novel conformal prediction intervals that achieve quantile-conditional coverage. As a separate contribution, we extend distribution-free conditional calibration guarantees of histogram binning and isotonic calibration to general losses.},
   keywords={calibration},
   pdf={https://arxiv.org/pdf/2502.05676}
@@ -178,11 +202,15 @@ poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/p
 @inproceedings{van2024stabilized,
   title={Stabilized Inverse Probability Weighting via Isotonic Calibration},
   author={{van der Laan}, Lars and Lin, Ziming and Carone, Marco and Luedtke, Alex},
-  booktitle={Proceedings of the 3rd Conference on Causal Learning and Reasoning (CLeaR)},
+  booktitle={Proceedings of the Fourth Conference on Causal Learning and Reasoning (CLeaR)},
+  volume={275},
+  series={Proceedings of Machine Learning Research},
+  pages={139--173},
   year={2025},
-  note={To appear},
+  publisher={PMLR},
+  url={https://proceedings.mlr.press/v275/laan25a.html},
   abstract={Inverse weighting with an estimated propensity score is widely used by estimation methods in causal inference to adjust for confounding bias. However, directly inverting propensity score estimates can lead to instability, bias, and excessive variability due to large inverse weights, especially when treatment overlap is limited. In this work, we propose a post-hoc calibration algorithm for inverse propensity weights that generates well-calibrated, stabilized weights from user-supplied, cross-fitted propensity score estimates. Our approach employs a variant of isotonic regression with a loss function specifically tailored to the inverse propensity weights. Through theoretical analysis and empirical studies, we demonstrate that isotonic calibration improves the performance of doubly robust estimators of the average treatment effect.},
-  pdf={https://arxiv.org/pdf/2411.06342},
+  pdf={https://raw.githubusercontent.com/mlresearch/v275/main/assets/laan25a/laan25a.pdf},
   code={https://ngreifer.github.io/WeightIt/reference/calibrate.html},
   keywords={causal},
   selected={true}
@@ -195,7 +223,7 @@ poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/p
       title={Self-Calibrating Conformal Prediction},
       author={{van der Laan}, Lars and {M. Alaa}, Ahmed},
       year={2024},
-        journal={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+        journal={The Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS)},
           selected={true},
           abstract={
           In machine learning, model calibration and predictive inference are essential for producing reliable predictions and quantifying uncertainty to support decision- making. Recognizing the complementary roles of point and interval predictions, we introduce Self-Calibrating Conformal Prediction, a method that combines Venn- Abers calibration and conformal prediction to deliver calibrated point predictions alongside prediction intervals with finite-sample validity conditional on these pre- dictions. To achieve this, we extend the original Venn-Abers procedure from binary classification to regression. Our theoretical framework supports analyzing confor- mal prediction methods that involve calibrating model predictions and subsequently constructing conditionally valid prediction intervals on the same data, where the conditioning set or conformity scores may depend on the calibrated predictions. Real-data experiments show that our method improves interval efficiency through model calibration and offers a practical alternative to feature-conditional validity.
@@ -217,6 +245,8 @@ pdf={https://openreview.net/pdf?id=BJ6HkT7qIk}
   pages={20240025},
   year={2026},
   publisher={De Gruyter},
+  doi={10.1515/jci-2024-0025},
+  url={https://doi.org/10.1515/jci-2024-0025},
     keywords={methods},
 	selected={false},
           abstract={
@@ -281,6 +311,9 @@ pdf={https://arxiv.org/pdf/2405.07186}
   address={Honolulu, Hawaii, USA},
   publisher={PMLR},
   volume={202},
+  series={Proceedings of Machine Learning Research},
+  pages={34831--34854},
+  url={https://proceedings.mlr.press/v202/van-der-laan23a.html},
     keywords={dynamic},
     pdf={https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf},
   poster={https://icml.cc/media/PosterPDFs/ICML%202023/24460.png?t=1690505587.8818903},
@@ -323,7 +356,12 @@ vaccine trial.}
   title={Nonparametric estimation of the causal effect of a stochastic threshold-based intervention},
   author={{van der Laan}, Lars and Zhang, Wenbo and Gilbert, Peter B},
   journal={Biometrics},
-  year={2022},
+  volume={79},
+  number={2},
+  pages={1014--1028},
+  year={2023},
+  doi={10.1111/biom.13690},
+  url={https://academic.oup.com/biometrics/article/79/2/1014/7513933},
   keywords={methods},
   pdf={https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13690},
   abstract={Identifying a biomarker or treatment-dose threshold that marks a specified level of risk is an important problem, especially in clinical trials. In view of this goal, we consider a covariate-adjusted threshold-based interventional estimand, which happens to equal the binary treatment–specific mean estimand from the causal inference literature obtained by dichotomizing the continuous biomarker or treatment as above or below a threshold. The unadjusted version of this estimand was considered in Donovan et al.. Expanding upon Stitelman et al., we show that this estimand, under conditions, identifies the expected outcome of a stochastic intervention that sets the treatment dose of all participants above the threshold. We propose a novel nonparametric efficient estimator for the covariate-adjusted threshold-response function for the case of informative outcome missingness, which utilizes machine learning and targeted minimum-loss estimation (TMLE). We prove the estimator is efficient and characterize its asymptotic distribution and robustness properties. Construction of simultaneous 95% confidence bands for the threshold-specific estimand across a set of thresholds is discussed. In the Supporting Information, we discuss how to adjust our estimator when the biomarker is missing at random, as occurs in clinical trials with biased sampling designs, using inverse probability weighting. Efficiency and bias reduction of the proposed estimator are assessed in simulations. The methods are employed to estimate neutralizing antibody thresholds for virologically confirmed dengue risk in the CYD14 and CYD15 dengue vaccine trials.}
@@ -341,6 +379,8 @@ vaccine trial.}
   year={2025},
   keywords={methods},
   publisher={De Gruyter},
+  doi={10.1515/jci-2023-0013},
+  url={https://doi.org/10.1515/jci-2023-0013},
   pdf={https://arxiv.org/pdf/2304.04904}
 }
 
@@ -368,15 +408,18 @@ vaccine trial.}
   pdf={https://arxiv.org/pdf/2101.06290}
 }
 
-@software{coyle2022hal9001-rpkg,
-      author = {Coyle, Jeremy R and Hejazi, Nima S and Phillips, Rachael V
-        and {van der Laan}, Lars and {van der Laan}, Mark J},
-      title = {{hal9001}: The scalable highly adaptive lasso},
-      year  = {2022},
+@article{coyle2022hal9001-rpkg,
+      author = {Hejazi, Nima S and Coyle, Jeremy R and {van der Laan}, Mark J},
+      title = {{hal9001}: Scalable highly adaptive lasso regression in {R}},
+      journal = {Journal of Open Source Software},
+      volume = {5},
+      number = {53},
+      pages = {2526},
+      year  = {2020},
       keywords={software},
-      url = {https://tlverse.org/hal9001/},
+      doi = {10.21105/joss.02526},
+      url = {https://joss.theoj.org/papers/10.21105/joss.02526},
       pdf={https://www.theoj.org/joss-papers/joss.02526/10.21105.joss.02526.pdf},
-      note = {{R} package version 0.4.2},
       selected={false}
     }
     
