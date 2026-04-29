@@ -47,6 +47,7 @@ Donsker-type conditions.},
   url={https://arxiv.org/abs/2604.21260},
   pdf={https://arxiv.org/pdf/2604.21260},
   website={https://larsvanderlaan.github.io/ppi-aipw/},
+  keywords={calibration},
   selected={true},
   abstract={We study semisupervised mean estimation with a small labeled sample, a large unlabeled sample, and a black-box prediction model whose output may be miscalibrated. A standard approach in this setting is augmented inverse-probability weighting (AIPW) [Robins et al., 1994], which protects against prediction-model misspecification but can be inefficient when the prediction score is poorly aligned with the outcome scale.
 We introduce Calibrated Prediction-Powered Inference, which post-hoc calibrates the prediction score on the labeled sample before using it for semisupervised estimation. This simple step requires no retraining and can improve the original score both as a predictor of the outcome and as a regression adjustment for semisupervised inference. We study both linear and isotonic calibration.
@@ -212,7 +213,7 @@ poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/p
   abstract={Inverse weighting with an estimated propensity score is widely used by estimation methods in causal inference to adjust for confounding bias. However, directly inverting propensity score estimates can lead to instability, bias, and excessive variability due to large inverse weights, especially when treatment overlap is limited. In this work, we propose a post-hoc calibration algorithm for inverse propensity weights that generates well-calibrated, stabilized weights from user-supplied, cross-fitted propensity score estimates. Our approach employs a variant of isotonic regression with a loss function specifically tailored to the inverse propensity weights. Through theoretical analysis and empirical studies, we demonstrate that isotonic calibration improves the performance of doubly robust estimators of the average treatment effect.},
   pdf={https://raw.githubusercontent.com/mlresearch/v275/main/assets/laan25a/laan25a.pdf},
   code={https://ngreifer.github.io/WeightIt/reference/calibrate.html},
-  keywords={causal},
+  keywords={calibration},
   selected={true}
 }
 
@@ -314,7 +315,7 @@ pdf={https://arxiv.org/pdf/2405.07186}
   series={Proceedings of Machine Learning Research},
   pages={34831--34854},
   url={https://proceedings.mlr.press/v202/van-der-laan23a.html},
-    keywords={dynamic},
+    keywords={calibration},
     pdf={https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf},
   poster={https://icml.cc/media/PosterPDFs/ICML%202023/24460.png?t=1690505587.8818903},
   abstract={We propose causal isotonic calibration, a novel nonparametric method for calibrating predictors of heterogeneous treatment effects. Furthermore, we introduce cross-calibration, a data-efficient variant of calibration that eliminates the need for hold-out calibration sets. Cross-calibration leverages cross-fitted predictors and generates a single calibrated predictor using all available data. Under weak conditions that do not assume monotonicity, we establish that both causal isotonic calibration and cross-calibration achieve fast doubly-robust calibration rates, as long as either the propensity score or outcome regression is estimated accurately in a suitable sense. The proposed causal isotonic calibrator can be wrapped around any black-box learning algorithm, providing robust and distribution-free calibration guarantees while preserving predictive performance.},

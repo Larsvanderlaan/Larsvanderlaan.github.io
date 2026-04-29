@@ -32,7 +32,7 @@ Below are selected methodological and theoretical contributions. For a complete 
   </div>
 
 
-  <h3>Conformal prediction and predictive uncertainty</h3>
+  <h3>Calibration, conformal prediction, and predictive uncertainty</h3>
   <div class="pub-section">
     <div class="pub-list">
       {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=calibration] %}
