@@ -19,8 +19,9 @@ output:
 
 #### PhD in Statistics
 - **Institution**: University of Washington, Seattle
-- **Year**: 2021 - Current
+- **Year**: 2021 - June 2026
 - **Advisors**: Marco Carone, PhD; Alex Luedtke, PhD
+- **Support**: Netflix Graduate Research Fellowship
 - **Research Focus**: Causal inference, statistical learning theory, debiased machine learning
 
 #### MA in Statistics
@@ -37,6 +38,18 @@ output:
 ---
 
 ### Professional Experience
+
+#### Postdoctoral Scholar
+- **Institution**: Stanford University, Department of Management Science and Engineering
+- **Year**: 2026 - Present
+- **Mentor**: [Professor Vasilis Syrgkanis](https://vsyrgkanis.com/)
+- **Support**: Netflix Research
+- **Research**: Machine learning, causal inference, and decision-making research.
+
+#### Netflix Graduate Research Fellowship
+- **Institution**: Netflix Research
+- **Year**: 2024 - June 2026
+- **Focus**: Supported Ph.D. research in machine learning and causal inference, including reinforcement learning and policy evaluation, long-term causal inference, instrumental variables, and automatic debiasing.
 
 #### Machine Learning Research Intern 
 - **Company**: Netflix, Los Gatos

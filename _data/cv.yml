@@ -17,9 +17,11 @@
   contents:
     - title: "PhD in Statistics"
       institution: "University of Washington, Seattle"
-      year: "2021 - Present"
+      year: "2021 - 2026"
       description:
+        - "Completed in June 2026."
         - "Advised by Marco Carone, PhD and Alex Luedtke, PhD."
+        - "Supported by a Netflix Graduate Research Fellowship."
         - "Research on semiparametric statistics, causal inference, and debiased machine learning."
     - title: "MA in Statistics"
       institution: "University of California, Berkeley"
@@ -31,11 +33,16 @@
 - title: Experience
   type: time_table
   contents:
-    - title: "Netflix PhD Research Fellowship"
-      institution: "Netflix"
-      year: "2024 - Current"
+    - title: "Postdoctoral Scholar"
+      institution: "Stanford University, Department of Management Science and Engineering"
+      year: "2026 - Present"
       description:
-        - "Awarded to support research in machine learning and causal inference, including reinforcement learning and policy evaluation, long-term causal inference, instrumental variables, and automatic debiasing."
+        - "Working under <a href='https://vsyrgkanis.com/'>Professor Vasilis Syrgkanis</a> on machine learning, causal inference, and decision-making research, supported by Netflix Research."
+    - title: "Netflix Graduate Research Fellowship"
+      institution: "Netflix Research"
+      year: "2024 - 2026"
+      description:
+        - "Supported Ph.D. research in machine learning and causal inference, including reinforcement learning and policy evaluation, long-term causal inference, instrumental variables, and automatic debiasing."
     - title: "Machine Learning Research Intern"
       institution: "Netflix"
       year: "Summer 2024"
@@ -51,7 +58,7 @@
         - "Research on distribution-free machine learning methods for model calibration, uncertainty quantification, predictive inference, and conformal prediction."
     - title: "Research Assistant"
       institution: "University of Washington, Statistics"
-      year: "2021 - Current"
+      year: "2021 - 2026"
       description:
         - "Conducted research on causal inference and debiased machine learning."
     - title: "Teaching Assistant – PhD Theoretical Statistics Sequence"
@@ -69,7 +76,7 @@
 - title: Awards
   type: list
   contents:
-    - "Netflix Graduate Research Fellowship – awarded to support advanced research in machine learning and causal inference. Mentors: Aurelien Bibaut and Nathan Kallus."
+    - "Netflix Graduate Research Fellowship - supported Ph.D. research in machine learning and causal inference. Mentors: Aurelien Bibaut and Nathan Kallus."
     - "Best Paper Award, Conference on Causal Learning and Reasoning (CLeaR), 2025 – for 'Stabilized Inverse Probability Weighting via Isotonic Calibration,' Lausanne, Switzerland."
     - 'Honorable Mention, Tom Ten Have Poster Award, "Automatic Doubly Robust Inference via Calibration" – American Causal Inference Conference (ACIC), Detroit, Michigan, 2025'
 

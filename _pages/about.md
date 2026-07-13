@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>University of Washington, Seattle</a>. Department of Statistics
+subtitle: Postdoctoral Scholar, Stanford University, Department of Management Science and Engineering
 
 profile:
   align: right
@@ -22,11 +22,11 @@ social: true  # includes social icons at the bottom of the page
 
 ## About me
 
-I am a final-year Ph.D. candidate in Statistics at the University of Washington, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com).
+I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University, working under [Professor Vasilis Syrgkanis](https://vsyrgkanis.com/) and supported by Netflix Research. I completed my Ph.D. in Statistics at the University of Washington in June 2026, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com), during which I was supported by a Netflix Graduate Research Fellowship.
 
 My research focuses on **causal inference, semiparametric statistics, and reinforcement learning**. I develop methods for debiased and efficient estimation with machine learning, including [calibrated DML](https://arxiv.org/pdf/2411.02771) for doubly robust inference, [adaptive DML](https://arxiv.org/pdf/2307.12544) for selective inference, [automatic DML](https://arxiv.org/pdf/2501.11868) for M-estimation, and [efficient plug-in learning](https://arxiv.org/pdf/2402.01972) for estimating heterogeneous treatment effects.
 
-I am supported by a Netflix Graduate Research Fellowship and collaborate with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en). More broadly, my work spans [long-term causal inference](https://arxiv.org/pdf/2501.06926), nonparametric [instrumental variables](https://arxiv.org/pdf/2505.07729) inference, [inverse reinforcement learning](https://arxiv.org/pdf/2512.24407) and dynamic discrete choice models, and value estimation in offline reinforcement learning, including [Fitted Q Evaluation](https://arxiv.org/pdf/2512.23805) and [Fitted Q Iteration](https://arxiv.org/pdf/2512.23927) without Bellman completeness.
+I collaborate with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en) at Netflix. More broadly, my work spans [long-term causal inference](https://arxiv.org/pdf/2501.06926), nonparametric [instrumental variables](https://arxiv.org/pdf/2505.07729) inference, [inverse reinforcement learning](https://arxiv.org/pdf/2512.24407) and dynamic discrete choice models, and value estimation in offline reinforcement learning, including [Fitted Q Evaluation](https://arxiv.org/pdf/2512.23805) and [Fitted Q Iteration](https://arxiv.org/pdf/2512.23927) without Bellman completeness.
 
 Another theme of my research is **calibration**: adapting post-hoc tools from predictive modeling to **causal inference and dynamic decision-making**. This includes [causal isotonic calibration](https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf) for heterogeneous treatment effect estimation, calibration of [inverse probability weighting](https://arxiv.org/pdf/2411.06342) estimators, [Bellman calibration](https://arxiv.org/pdf/2512.23694) for offline reinforcement learning, [calibrated debiased machine learning](https://arxiv.org/pdf/2411.02771), and [calibrated prediction-powered inference](https://arxiv.org/pdf/2604.21260). I have also worked on calibration for predictive uncertainty quantification and conformal prediction.
 

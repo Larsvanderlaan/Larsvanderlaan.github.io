@@ -8,7 +8,7 @@ middle_name:
 last_name: van der Laan
 email: lvdlaan@uw.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  I am a PhD student in Statistics at the University of Washington, Seattle. My research interests include causal inference, semiparametric statistics, debiased machine learning, statistical learning and calibration, and inference after data-driven model-selection.
+  I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University, working under Professor Vasilis Syrgkanis and supported by Netflix Research. I completed my PhD in Statistics at the University of Washington in June 2026.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
