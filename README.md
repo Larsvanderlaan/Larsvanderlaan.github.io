@@ -2,7 +2,7 @@
 
 ## About me
 
-I am a third-year Ph.D. student in Statistics at the University of Washington, with a strong passion for exploring the intersections of causal inference and debiased machine learning. I am advised by Professors [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com).  
+I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University, working under [Professor Vasilis Syrgkanis](https://vsyrgkanis.com/) and supported by Netflix Research. I completed my Ph.D. in Statistics at the University of Washington in June 2026, advised by Professors [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com), during which I was supported by a Netflix Graduate Research Fellowship.
 
 
 My research interests encompass a wide range of areas, including semiparametric statistics, shape-constrained inference, distribution-free statistical learning and calibration, and inference after model selection. As a significant component of my research, I focus on developing distribution-free causal inference methods that demonstrate robustness to treatment positivity/overlap violations and yield less variable estimates and narrower confidence intervals compared to standard nonparametric approaches. I am enthusiastic about applying these methodologies to various domains, such as survival and longitudinal data analysis, observational studies, inference on heterogeneous treatment effects, and personalized decision-making.
