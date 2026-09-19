@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Lars
 middle_name:
 last_name: van der Laan
-email: lvdlaan@uw.edu
+email: vdlaan@stanford.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University, working under Professor Vasilis Syrgkanis and supported by Netflix Research. I completed my PhD in Statistics at the University of Washington in June 2026.
 footer_text: >
@@ -106,7 +106,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 
 contact_note: >
-  To contact me, email me at lvdlaan@uw.edu or connect with me on LinkedIn
+  To contact me, email me at vdlaan@stanford.edu or connect with me on LinkedIn
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

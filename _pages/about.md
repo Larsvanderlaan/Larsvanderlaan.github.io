@@ -9,8 +9,8 @@ profile:
   image: prof_pic1.jpg 
   image_circular: true # crops the image to make it circular
   address: >
-    <p>Seattle, WA </p>
-    <p>lvdlaan@uw.edu</p>
+    <p>Palo Alto, CA</p>
+    <p>vdlaan@stanford.edu</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

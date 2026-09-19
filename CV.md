@@ -140,10 +140,8 @@ output:
 ---
 
 ### Contact Information
-- B313
-- Padelford Hall, Northeast Stevens Way
-- Seattle, WA 98103
-- lvdlaan@uw.edu
+- Palo Alto, CA
+- vdlaan@stanford.edu
 - 925-257-3339
 
 ---

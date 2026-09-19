@@ -4,11 +4,11 @@
     - name: "Full Name"
       value: "Lars van der Laan"
     - name: "Address"
-      value: "Seattle, Washington, USA"
+      value: "Palo Alto, California, USA"
     - name: "Phone"
       value: "(925) 257-3339"
     - name: "Email"
-      value: "lvdlaan@uw.edu"
+      value: "vdlaan@stanford.edu"
     - name: "Homepage"
       value: "https://larsvanderlaan.github.io"
 
