@@ -6,26 +6,26 @@ subtitle: 'Causal inference and semiparametric statistics · Dynamic decision-ma
 
 profile:
   align: right
-  image: prof_pic1.jpg 
+  image: prof_pic1.jpg
   image_alt: Lars van der Laan
-  image_circular: true # crops the image to make it circular
+  image_circular: true
   address: >
     <p><a href="mailto:vdlaan@stanford.edu">vdlaan@stanford.edu</a></p>
 
-news: true  # includes a compact list of recent news
-latest_posts: false  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: true
+latest_posts: false
+selected_papers: true
+social: true
 ---
 
 ## About me
 
-I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University and a Stanford Causal Science Center Fellow, working under [Professor Vasilis Syrgkanis](https://vsyrgkanis.com/) and supported by Netflix Research. I completed my Ph.D. in Statistics at the University of Washington in June 2026, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com), during which I was supported by a Netflix Graduate Research Fellowship. I also collaborate with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ) at Netflix.
+I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University and a Stanford Causal Science Center Fellow, working with [Vasilis Syrgkanis](https://vsyrgkanis.com/) and supported by Netflix Research. I completed my Ph.D. in Statistics at the University of Washington in June 2026, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com), during which I was supported by a Netflix Graduate Research Fellowship. I also collaborate with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ) at Netflix.
 
-I develop statistical methods for reliable inference and decision-making with flexible machine learning. A central part of my work is **causal inference and semiparametric statistics**: how to obtain valid and efficient inference under weak assumptions. My work includes automating debiased machine learning and developing doubly robust inference, as well as data fusion, heterogeneous treatment effects, and predictive inference.
+My research focuses on **causal inference and semiparametric statistics**, particularly how to use machine learning for valid and efficient statistical inference. I have developed methods for automatic debiasing of smooth functionals of nonparametric M-estimands, calibrated debiased machine learning for doubly robust inference, and adaptive inference after data-driven model selection. My work also includes efficient estimation of heterogeneous treatment effects, long-term causal inference using nonparametric instrumental variables, and data fusion to improve efficiency in randomized trials.
 
-I also work on **dynamic decision-making and reinforcement learning**, spanning statistical inference and learning theory. This includes debiased machine learning and off-policy evaluation for sequential problems, theoretical guarantees and model-selection methods for offline RL algorithms, and inverse reinforcement learning.
+I also work on **dynamic decision-making and reinforcement learning**, with a focus on off-policy evaluation and offline reinforcement learning under function approximation and distribution shift. My recent work includes occupancy-ratio estimation and occupancy-weighted fitted methods that avoid Bellman completeness assumptions, as well as model-selection methods for value functions and occupancy ratios. I also study efficient inference for inverse reinforcement learning and dynamic discrete choice models.
 
-Across these areas, I use **calibration** as a practical tool to improve inference and decision-making without retraining the underlying model. I apply these ideas in biomedical and technology settings.
+**Calibration** is a recurring theme across my research. I have developed methods for calibrating inverse probability weights, nuisance estimators used in doubly robust inference, and off-policy value estimates. I also study calibration for conformal prediction and prediction-powered inference. Many of these methods involve post-hoc adjustments to existing estimates, without retraining the underlying model. I apply these ideas in biomedical research and technology settings.
 
 <p class="home-links"><a href="/cv/">CV</a> · <a href="https://scholar.google.com/citations?user=0bwP0i4AAAAJ">Google Scholar</a> · <a href="/publications/">Publications</a> · <a href="mailto:vdlaan@stanford.edu">Email</a></p>
