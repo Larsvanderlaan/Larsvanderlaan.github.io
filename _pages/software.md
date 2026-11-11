@@ -52,7 +52,7 @@ This page highlights selected research software accompanying my work in causal i
       <code>hte3</code> accompanies <em>Combining T-learning and DR-learning: a framework for oracle-efficient estimation of causal contrasts</em>. It implements efficient plug-in learning for heterogeneous causal contrasts, including the conditional average treatment effect and conditional relative risk.
     </p>
     <div class="software-links">
-      <a href="https://arxiv.org/pdf/2402.01972.pdf">paper</a>
+      <a href="https://arxiv.org/pdf/2402.01972">paper</a>
       <a href="https://larsvanderlaan.github.io/hte3/">package site</a>
       <a href="https://github.com/Larsvanderlaan/hte3">code</a>
     </div>

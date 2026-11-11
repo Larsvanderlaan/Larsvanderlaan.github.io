@@ -26,11 +26,34 @@ layout: default
     height: 100%;
     border: 0;
   }
+  .cv-actions {
+    position: fixed;
+    top: calc(var(--nav-h) + 0.6rem);
+    right: 1rem;
+    z-index: 2;
+    padding: 0.35rem 0.5rem;
+    border-radius: 0.35rem;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+    font-size: 0.85rem;
+  }
+  .cv-actions a { margin-left: 0.65rem; }
+  .cv-updated { color: #555; }
+  .cv-mobile-note { display: none; }
 
   /* On small screens, hide the embed and show buttons instead */
   @media (max-width: 768px) {
     .cv-fullscreen { display: none; }
-    .cv-actions { margin: var(--nav-h) auto 2rem auto; text-align: center; }
+    .cv-actions {
+      position: static;
+      margin: var(--nav-h) auto 2rem auto;
+      padding: 0 1rem;
+      background: transparent;
+      box-shadow: none;
+      text-align: center;
+    }
+    .cv-updated { display: block; margin-bottom: 0.75rem; }
+    .cv-mobile-note { display: block; margin: 0.75rem 0 0; color: #555; }
     .cv-actions a {
       display: inline-block;
       margin: 0.25rem 0.5rem;
@@ -55,8 +78,10 @@ layout: default
 {% if pdf_url %}
   <!-- Buttons for mobile -->
   <div class="cv-actions">
+    {% if page.cv_updated %}<span class="cv-updated">Updated {{ page.cv_updated }}</span>{% endif %}
     <a href="{{ pdf_url }}" target="_blank" rel="noopener">Open full CV</a>
     <a href="{{ pdf_url }}" download>Download CV</a>
+    <span class="cv-mobile-note">For the best mobile view, open the PDF in a new tab.</span>
   </div>
 
   <!-- Embed for desktop -->

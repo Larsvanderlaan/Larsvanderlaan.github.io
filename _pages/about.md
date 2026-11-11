@@ -2,32 +2,30 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Scholar, Stanford University, Department of Management Science and Engineering
+subtitle: 'Causal inference · semiparametric statistics and debiased machine learning · dynamic decision-making and reinforcement learning · calibration<br><span class="affiliation">Postdoctoral Scholar, Stanford MS&amp;E · Stanford Causal Science Center Fellow</span>'
 
 profile:
   align: right
   image: prof_pic1.jpg 
+  image_alt: Lars van der Laan
   image_circular: true # crops the image to make it circular
   address: >
-    <p>Palo Alto, CA</p>
-    <p>vdlaan@stanford.edu</p>
+    <p><a href="mailto:vdlaan@stanford.edu">vdlaan@stanford.edu</a></p>
 
-news: false  # includes a list of news items
+news: true  # includes a compact list of recent news
 latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
- 
-
 ## About me
 
-I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University, working under [Professor Vasilis Syrgkanis](https://vsyrgkanis.com/) and supported by Netflix Research. I completed my Ph.D. in Statistics at the University of Washington in June 2026, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com), during which I was supported by a Netflix Graduate Research Fellowship.
+I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University and a Stanford Causal Science Center Fellow, working under [Professor Vasilis Syrgkanis](https://vsyrgkanis.com/) and supported by Netflix Research. I completed my Ph.D. in Statistics at the University of Washington in June 2026, advised by [Marco Carone](http://faculty.washington.edu/mcarone/about.html) and [Alex Luedtke](http://www.alexluedtke.com), during which I was supported by a Netflix Graduate Research Fellowship.
 
-My research focuses on **causal inference, semiparametric statistics, and reinforcement learning**. I develop methods for debiased and efficient estimation with machine learning, including [calibrated DML](https://arxiv.org/pdf/2411.02771) for doubly robust inference, [adaptive DML](https://arxiv.org/pdf/2307.12544) for selective inference, [automatic DML](https://arxiv.org/pdf/2501.11868) for M-estimation, and [efficient plug-in learning](https://arxiv.org/pdf/2402.01972) for estimating heterogeneous treatment effects.
+I develop statistical methods for reliable inference and decision-making with flexible machine learning. My work focuses on **causal inference, semiparametric statistics, and reinforcement learning**, including automatic and doubly robust inference, heterogeneous treatment effects, and principled model selection.
 
-I collaborate with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ&hl=en) at Netflix. More broadly, my work spans [long-term causal inference](https://arxiv.org/pdf/2501.06926), nonparametric [instrumental variables](https://arxiv.org/pdf/2505.07729) inference, [inverse reinforcement learning](https://arxiv.org/pdf/2512.24407) and dynamic discrete choice models, and value estimation in offline reinforcement learning, including [Fitted Q Evaluation](https://arxiv.org/pdf/2512.23805) and [Fitted Q Iteration](https://arxiv.org/pdf/2512.23927) without Bellman completeness.
+I use **calibration** as a practical way to improve inference and decision-making without retraining the underlying model. I have applied this idea to debiased machine learning, prediction-powered inference, heterogeneous treatment effects, and offline reinforcement learning. My recent work also develops off-policy evaluation and offline RL methods that avoid Bellman-completeness assumptions.
 
-Another theme of my research is **calibration**: adapting post-hoc tools from predictive modeling to **causal inference and dynamic decision-making**. This includes [causal isotonic calibration](https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf) for heterogeneous treatment effect estimation, calibration of [inverse probability weighting](https://arxiv.org/pdf/2411.06342) estimators, [Bellman calibration](https://arxiv.org/pdf/2512.23694) for offline reinforcement learning, [calibrated debiased machine learning](https://arxiv.org/pdf/2411.02771), and [calibrated prediction-powered inference](https://arxiv.org/pdf/2604.21260). I have also worked on calibration for predictive uncertainty quantification and conformal prediction.
+I collaborate with [Nathan Kallus](https://nathankallus.com/) and [Aurélien Bibaut](https://scholar.google.com/citations?user=N_8WC5oAAAAJ) at Netflix, and I apply these ideas in biomedical and technology settings.
 
-Beyond methodology, I apply these ideas in biomedical and technology settings through research internships at Genentech, the Fred Hutchinson Cancer Center, and Netflix. I also care about teaching and mentorship. I recently wrote a guide on [empirical risk minimization](https://arxiv.org/pdf/2602.21501).
+<p class="home-links"><a href="/cv/">CV</a> · <a href="https://scholar.google.com/citations?user=0bwP0i4AAAAJ">Google Scholar</a> · <a href="/publications/">Publications</a> · <a href="mailto:vdlaan@stanford.edu">Email</a></p>

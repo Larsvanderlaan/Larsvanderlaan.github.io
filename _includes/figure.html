@@ -3,7 +3,7 @@
 <figure>
 
   <picture>
-    {% if site.imagemagick.enabled %}
+    {% if include.path contains 'prof_pic1.jpg' or site.imagemagick.enabled %}
     {% for i in site.imagemagick.widths -%}
       <source
         class="responsive-img-srcset"

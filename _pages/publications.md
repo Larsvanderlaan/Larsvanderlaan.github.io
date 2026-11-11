@@ -6,50 +6,67 @@ nav: true
 nav_order: 1
 ---
 
-Below are selected methodological and theoretical contributions. For a complete list of publications, including applied work, see my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en&authuser=1) profile.
+Below are selected methodological and theoretical contributions, organized by research area. For the complete publication record, including applied collaborations, see my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ) profile or [CV](/cv/).
+
+<nav class="publication-topics" aria-label="Publication topics">
+  <a href="#dml">Debiased inference</a>
+  <a href="#ope">Offline RL &amp; OPE</a>
+  <a href="#sequential">Sequential inference</a>
+  <a href="#hte">Heterogeneous effects</a>
+  <a href="#calibration">Calibration</a>
+  <a href="#software">Software</a>
+  <a href="#notes">Notes &amp; references</a>
+</nav>
 
 <div class="publications">
 
-  <h3>Debiased machine learning and efficiency theory</h3>
+  <h2 id="dml">Debiased machine learning and semiparametric inference</h2>
   <div class="pub-section">
     <div class="pub-list">
-      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=effest] %}
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=web_dml] --group_by none %}
     </div>
   </div>
   
-    <h3>Dynamic decision-making and heterogeneous treatment effects</h3>
+  <h2 id="ope">Offline reinforcement learning and off-policy evaluation</h2>
   <div class="pub-section">
     <div class="pub-list">
-      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=dynamic] %}
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=web_ope] --group_by none %}
     </div>
   </div>
 
-  <h3>Causal inference methodology</h3>
+  <h2 id="sequential">Inverse reinforcement learning and sequential causal inference</h2>
   <div class="pub-section">
     <div class="pub-list">
-      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=methods] %}
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=web_sequential] --group_by none %}
     </div>
   </div>
 
 
-  <h3>Calibration, conformal prediction, and predictive uncertainty</h3>
+  <h2 id="hte">Heterogeneous treatment effects</h2>
   <div class="pub-section">
     <div class="pub-list">
-      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=calibration] %}
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=web_hte] --group_by none %}
     </div>
   </div>
 
-  <h3>Software and computational tools</h3>
+  <h2 id="calibration">Calibration and predictive inference</h2>
   <div class="pub-section">
     <div class="pub-list">
-      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=software] %}
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=web_calibration] --group_by none %}
     </div>
   </div>
   
-<h3>Notes and teaching materials</h3>
+  <h2 id="software">Software and research materials</h2>
   <div class="pub-section">
     <div class="pub-list">
-      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=notes] %}
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=web_software] --group_by none %}
+    </div>
+  </div>
+
+  <h2 id="notes">Notes and reference works</h2>
+  <div class="pub-section">
+    <div class="pub-list">
+      {% bibliography -f {{site.scholar.bibliography}} --query @*[keywords~=web_notes] --group_by none %}
     </div>
   </div>
 

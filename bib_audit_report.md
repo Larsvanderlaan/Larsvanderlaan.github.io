@@ -1,46 +1,39 @@
 # Bibliography Audit Report
 
-Audit date: 2026-04-29
+Audit date: 2026-11-11
 
-Scope checked:
-- `_bibliography/papers.bib`: 26 BibTeX entries
-- `assets/bibliography/2018-12-22-distill.bib`: 1 BibTeX entry
+## Scope
 
-Parser / structural checks:
-- Duplicate-key scan found no duplicate keys.
-- Brace-balance scan returned zero final imbalance for both `.bib` files.
-- A full `bibtex-ruby` parse could not be run through `bundle exec` because the locked Bundler version (`2.5.16`) is not installed in the active system Ruby.
+- Reviewed all 68 rows currently visible on Lars van der Laan's public Google Scholar profile.
+- Consolidated duplicate versions, correction notices, and repository mirrors into 56 unique scholarly outputs in the academic CV.
+- `_bibliography/papers.bib` now contains 56 publication/output records plus one BibTeX string definition.
+- Google Scholar records were supplemented with official proceedings, publisher, DOI, and arXiv metadata where Scholar had not yet indexed the final version.
 
-Build / citation-key checks:
-- No `.tex`, `Makefile`, or `latexmkrc` files were found, so there is no clear LaTeX/BibTeX compile command in this repository.
-- The closest clear project build is `bundle exec jekyll build`, but it could not run because Bundler `2.5.16` is missing from the active Ruby environment.
-- Searched repository Markdown/TeX sources for each changed citation key. No explicit uses of the changed keys were found; the publications page uses Jekyll Scholar queries rather than direct citation-key references. No citation keys were changed.
+## Material updates
 
-| Citation key | Original status | Action taken | Source checked | Notes / uncertainty |
-|---|---|---|---|---|
-| `van2026researcher` | arXiv preprint, 2026 | Left unchanged | [arXiv:2602.21501](https://arxiv.org/abs/2602.21501) | Official arXiv page confirms title, author, 2026 submission/revision, and preprint status. No published version found in search. |
-| `van2025efficient` | arXiv preprint, 2025 | Left unchanged | [arXiv:2512.24407](https://arxiv.org/abs/2512.24407) | Official arXiv page confirms title, author order, year, and primary class `cs.LG`. No published version found in search. |
-| `van2025FQI` | arXiv preprint, 2025 | Left unchanged | [arXiv:2512.23927](https://arxiv.org/abs/2512.23927) | Official arXiv page confirms title, author order, year, and preprint status. No published version found in search. |
-| `van2025FQE` | arXiv preprint, 2025 | Left unchanged | [arXiv:2512.23805](https://arxiv.org/abs/2512.23805) | Official arXiv page confirms metadata and shows a 2026 v2 revision. Bibliographic fields remained valid; abstract text in the `.bib` is not bibliographic metadata and was not edited. |
-| `van2025bellman` | arXiv preprint, 2025 | Left unchanged | [arXiv:2512.23694](https://arxiv.org/abs/2512.23694) | Official arXiv page confirms title, author order, year, and primary class `stat.ML`. No published version found in search. |
-| `vanderlaan2025nonparametricinstrumentalvariableinference` | arXiv preprint, 2025 | Left unchanged | [arXiv:2505.07729](https://arxiv.org/abs/2505.07729) | Official arXiv page confirms title, author order, eprint, primary class `stat.ME`, and 2026 v3 revision. Existing metadata already included arXiv fields. |
-| `van2025generalized` | ICML 2025, originally `To appear` | Updated from forthcoming to published ICML/PMLR metadata; added PMLR volume, series, address, publisher, and OpenReview URL; removed `note={To appear}` | [OpenReview ICML 2025](https://openreview.net/forum?id=kl2SA1N03E), [arXiv:2502.05676](https://arxiv.org/abs/2502.05676), [ICML 2025 listing](https://mlanthology.org/icml/2025/) | Source confirms ICML 2025 poster and proceedings PDF indicates PMLR 267, Vancouver. Page range was not found on an official page, so no pages were added. Conference identity remains explicit in `booktitle`. |
-| `vanderlaan2025automaticdebiasedmachinelearning` | arXiv preprint, 2025 | Left unchanged | [arXiv:2501.11868](https://arxiv.org/abs/2501.11868) | Official arXiv page confirms title, author order, eprint, primary class `stat.ME`, and 2026 v3 revision. No published version found in search. |
-| `vanderlaan2025automaticdoublereinforcementlearning` | arXiv preprint, 2025 | Left unchanged | [arXiv:2501.06926](https://arxiv.org/abs/2501.06926) | Official arXiv page confirms title, author order, eprint, and v4 status. No published version found in search. |
-| `van2024automatic` | arXiv preprint, 2024 | Left unchanged | [arXiv:2411.02771](https://arxiv.org/abs/2411.02771) | Official arXiv page confirms title, author order, 2024 submission, and v2 revision. No published version found in search. |
-| `van2024stabilized` | CLeaR 2025, originally `To appear` and listed as 3rd CLeaR | Updated to published PMLR metadata: Fourth Conference on Causal Learning and Reasoning (CLeaR), PMLR 275, pages 139--173, publisher, URL, and PMLR PDF; removed `To appear` | [PMLR v275 paper page](https://proceedings.mlr.press/v275/laan25a.html), [arXiv:2411.06342](https://arxiv.org/abs/2411.06342) | This was a clear status/venue correction. The arXiv page says accepted to CLeaR 2025; PMLR supplies final volume and pages. Conference identity remains explicit in `booktitle`. |
-| `vanderlaan2024selfconsistent` | NeurIPS 2024 | Added `(NeurIPS)` to venue text | [OpenReview NeurIPS 2024](https://openreview.net/forum?id=BJ6HkT7qIk) | OpenReview confirms NeurIPS 2024 poster, title, authors, and publication date. Added acronym per user request to keep conference identity visible. Left entry type and other metadata unchanged. |
-| `van2026adaptive` | Journal article, 2026 | Added DOI and DOI URL | [De Gruyter DOI page/PDF](https://www.degruyterbrill.com/document/doi/10.1515/jci-2024-0025/pdf?licenseType=open-access) | Publisher source confirms Journal of Causal Inference 14(1), article 20240025, DOI `10.1515/jci-2024-0025`, and online publication. Existing title/authors/year/venue matched. |
-| `van2024combining` | arXiv preprint, 2024 | Left unchanged | [arXiv:2402.01972](https://arxiv.org/abs/2402.01972) | Official arXiv page confirms title, author order, and 2026 v2 revision. No published version found in search. |
-| `dutta2023estimating` | arXiv preprint, 2023 | Left unchanged | [arXiv:2310.09926](https://arxiv.org/abs/2310.09926) | Official arXiv page confirms title, author order, year, and v2 status. No published version found in search. |
-| `van2023adaptive` | arXiv preprint, 2023 | Left unchanged | [arXiv:2307.12544](https://arxiv.org/abs/2307.12544) | Official arXiv page confirms title, author order, and 2026 v2 revision. No published version found in search. |
-| `van2023causal` | ICML 2023 PMLR entry with missing pages/URL/series | Added PMLR series, pages 34831--34854, and official PMLR URL | [PMLR v202 paper page](https://proceedings.mlr.press/v202/van-der-laan23a.html) | PMLR confirms Proceedings of the 40th International Conference on Machine Learning, PMLR 202:34831--34854, 2023. Conference identity was already explicit in `booktitle`. |
-| `van2023semiparametric` | arXiv preprint, 2023 | Left unchanged | [arXiv:2303.11462](https://arxiv.org/abs/2303.11462) | Official arXiv page confirms title, author order, primary class, and 2025 v2 revision. No published version found in search. |
-| `van2022nonparametric` | Published article but missing final volume/issue/pages/DOI; year listed as 2022 online-publication year | Updated to final journal metadata: Biometrics 79(2):1014--1028, 2023, DOI, official URL | [Oxford Academic / Biometrics](https://academic.oup.com/biometrics/article/79/2/1014/7513933), [PubMed](https://pubmed.ncbi.nlm.nih.gov/35526218/) | Publisher and PubMed confirm final issue year 2023 and e-publication in 2022. Used final journal citation year 2023. |
-| `wang2025targeted` | Journal article, 2025 | Added DOI and DOI URL | [De Gruyter article page](https://www.degruyterbrill.com/document/doi/10.1515/jci-2023-0013/html) | Publisher confirms Journal of Causal Inference 13(1), article 20230013, DOI `10.1515/jci-2023-0013`, and 2025 publication. Existing core metadata matched. |
-| `van2025inverse` | arXiv preprint, 2025 | Left unchanged | [arXiv:2509.21172](https://arxiv.org/abs/2509.21172) | Official arXiv page confirms title, author order, year, and primary class `cs.LG`. No published version found in search. |
-| `van2021higher` | arXiv preprint, 2021 | Left unchanged | [arXiv:2101.06290](https://arxiv.org/abs/2101.06290) | Official arXiv page confirms title, author order, year, and v3 status. No published version found in search. |
-| `coyle2022hal9001-rpkg` | Software/JOSS-like entry with metadata inconsistent with official JOSS paper | Updated to official JOSS article metadata while preserving citation key: authors, title, journal, volume, issue, article number, year 2020, DOI, and JOSS URL | [JOSS paper page](https://joss.theoj.org/papers/10.21105/joss.02526) | Existing `pdf` pointed to the JOSS paper, whose official metadata lists Hejazi, Coyle, and Mark J. van der Laan as authors and year 2020. Removed package-version note as not part of the official publication citation. |
-| `wyss2025undersmoothed` | arXiv preprint, 2025 | Left unchanged | [arXiv:2506.17760](https://arxiv.org/abs/2506.17760) | Official arXiv page confirms title, author order, year, and 2025 v3 revision. No published version found in search. |
-| `liang2025hybrid` | arXiv preprint, 2025 | Left unchanged | [arXiv:2506.13680](https://arxiv.org/abs/2506.13680) | Official arXiv page confirms title, author order, year, and 2026 v2 revision. No published version found in search. |
-| `gregor2015draw` | arXiv preprint in `assets/bibliography`, title capitalization and arXiv fields incomplete | Updated title capitalization/protection for `{DRAW}`, normalized arXiv preprint journal field, and added eprint/archivePrefix/primaryClass/DOI | [arXiv:1502.04623](https://arxiv.org/abs/1502.04623) | Official arXiv page confirms title casing, author order, year, primary class `cs.CV`, and DOI. No published version was found in search. |
+- Promoted `Calibeating Prediction-Powered Inference` and `Inverse Reinforcement Learning with Just Classification and a Few Regressions` from preprints to accepted NeurIPS 2026 conference papers, using the official NeurIPS 2026 program listing.
+- Updated `Hybrid Meta-learners for Estimating Heterogeneous Treatment Effects` to its final AISTATS 2026 citation in PMLR 300, pages 3385--3393.
+- Synchronized the current arXiv titles for `Fitted Q-Evaluation without Bellman Completeness via Occupancy Weighting` (arXiv:2512.23805, v4) and `Soft Fitted Q-Iteration without Bellman Completeness: Occupancy Reweighting and Temperature Annealing` (arXiv:2512.23927, v3).
+- Added four current preprints: `Fitted Occupancy-Ratio Evaluation without Bellman Completeness`, `Bellman Calibration for Marginalized Importance Weighting in Offline Reinforcement Learning`, `Model Selection for Off-Policy Evaluation via Pairwise Bellman Validation`, and `Targeted Maximum Likelihood Estimation of Vaccine Effectiveness and Immune Correlates in Test-Negative Design Studies with Missing Data`.
+- Updated `Tuning LASSO Models for Propensity Score Weighting and Using Synthetic Negative Control Exposures for Residual Bias Detection` to its final *Statistics in Medicine* citation.
+- Added the Wiley StatsRef reference work `Machine Learning for Causal Inference` and the remaining Google Scholar-indexed journal articles, protocols, research materials, and software records.
+- Corrected the `hal9001` record so it represents the Scholar-indexed software output that includes Lars van der Laan, rather than the separate JOSS article on which he is not an author.
+
+## Validation
+
+- Biber parsed the complete bibliography without warnings or duplicate-key errors.
+- The generated CV contains 56 continuously numbered records across five publication and research-output categories.
+- The CV PDF was rendered page by page and checked for clipping, overlap, missing entries, and malformed references.
+
+## Principal sources
+
+- [Google Scholar profile](https://scholar.google.com/citations?user=0bwP0i4AAAAJ&hl=en)
+- [NeurIPS 2026 accepted papers](https://neurips.cc/Downloads/2026)
+- [Calibeating Prediction-Powered Inference, arXiv:2604.21260](https://arxiv.org/abs/2604.21260)
+- [Inverse Reinforcement Learning with Just Classification and a Few Regressions, arXiv:2509.21172](https://arxiv.org/abs/2509.21172)
+- [Hybrid Meta-Learners for Estimating Heterogeneous Treatment Effects, AISTATS 2026](https://proceedings.mlr.press/v300/liang26a.html)
+- [Fitted Q-Evaluation without Bellman Completeness via Occupancy Weighting, arXiv:2512.23805](https://arxiv.org/abs/2512.23805)
+- [Soft Fitted Q-Iteration without Bellman Completeness, arXiv:2512.23927](https://arxiv.org/abs/2512.23927)
+- [Stanford Causal AI Lab](https://causalai.stanford.edu/)
+
+Metadata may need another pass once NeurIPS releases final proceedings pagination and Google Scholar merges its preprint and proceedings versions.

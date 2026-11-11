@@ -120,12 +120,24 @@ blockquote {
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
+    font-family: inherit;
+    font-size: 0.85rem;
 
     p {
       display: inline-block;
       margin: 0;
     }
+  }
+}
+
+@media (max-width: 575px) {
+  .profile,
+  .profile.float-right,
+  .profile.float-left {
+    float: none !important;
+    width: 200px;
+    margin: 0 auto 1.25rem;
+    text-align: center;
   }
 }
 
@@ -350,9 +362,36 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-size: 0.8rem;
+}
+
+.post-header .desc .affiliation {
+  display: inline-block;
+  margin-top: 0.3rem;
+  font-size: 0.9em;
+  color: var(--global-text-color-light);
+}
+
+.home-links {
+  margin: 1.25rem 0 0;
+  font-weight: 500;
+}
+
+.publication-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.8rem;
+  margin: 1.25rem 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--global-divider-color);
   font-size: 0.9rem;
+}
+
+.publications > h2 {
+  margin-top: 2.5rem;
+  font-size: 1.45rem;
 }
 
 // CV

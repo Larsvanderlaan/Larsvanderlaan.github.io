@@ -48,7 +48,7 @@
 
           <!-- About -->
           <li class="nav-item {% if page.url == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">{{ about_title }}
+            <a class="nav-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ about_title }}
               {%- if page.url == '/' -%}<span class="sr-only">(current)</span>{%- endif -%}
             </a>
           </li>
@@ -82,13 +82,12 @@
           {%- assign sorted_pages = with_order | concat: no_order -%}
 
           {%- for p in sorted_pages -%}
-            {%- assign is_active = (page.url == p.url) -%}
             {%- assign has_dropdown = p.dropdown -%}
             {%- if has_dropdown -%}
               {%- assign kids = p.children | default: [] -%}
-              <li class="nav-item dropdown {% if is_active %}active{% endif %}">
+              <li class="nav-item dropdown {% if page.url == p.url %}active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-{{ forloop.index }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  {{ p.title }}{% if is_active %} <span class="sr-only">(current)</span>{% endif %}
+                  {{ p.title }}{% if page.url == p.url %} <span class="sr-only">(current)</span>{% endif %}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown-{{ forloop.index }}">
                   {%- for child in kids -%}
@@ -102,9 +101,9 @@
                 </div>
               </li>
             {%- else -%}
-              <li class="nav-item {% if is_active %}active{% endif %}">
-                <a class="nav-link" href="{{ p.url | default: p.permalink | relative_url }}">
-                  {{ p.title }}{% if is_active %} <span class="sr-only">(current)</span>{% endif %}
+              <li class="nav-item {% if page.url == p.url %}active{% endif %}">
+                <a class="nav-link" href="{{ p.url | default: p.permalink | relative_url }}"{% if page.url == p.url %} aria-current="page"{% endif %}>
+                  {{ p.title }}{% if page.url == p.url %} <span class="sr-only">(current)</span>{% endif %}
                 </a>
               </li>
             {%- endif -%}

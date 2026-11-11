@@ -1,5 +1,3 @@
----
-
 @string{aps = {American Physical Society,}}
 
 
@@ -30,16 +28,17 @@ depends only on nuisance-estimation accuracy. As a novel contribution, we also t
 sample regime, in which the nuisances and the ERM are fit on the same data, deriving regret
 bounds and showing that fast oracle rates remain attainable under suitable smoothness and
 Donsker-type conditions.},
-     keywords={notes},
-   selected={true}
+     keywords={notes,web_notes},
+   selected={false}
 }
 
 
-@article{van2026calibeating,
+@inproceedings{van2026calibeating,
   title={Calibeating Prediction-Powered Inference},
   author={{van der Laan}, Lars and {van der Laan}, Mark},
-  journal={arXiv preprint arXiv:2604.21260},
+  booktitle={Advances in Neural Information Processing Systems 39 (NeurIPS 2026)},
   year={2026},
+  note={Accepted for presentation},
   eprint={2604.21260},
   archivePrefix={arXiv},
   primaryClass={stat.ML},
@@ -47,8 +46,8 @@ Donsker-type conditions.},
   url={https://arxiv.org/abs/2604.21260},
   pdf={https://arxiv.org/pdf/2604.21260},
   website={https://larsvanderlaan.github.io/ppi-aipw/},
-  keywords={calibration},
-  selected={true},
+  keywords={calibration,web_calibration},
+  selected={false},
   abstract={We study semisupervised mean estimation with a small labeled sample, a large unlabeled sample, and a black-box prediction model whose output may be miscalibrated. A standard approach in this setting is augmented inverse-probability weighting (AIPW) [Robins et al., 1994], which protects against prediction-model misspecification but can be inefficient when the prediction score is poorly aligned with the outcome scale.
 We introduce Calibrated Prediction-Powered Inference, which post-hoc calibrates the prediction score on the labeled sample before using it for semisupervised estimation. This simple step requires no retraining and can improve the original score both as a predictor of the outcome and as a regression adjustment for semisupervised inference. We study both linear and isotonic calibration.
 For isotonic calibration, we establish first-order optimality guarantees: isotonic post-processing can improve predictive accuracy and estimator efficiency relative to the original score and simpler post-processing rules, while no further post-processing of the fitted isotonic score yields additional first-order gains. For linear calibration, we show first-order equivalence to PPI++.
@@ -61,8 +60,8 @@ We also clarify the relationship among existing estimators, showing that the ori
   title={Efficient Inference for Inverse Reinforcement Learning and Dynamic Discrete Choice Models},
   author={{van der Laan}, Lars and Bibaut, Aurelien and Kallus, Nathan},
   journal={arXiv preprint arXiv:2512.24407},
-     keywords={dynamic},
-   selected={true},
+     keywords={dynamic,web_sequential},
+   selected={false},
   year={2025},
   abstract={Inverse reinforcement learning (IRL) and dynamic discrete choice (DDC) models explain
 sequential decision-making by recovering reward functions that rationalize observed behaviour.
@@ -85,23 +84,33 @@ pdf={https://arxiv.org/pdf/2512.24407}
 }
 
 @article{van2025FQI,
-  title={Stationary Reweighting Yields Local Convergence of Soft Fitted Q-Iteration},
+  title={Soft Fitted Q-Iteration without Bellman Completeness: Occupancy Reweighting and Temperature Annealing},
   author={{van der Laan}, Lars and Kallus, Nathan},
-           keywords={dynamic},
+  keywords={dynamic,web_ope},
   journal={arXiv preprint arXiv:2512.23927},
   year={2025},
+  eprint={2512.23927},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML},
+  doi={10.48550/arXiv.2512.23927},
+  url={https://arxiv.org/abs/2512.23927},
   abstract={Fitted Q-iteration (FQI) and its entropy-regularized variant, soft FQI, are central tools for value-based model-free offline reinforcement learning, but can behave poorly under function approximation and distribution shift. In the entropy-regularized setting, we show that the soft Bellman operator is locally contractive in the stationary norm of the soft-optimal policy, rather than in the behavior norm used by standard FQI. This geometric mismatch explains the instability of soft Q-iteration with function approximation in the absence of Bellman completeness. To restore contraction, we introduce stationary-reweighted soft FQI, which reweights each regression update using the stationary distribution of the current policy. We prove local linear convergence under function approximation with geometrically damped weight-estimation errors, assuming approximate realizability. Our analysis further suggests that global convergence may be recovered by gradually reducing the softmax temperature, and that this continuation approach can extend to the hardmax limit under a mild margin condition.},
   pdf={https://arxiv.org/pdf/2512.23927}
 }
 
 
 @article{van2025FQE,
-  title={Fitted Q Evaluation without Bellman Completeness via Stationary Weighting},
+  title={Fitted Q-Evaluation without Bellman Completeness via Occupancy Weighting},
   author={{van der Laan}, Lars and Kallus, Nathan},
-         keywords={dynamic},
+  keywords={dynamic,web_ope},
   journal={arXiv preprint arXiv:2512.23805},
-    selected={true},
+  selected={false},
   year={2025},
+  eprint={2512.23805},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML},
+  doi={10.48550/arXiv.2512.23805},
+  url={https://arxiv.org/abs/2512.23805},
   abstract={Fitted Q-evaluation (FQE) is a central method for off-policy evaluation in reinforcement learning, but it generally requires Bellman completeness: that the hypothesis class is closed under the evaluation Bellman operator. This requirement is challenging because enlarging the hypothesis class can worsen completeness. We show that the need for this assumption stems from a fundamental norm mismatch: the Bellman operator is gamma-contractive under the stationary distribution of the target policy, whereas FQE minimizes Bellman error under the behavior distribution. We propose a simple fix: reweight each regression step using an estimate of the stationary density ratio, thereby aligning FQE with the norm in which the Bellman operator contracts. This enables strong evaluation guarantees in the absence of realizability or Bellman completeness, avoiding the geometric error blow-up of standard FQE in this setting while maintaining the practicality of regression-based evaluation.},
      pdf={https://arxiv.org/pdf/2512.23805}
 }
@@ -112,7 +121,7 @@ pdf={https://arxiv.org/pdf/2512.24407}
   author={{{van der Laan}}, Lars and Kallus, Nathan},
   journal={arXiv preprint arXiv:2512.23694},
   year={2025},
-       keywords={dynamic},
+       keywords={dynamic,web_ope},
    abstract={We introduce Iterated Bellman Calibration, a simple, model-agnostic, post-hoc procedure for calibrating off-policy value predictions in infinite-horizon Markov decision processes. Bellman calibration requires that states with similar predicted long-term returns exhibit one-step returns consistent with the Bellman equation under the target policy. We adapt classical histogram and isotonic calibration to the dynamic, counterfactual setting by repeatedly regressing fitted Bellman targets onto a model's predictions, using a doubly robust pseudo-outcome to handle off-policy data. This yields a one-dimensional fitted value iteration scheme that can be applied to any value estimator. Our analysis provides finite-sample guarantees for both calibration and prediction under weak assumptions, and critically, without requiring Bellman completeness or realizability.},
    pdf={https://arxiv.org/pdf/2512.23694}
 }
@@ -130,8 +139,8 @@ pdf={https://arxiv.org/pdf/2512.24407}
       code={https://github.com/Larsvanderlaan/discreteNPIV},
       website={https://larsvanderlaan.github.io/discreteNPIV/long-term.html},
       abstract={We study inference on linear functionals in the nonparametric instrumental variable (NPIV) problem with a discretely-valued instrument under a many-weak-instruments asymptotic regime, where the number of instrument values grows with the sample size. A key motivating example is estimating long-term causal effects in a new experiment with only short-term outcomes, using past experiments to instrument for the effect of short- on long-term outcomes. Here, the assignment to a past experiment serves as the instrument: we have many past experiments but only a limited number of units in each. Since the structural function is nonparametric but constrained by only finitely many moment restrictions, point identification typically fails. To address this, we consider linear functionals of the minimum-norm solution to the moment restrictions, which is always well-defined. As the number of instrument levels grows, these functionals define an approximating sequence to a target functional, replacing point identification with a weaker asymptotic notion suited to discrete instruments. Extending the Jackknife Instrumental Variable Estimator (JIVE) beyond the classical parametric setting, we propose npJIVE, a nonparametric estimator for solutions to linear inverse problems with many weak instruments. We construct automatic debiased machine learning estimators for linear functionals of both the structural function and its minimum-norm projection, and establish their efficiency in the many-weak-instruments regime.},
-      keywords={methods},
-      selected={true}
+      keywords={methods,web_dml},
+      selected={false}
 }
 
 
@@ -146,7 +155,7 @@ pdf={https://arxiv.org/pdf/2512.24407}
   year={2025},
   url={https://openreview.net/forum?id=kl2SA1N03E},
   abstract={Ensuring model calibration is critical for reliable predictions, yet popular distribution-free methods, such as histogram binning and isotonic regression, provide only asymptotic guarantees. We introduce a unified framework for Venn and Venn-Abers calibration, generalizing Vovk's binary classification approach to arbitrary prediction tasks and loss functions. Venn calibration leverages binning calibrators to construct prediction sets that contain at least one marginally perfectly calibrated point prediction in finite samples, capturing epistemic uncertainty in the calibration process. The width of these sets shrinks asymptotically to zero, converging to a conditionally calibrated point prediction. Furthermore, we propose Venn multicalibration, a novel methodology for finite-sample calibration across subpopulations. For quantile loss, group-conditional and multicalibrated conformal prediction arise as special cases of Venn multicalibration, and Venn calibration produces novel conformal prediction intervals that achieve quantile-conditional coverage. As a separate contribution, we extend distribution-free conditional calibration guarantees of histogram binning and isotonic calibration to general losses.},
-  keywords={calibration},
+  keywords={calibration,web_calibration},
   pdf={https://arxiv.org/pdf/2502.05676}
 }
 
@@ -159,7 +168,7 @@ pdf={https://arxiv.org/pdf/2512.24407}
       archivePrefix={arXiv},
       primaryClass={stat.ME},
       url={https://arxiv.org/abs/2501.11868}, 
-      keywords={effest},
+      keywords={effest,web_dml},
       selected={true},
 	pdf={https://arxiv.org/abs/2501.11868},
 abstract={
@@ -176,8 +185,8 @@ We propose a unified framework for automatic debiased machine learning (autoDML)
       archivePrefix={arXiv},
       primaryClass={stat.ML},
       url={https://arxiv.org/abs/2501.06926}, 
-      keywords={dynamic},
-      selected={true},
+      keywords={dynamic,web_sequential},
+      selected={false},
       abstract={Long-term causal effects often must be estimated from short-term data due to limited follow-up in healthcare, economics, and online platforms. Markov Decision Processes (MDPs) provide a natural framework for capturing such long-term dynamics through sequences of states, actions, and rewards. Double Reinforcement Learning (DRL) enables efficient inference on policy values in MDPs, but nonparametric implementations require strong intertemporal overlap assumptions and often exhibit high variance and instability. We propose a semiparametric extension of DRL for efficient inference on linear functionals of the Q-function--such as policy values--in infinite-horizon, time-homogeneous MDPs. By imposing structural restrictions on the Q-function, our approach relaxes the strong overlap conditions required by nonparametric methods and improves statistical efficiency. Under model misspecification, our estimators target the functional of the best-approximating Q-function, with only second-order bias. We provide conditions for valid inference using sieve methods and data-driven model selection. A central challenge in DRL is the estimation of nuisance functions, such as density ratios, which often involve difficult minimax optimization. To address this, we introduce a novel plug-in estimator based on isotonic Bellman calibration, which combines fitted Q-iteration with an isotonic regression adjustment. The estimator is debiased without requiring estimation of additional nuisance functions and reduces high-dimensional overlap assumptions to a one-dimensional condition. Bellman calibration extends isotonic calibration--widely used in prediction and classification--to the MDP setting and may be of independent interest.},
 pdf={https://arxiv.org/pdf/2501.06926},
 poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/pdfs_papers/MarkovDRLSlides.pdf}
@@ -195,7 +204,7 @@ poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/p
   code={https://github.com/Larsvanderlaan/calibratedDML},
   website={https://larsvanderlaan.github.io/calibratedDML/index.html},
   poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/pdfs_papers/posterDoublyRobustCalibration.pdf},
-  keywords={effest},
+  keywords={effest,web_dml},
   year={2024}
 }
 
@@ -213,8 +222,8 @@ poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/p
   abstract={Inverse weighting with an estimated propensity score is widely used by estimation methods in causal inference to adjust for confounding bias. However, directly inverting propensity score estimates can lead to instability, bias, and excessive variability due to large inverse weights, especially when treatment overlap is limited. In this work, we propose a post-hoc calibration algorithm for inverse propensity weights that generates well-calibrated, stabilized weights from user-supplied, cross-fitted propensity score estimates. Our approach employs a variant of isotonic regression with a loss function specifically tailored to the inverse propensity weights. Through theoretical analysis and empirical studies, we demonstrate that isotonic calibration improves the performance of doubly robust estimators of the average treatment effect.},
   pdf={https://raw.githubusercontent.com/mlresearch/v275/main/assets/laan25a/laan25a.pdf},
   code={https://ngreifer.github.io/WeightIt/reference/calibrate.html},
-  keywords={calibration},
-  selected={true}
+  keywords={calibration,web_calibration},
+  selected={false}
 }
 
 
@@ -225,11 +234,11 @@ poster={https://github.com/Larsvanderlaan/Larsvanderlaan.github.io/blob/master/p
       author={{van der Laan}, Lars and {M. Alaa}, Ahmed},
       year={2024},
         journal={The Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS)},
-          selected={true},
+          selected={false},
           abstract={
           In machine learning, model calibration and predictive inference are essential for producing reliable predictions and quantifying uncertainty to support decision- making. Recognizing the complementary roles of point and interval predictions, we introduce Self-Calibrating Conformal Prediction, a method that combines Venn- Abers calibration and conformal prediction to deliver calibrated point predictions alongside prediction intervals with finite-sample validity conditional on these pre- dictions. To achieve this, we extend the original Venn-Abers procedure from binary classification to regression. Our theoretical framework supports analyzing confor- mal prediction methods that involve calibrating model predictions and subsequently constructing conditionally valid prediction intervals on the same data, where the conditioning set or conformity scores may depend on the calibrated predictions. Real-data experiments show that our method improves interval efficiency through model calibration and offers a practical alternative to feature-conditional validity.
 },
-keywords={calibration},
+keywords={calibration,web_calibration},
 code={https://github.com/Larsvanderlaan/SelfCalibratingConformal},
 website={https://larsvanderlaan.github.io/SelfCalibratingConformal/},
  poster={https://neurips.cc/media/PosterPDFs/NeurIPS%202024/96201.png?t=1733961325.1491308},
@@ -248,7 +257,7 @@ pdf={https://openreview.net/pdf?id=BJ6HkT7qIk}
   publisher={De Gruyter},
   doi={10.1515/jci-2024-0025},
   url={https://doi.org/10.1515/jci-2024-0025},
-    keywords={methods},
+    keywords={methods,web_dml},
 	selected={false},
           abstract={
           We consider the problem of estimating the average treatment effect (ATE) when both randomized control trial (RCT) data and real-world data (RWD) are available. We decompose the ATE estimand as the difference between a pooled-ATE estimand that integrates RCT and RWD and a bias estimand that captures the conditional effect of RCT enrollment on the outcome. We introduce an adaptive targeted minimum loss-based estimation (A-TMLE) framework to estimate them. We prove that the A-TMLE estimator is root-n-consistent and asymptotically normal. Moreover, in finite sample, it achieves the super-efficiency one would obtain had one known the oracle model for the conditional effect of the RCT enrollment on the outcome. Consequently, the smaller the working model of the bias induced by the RWD is, the greater our estimator's efficiency, while our estimator will always be at least as efficient as an efficient estimator that uses the RCT data only. A-TMLE outperforms existing methods in simulations by having smaller mean-squared-error and 95% confidence intervals. A-TMLE could help utilize RWD to improve the efficiency of randomized trial results without biasing the estimates of intervention effects. This approach could allow for smaller, faster trials, decreasing the time until patients can receive effective treatments.
@@ -272,7 +281,7 @@ pdf={https://arxiv.org/pdf/2405.07186}
     code={https://github.com/Larsvanderlaan/hte3},
     website={https://larsvanderlaan.github.io/hte3/},
     poster={https://pbs.twimg.com/media/GN4OvShakAABC4T?format=jpg&name=4096x4096},
-      keywords={dynamic},
+      keywords={dynamic,web_hte},
     abstract={
     We introduce efficient plug-in (EP) learning, a novel framework for the estimation of heterogeneous causal contrasts, such as the conditional average treatment effect and conditional relative risk. The EP-learning framework enjoys the same oracle-efficiency as Neyman-orthogonal learning strategies, such as DR-learning and R-learning, while addressing some of their primary drawbacks, including that (i) their practical applicability can be hindered by loss function non-convexity; and (ii) they may suffer from poor performance and instability due to inverse probability weighting and pseudo-outcomes that violate bounds. To avoid these drawbacks, EP-learner constructs an efficient plug-in estimator of the population risk function for the causal contrast, thereby inheriting the stability and robustness properties of plug-in estimation strategies like T-learning. Under reasonable conditions, EP-learners based on empirical risk minimization are oracle-efficient, exhibiting asymptotic equivalence to the minimizer of an oracle-efficient one-step debiased estimator of the population risk function. In simulation experiments, we illustrate that EP-learners of the conditional average treatment effect and conditional relative risk outperform state-of-the-art competitors, including T-learner, R-learner, and DR-learner. Open-source implementations of the proposed methods are available in our R package hte3.
 }
@@ -284,7 +293,7 @@ pdf={https://arxiv.org/pdf/2405.07186}
   journal={arXiv preprint arXiv:2310.09926},
   year={2023},
   pdf={https://arxiv.org/pdf/2310.09926.pdf},
-    keywords={calibration},
+    keywords={calibration,web_calibration},
   abstract={
   Foundation models are trained on vast amounts of data at scale using self-supervised learning, enabling adaptation to a wide range of downstream tasks. At test time, these models exhibit zero-shot capabilities through which they can classify previously unseen (user-specified) categories. In this paper, we address the problem of quantifying uncertainty in these zero-shot predictions. We propose a heuristic approach for uncertainty estimation in zero-shot settings using conformal prediction with web data. Given a set of classes at test time, we conduct zero-shot classification with CLIP-style models using a prompt template, e.g., "an image of a ", and use the same template as a search query to source calibration data from the open web. Given a web-based calibration set, we apply conformal prediction with a novel conformity score that accounts for potential errors in retrieved web data. We evaluate the utility of our proposed method in Biomedical foundation models; our preliminary results show that web-based conformal prediction sets achieve the target coverage with satisfactory efficiency on a variety of biomedical datasets.
 }
@@ -297,7 +306,7 @@ pdf={https://arxiv.org/pdf/2405.07186}
   journal={arXiv preprint arXiv:2307.12544},
   year={2023},
   selected={false},
-  keywords={effest},
+  keywords={effest,web_dml},
   pdf={https://arxiv.org/pdf/2307.12544},
   abstract={Debiased machine learning estimators for nonparametric inference of smooth functionals of the data-generating distribution can suffer from excessive variability and instability. For this reason, practitioners may resort to simpler models based on parametric or semiparametric assumptions. However, such simplifying assumptions may fail to hold, and estimates may then be biased due to model misspecification. To address this problem, we propose Adaptive Debiased Machine Learning (ADML), a nonparametric framework that combines data-driven model selection and debiased machine learning techniques to construct asymptotically linear, adaptive, and superefficient estimators for pathwise differentiable functionals. By learning model structure directly from data, ADML avoids the bias introduced by model misspecification and remains free from the restrictions of parametric and semiparametric models. While they may exhibit irregular behavior for the target parameter in a nonparametric statistical model, we demonstrate that ADML estimators provides regular and locally uniformly valid inference for a projection-based oracle parameter. Importantly, this oracle parameter agrees with the original target parameter for distributions within an unknown but correctly specified oracle statistical submodel that is learned from the data. This finding implies that there is no penalty, in a local asymptotic sense, for conducting data-driven model selection compared to having prior knowledge of the oracle submodel and oracle parameter. To demonstrate the practical applicability of our theory, we provide a broad class of ADML estimators for estimating the average treatment effect in adaptive partially linear regression models.},
   code={https://github.com/Larsvanderlaan/causalHAL},
@@ -315,7 +324,7 @@ pdf={https://arxiv.org/pdf/2405.07186}
   series={Proceedings of Machine Learning Research},
   pages={34831--34854},
   url={https://proceedings.mlr.press/v202/van-der-laan23a.html},
-    keywords={calibration},
+    keywords={calibration,web_hte},
     pdf={https://proceedings.mlr.press/v202/van-der-laan23a/van-der-laan23a.pdf},
   poster={https://icml.cc/media/PosterPDFs/ICML%202023/24460.png?t=1690505587.8818903},
   abstract={We propose causal isotonic calibration, a novel nonparametric method for calibrating predictors of heterogeneous treatment effects. Furthermore, we introduce cross-calibration, a data-efficient variant of calibration that eliminates the need for hold-out calibration sets. Cross-calibration leverages cross-fitted predictors and generates a single calibrated predictor using all available data. Under weak conditions that do not assume monotonicity, we establish that both causal isotonic calibration and cross-calibration achieve fast doubly-robust calibration rates, as long as either the propensity score or outcome regression is estimated accurately in a suitable sense. The proposed causal isotonic calibrator can be wrapped around any black-box learning algorithm, providing robust and distribution-free calibration guarantees while preserving predictive performance.},
@@ -337,7 +346,7 @@ efficacy in case-only studies with informative missingness},
   author={{van der Laan}, Lars and Gilbert, Peter B},
   journal={arXiv preprint arXiv:2303.11462},
   year={2023},
-  keywords={methods},
+  keywords={methods,web_dml},
   pdf={https://arxiv.org/pdf/2303.11462},
   abstract={
   We develop semiparametric methods for estimating subgroup-specific relative vaccine efficacy against
@@ -363,7 +372,7 @@ vaccine trial.}
   year={2023},
   doi={10.1111/biom.13690},
   url={https://academic.oup.com/biometrics/article/79/2/1014/7513933},
-  keywords={methods},
+  keywords={methods,web_dml},
   pdf={https://onlinelibrary.wiley.com/doi/abs/10.1111/biom.13690},
   abstract={Identifying a biomarker or treatment-dose threshold that marks a specified level of risk is an important problem, especially in clinical trials. In view of this goal, we consider a covariate-adjusted threshold-based interventional estimand, which happens to equal the binary treatment–specific mean estimand from the causal inference literature obtained by dichotomizing the continuous biomarker or treatment as above or below a threshold. The unadjusted version of this estimand was considered in Donovan et al.. Expanding upon Stitelman et al., we show that this estimand, under conditions, identifies the expected outcome of a stochastic intervention that sets the treatment dose of all participants above the threshold. We propose a novel nonparametric efficient estimator for the covariate-adjusted threshold-response function for the case of informative outcome missingness, which utilizes machine learning and targeted minimum-loss estimation (TMLE). We prove the estimator is efficient and characterize its asymptotic distribution and robustness properties. Construction of simultaneous 95% confidence bands for the threshold-specific estimand across a set of thresholds is discussed. In the Supporting Information, we discuss how to adjust our estimator when the biomarker is missing at random, as occurs in clinical trials with biased sampling designs, using inverse probability weighting. Efficiency and bias reduction of the proposed estimator are assessed in simulations. The methods are employed to estimate neutralizing antibody thresholds for virologically confirmed dengue risk in the CYD14 and CYD15 dengue vaccine trials.}
 }
@@ -378,7 +387,7 @@ vaccine trial.}
   number={1},
   pages={20230013},
   year={2025},
-  keywords={methods},
+  keywords={methods,web_dml},
   publisher={De Gruyter},
   doi={10.1515/jci-2023-0013},
   url={https://doi.org/10.1515/jci-2023-0013},
@@ -386,14 +395,19 @@ vaccine trial.}
 }
 
 
-@article{van2025inverse,
-  title={Inverse Reinforcement Learning Using Just Classification and a Few Regressions},
+@inproceedings{van2025inverse,
+  title={Inverse Reinforcement Learning with Just Classification and a Few Regressions},
   author={{van der Laan}, Lars and Kallus, Nathan and Bibaut, Aur{\'e}lien},
-  journal={arXiv preprint arXiv:2509.21172},
-  year={2025},
+  booktitle={Advances in Neural Information Processing Systems 39 (NeurIPS 2026)},
+  year={2026},
+  note={Accepted for presentation},
+  eprint={2509.21172},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  url={https://arxiv.org/abs/2509.21172},
    pdf={https://arxiv.org/pdf/2509.21172},
-   keywords={dynamic},
-   selected={true},
+   keywords={dynamic,web_sequential},
+   selected={false},
    abstract={Inverse reinforcement learning (IRL) aims to explain observed behavior by uncovering an underlying reward. In the maximum-entropy or Gumbel-shocks-to-reward frameworks, this amounts to fitting a reward function and a soft value function that together satisfy the soft Bellman consistency condition and maximize the likelihood of observed actions. While this perspective has had enormous impact in imitation learning for robotics and understanding dynamic choices in economics, practical learning algorithms often involve delicate inner-loop optimization, repeated dynamic programming, or adversarial training, all of which complicate the use of modern, highly expressive function approximators like neural nets and boosting. We revisit softmax IRL and show that the population maximum-likelihood solution is characterized by a linear fixed-point equation involving the behavior policy. This observation reduces IRL to two off-the-shelf supervised learning problems: probabilistic classification to estimate the behavior policy, and iterative regression to solve the fixed point. The resulting method is simple and modular across function approximation classes and algorithms. We provide a precise characterization of the optimal solution, a generic oracle-based algorithm, finite-sample error bounds, and empirical results showing competitive or superior performance to MaxEnt IRL.}
 }
 
@@ -404,44 +418,429 @@ vaccine trial.}
   title={Higher order targeted maximum likelihood estimation},
   author={{van der Laan}, Mark and Wang, Zeyi and {van der Laan}, Lars},
   journal={arXiv preprint arXiv:2101.06290},
-  keywords={effest},
+  keywords={effest,web_dml},
   year={2021},
   pdf={https://arxiv.org/pdf/2101.06290}
 }
 
-@article{coyle2022hal9001-rpkg,
-      author = {Hejazi, Nima S and Coyle, Jeremy R and {van der Laan}, Mark J},
-      title = {{hal9001}: Scalable highly adaptive lasso regression in {R}},
-      journal = {Journal of Open Source Software},
-      volume = {5},
-      number = {53},
-      pages = {2526},
+@misc{coyle2020hal9001,
+      author = {Coyle, Jeremy R and Hejazi, Nima S and Phillips, Rachael V and {van der Laan}, Lars W P and {van der Laan}, Mark J},
+      title = {{hal9001}: The scalable highly adaptive lasso},
       year  = {2020},
-      keywords={software},
-      doi = {10.21105/joss.02526},
-      url = {https://joss.theoj.org/papers/10.21105/joss.02526},
-      pdf={https://www.theoj.org/joss-papers/joss.02526/10.21105.joss.02526.pdf},
+      keywords={software,web_software},
+      doi = {10.5281/zenodo.3558313},
+      url = {https://doi.org/10.5281/zenodo.3558313},
+      note = {R package},
       selected={false}
     }
     
     
     
-    @article{wyss2025undersmoothed,
-  title={Undersmoothed LASSO Models for Propensity Score Weighting and Synthetic Negative Control Exposures for Bias Detection},
+@article{wyss2025undersmoothed,
+  title={Tuning LASSO Models for Propensity Score Weighting and Using Synthetic Negative Control Exposures for Residual Bias Detection},
   author={Wyss, Richard and Hansen, Ben B and Hahn, Georg and {van der Laan}, Lars and Lin, Joshua K},
-    keywords={methods},
-  journal={arXiv preprint arXiv:2506.17760},
-  year={2025}
+  keywords={methods,web_dml},
+  journal={Statistics in Medicine},
+  volume={45},
+  number={8--9},
+  pages={e70503},
+  year={2026},
+  doi={10.1002/sim.70503},
+  url={https://doi.org/10.1002/sim.70503}
 }
 
 
 
-@article{liang2025hybrid,
+@inproceedings{liang2025hybrid,
   title={Hybrid Meta-learners for Estimating Heterogeneous Treatment Effects},
   author={Liang, Zhongyuan and {van der Laan}, Lars and Alaa, Ahmed},
-  journal={arXiv preprint arXiv:2506.13680},
-      keywords={dynamic},
-  year={2025}
+  booktitle={Proceedings of the 29th International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  series={Proceedings of Machine Learning Research},
+  volume={300},
+  pages={3385--3393},
+  publisher={PMLR},
+  year={2026},
+  url={https://proceedings.mlr.press/v300/liang26a.html},
+  pdf={https://raw.githubusercontent.com/mlresearch/v300/main/assets/liang26a/liang26a.pdf},
+  eprint={2506.13680},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  doi={10.48550/arXiv.2506.13680},
+  keywords={dynamic,web_hte}
+}
+
+
+@article{vanderlaan2026fore,
+  title={Fitted Occupancy-Ratio Evaluation without Bellman Completeness},
+  author={{van der Laan}, Lars and Kallus, Nathan},
+  journal={arXiv preprint arXiv:2607.05375},
+  year={2026},
+  eprint={2607.05375},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML},
+  doi={10.48550/arXiv.2607.05375},
+  url={https://arxiv.org/abs/2607.05375},
+  pdf={https://arxiv.org/pdf/2607.05375},
+  keywords={dynamic,web_ope},
+  selected={true}
+}
+
+
+@article{vanderlaan2026bellmanmarginalized,
+  title={Bellman Calibration for Marginalized Importance Weighting in Offline Reinforcement Learning},
+  author={{van der Laan}, Lars and Kallus, Nathan},
+  journal={arXiv preprint arXiv:2608.24858},
+  year={2026},
+  eprint={2608.24858},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG},
+  doi={10.48550/arXiv.2608.24858},
+  url={https://arxiv.org/abs/2608.24858},
+  pdf={https://arxiv.org/pdf/2608.24858},
+  keywords={dynamic,calibration,web_ope},
+  selected={false}
+}
+
+
+@article{vanderlaan2026pairwise,
+  title={Model Selection for Off-Policy Evaluation via Pairwise Bellman Validation},
+  author={{van der Laan}, Lars and Syrgkanis, Vasilis and Kallus, Nathan},
+  journal={arXiv preprint arXiv:2610.35748},
+  year={2026},
+  eprint={2610.35748},
+  archivePrefix={arXiv},
+  primaryClass={stat.ML},
+  doi={10.48550/arXiv.2610.35748},
+  url={https://arxiv.org/abs/2610.35748},
+  pdf={https://arxiv.org/pdf/2610.35748},
+  keywords={dynamic,web_ope},
+  selected={false}
+}
+
+
+@article{andrews2026targeted,
+  title={Targeted Maximum Likelihood Estimation of Vaccine Effectiveness and Immune Correlates in Test-Negative Design Studies with Missing Data},
+  author={Andrews, Leah I B and {van der Laan}, Lars and Gilbert, Peter B},
+  journal={arXiv preprint arXiv:2605.21793},
+  year={2026},
+  eprint={2605.21793},
+  archivePrefix={arXiv},
+  primaryClass={stat.ME},
+  doi={10.48550/arXiv.2605.21793},
+  url={https://arxiv.org/abs/2605.21793},
+  pdf={https://arxiv.org/pdf/2605.21793},
+  keywords={methods,web_dml},
+  selected={false}
+}
+
+
+@incollection{frauen2026machine,
+  title={Machine Learning for Causal Inference},
+  author={Frauen, Dennis and Melnychuk, Valentyn and {van der Laan}, Lars and Feuerriegel, Stefan},
+  booktitle={Wiley StatsRef: Statistics Reference Online},
+  editor={Balakrishnan, N and Colton, T and Everitt, B and Piegorsch, W and Ruggeri, F and Teugels, J L},
+  pages={1--17},
+  year={2026},
+  publisher={John Wiley \& Sons},
+  doi={10.1002/9781118445112.stat08670},
+  url={https://doi.org/10.1002/9781118445112.stat08670},
+  keywords={notes,web_notes},
+  selected={false}
+}
+
+
+@article{janes2026correlates,
+  title={Correlates of Severe and Delta COVID-19 in a Phase 3 Trial of the AZD1222 Vaccine},
+  author={Janes, Holly and Fong, Youyi and Huang, Ying and Benkeser, David and Kelly, Elizabeth J and Hirsch, Ian and Stanley, Ann Marie and Villafana, Tonya and Petropoulos, Christos J and Leith, Andrew and Haugaard, Deanne and Webb, Bill and Lu, Yiwen and Yu, Chenchen and Borate, Bhavesh and {van der Laan}, Lars W P and Hejazi, Nima S and Randhawa, April K and Andrasik, Michele P and Kublin, James G and Isaacs, Margaret Brewinski and Makhene, Mamodikoe and Tong, Tina and Robb, Merlin L and Corey, Lawrence and Neuzil, Kathleen M and Follmann, Dean and Falsey, Ann R and Sobieszczyk, Magdalena E and Koup, Richard A and Gilbert, Peter B},
+  journal={npj Vaccines},
+  volume={11},
+  number={1},
+  pages={120},
+  year={2026},
+  doi={10.1038/s41541-026-01411-1},
+  url={https://doi.org/10.1038/s41541-026-01411-1},
+  keywords={cv}
+}
+
+
+@article{baek2025pegaspargase,
+  title={Retrospective Review of the Toxicities and Change in Dosing Patterns for Pegaspargase in Patients with Acute Lymphoblastic Leukemia/Lymphoma and T-cell Lymphoma},
+  author={Baek, Grace and Kim, Miryoung and Lee, Madison and O'Connor, Shan and Held, Lauren and {van der Laan}, Lars and Cassaday, Ryan D},
+  journal={Journal of Oncology Pharmacy Practice},
+  volume={31},
+  number={4},
+  pages={534--544},
+  year={2025},
+  doi={10.1177/10781552241246104},
+  url={https://doi.org/10.1177/10781552241246104},
+  keywords={cv}
+}
+
+
+@article{luedtke2025ensemblevariants,
+  title={Immune Correlates Analysis of Antibody Responses against SARS-CoV-2 Variants in the ENSEMBLE Vaccine Efficacy Trial},
+  author={Luedtke, Alex and Fong, Youyi and {van der Laan}, Lars and Heng, Feng and Huang, Ying and Lu, Yiwen and Yu, Chenchen and Carpp, Lindsay N and Roels, Sandra and Le Gars, Melanie and others},
+  journal={iScience},
+  volume={28},
+  number={11},
+  year={2025},
+  keywords={cv}
+}
+
+
+@article{khodasevich2025superlearner,
+  title={A SuperLearner-Based Pipeline for the Development of DNA Methylation-Derived Predictors of Phenotypic Traits},
+  author={Khodasevich, Daria and Holland, Nina and {van der Laan}, Lars and Cardenas, Andres},
+  journal={PLOS Computational Biology},
+  volume={21},
+  number={2},
+  pages={e1012768},
+  year={2025},
+  keywords={cv}
+}
+
+
+@article{kenny2025controlled,
+  title={Inference on Controlled Effects for Assessing Immune Correlates of Protection Based on a Cox Model},
+  author={Kenny, Avi and {van der Laan}, Lars and Gilbert, Peter B and Carone, Marco},
+  journal={Statistics in Medicine},
+  volume={44},
+  number={28--30},
+  pages={e70347},
+  year={2025},
+  keywords={cv}
+}
+
+
+@article{andrews2025testnegative,
+  title={Evaluating the Test-Negative Design for COVID-19 Vaccine Effectiveness Using Randomized Trial Data: A Secondary Cross-Protocol Analysis of 5 Randomized Clinical Trials},
+  author={Andrews, Leah I B and Halloran, M Elizabeth and Neuzil, Kathleen M and {van der Laan}, Lars and Huang, Ying and Andriesen, Jessica and Patel, Manish and Fisher, Lindy H and Janes, Holly and Rouphael, Nadine and others},
+  journal={JAMA Network Open},
+  volume={8},
+  number={5},
+  pages={e2512763},
+  year={2025},
+  keywords={cv}
+}
+
+
+@article{zhang2024omicron,
+  title={Omicron COVID-19 Immune Correlates Analysis of a Third Dose of mRNA-1273 in the COVE Trial},
+  author={Zhang, Botao and Fong, Youyi and Fintzi, Jonathan and Chu, Elizabeth and Janes, Holly E and Kenny, Avi and Carone, Marco and Benkeser, David and {van der Laan}, Lars and Deng, Weiping and others},
+  journal={Nature Communications},
+  volume={15},
+  number={1},
+  pages={7954},
+  year={2024},
+  keywords={cv}
+}
+
+
+@article{kenny2024imbokodo,
+  title={Immune Correlates Analysis of the Imbokodo (HVTN 705/HPX2008) Efficacy Trial of a Mosaic HIV-1 Vaccine Regimen Evaluated in Southern African People Assigned Female Sex at Birth: A Two-Phase Case-Control Study},
+  author={Kenny, Avi and {van Duijn}, Julia and Dintwe, Olebogeng and Heptinstall, Jessica and Burnham, Rachel and Sawant, Sameer and Zhang, Li and Mielke, Daniel and Khuzwayo, Sihle and Omar, Fadila L and {van der Laan}, Lars and others},
+  journal={EBioMedicine},
+  volume={108},
+  pages={105320},
+  year={2024},
+  keywords={cv}
+}
+
+
+@article{turley2023modifiers,
+  title={Modifiers of COVID-19 Vaccine Efficacy: Results from Four COVID-19 Prevention Network Efficacy Trials},
+  author={Turley, Cynthia B and Tables, L K and Fuller, T and Sanders, L J and Scott, H and Moodley, A and Davis, A W and Leav, B and Miller, J and Schoemaker, K and {van der Laan}, Lars and others},
+  journal={Vaccine},
+  volume={41},
+  number={33},
+  pages={4899--4906},
+  year={2023},
+  keywords={cv}
+}
+
+
+@article{fong2023rsv,
+  title={Antibody Correlates of Protection from Severe Respiratory Syncytial Virus Disease in a Vaccine Efficacy Trial},
+  author={Fong, Youyi and Huang, Ying and Borate, Bhavesh and {van der Laan}, Lars W P and Zhang, Wenbo and Carpp, Lindsay N and Cho, Inyoul and Glenn, Gregory and Fries, Louis and Gottardo, Raphael and others},
+  journal={Open Forum Infectious Diseases},
+  volume={10},
+  number={1},
+  pages={ofac693},
+  year={2023},
+  keywords={cv}
+}
+
+
+@article{fong2023prevent19,
+  title={Immune Correlates Analysis of the PREVENT-19 COVID-19 Vaccine Efficacy Clinical Trial},
+  author={Fong, Youyi and Huang, Ying and Benkeser, David and Carpp, Lindsay N and {\'A}{\~n}ez, Germ{\'a}n and Woo, Woong and McGarry, Andrea and Dunkle, Lisa M and Cho, Inyoul and Houchens, Christopher R and {van der Laan}, Lars and others},
+  journal={Nature Communications},
+  volume={14},
+  number={1},
+  pages={331},
+  year={2023},
+  keywords={cv}
+}
+
+
+@article{collender2023maternal,
+  title={Maternal Adverse Childhood Experiences (ACEs) and DNA Methylation of Newborns in Cord Blood},
+  author={Collender, Peter and Bozack, Anne K and Veazie, Sarah and Nwanaji-Enwerem, Jamaji C and {van der Laan}, Lars and Kogut, Katherine and Riddell, Corinne and Eskenazi, Brenda and Holland, Nina and Deardorff, Julianna and others},
+  journal={Clinical Epigenetics},
+  volume={15},
+  number={1},
+  pages={162},
+  year={2023},
+  keywords={cv}
+}
+
+
+@article{benkeser2023comparing,
+  title={Comparing Antibody Assays as Correlates of Protection against COVID-19 in the COVE mRNA-1273 Vaccine Efficacy Trial},
+  author={Benkeser, David and Montefiori, David C and McDermott, Adrian B and Fong, Youyi and Janes, Holly E and Deng, Weiping and Zhou, Honghong and Houchens, Christopher R and Martins, Karen and Jayashankar, Lakshmi and {van der Laan}, Lars and others},
+  journal={Science Translational Medicine},
+  volume={15},
+  number={692},
+  pages={eade9078},
+  year={2023},
+  keywords={cv}
+}
+
+
+@article{benkeser2023azd1222,
+  title={Immune Correlates Analysis of a Phase 3 Trial of the AZD1222 (ChAdOx1 nCoV-19) Vaccine},
+  author={Benkeser, David and Fong, Youyi and Janes, Holly E and Kelly, Elizabeth J and Hirsch, Ian and Sproule, Susan and Stanley, Ann Marie and Maaske, Jacob and Villafana, Tonya and Houchens, Christopher R and {van der Laan}, Lars and others},
+  journal={npj Vaccines},
+  volume={8},
+  number={1},
+  pages={36},
+  year={2023},
+  keywords={cv}
+}
+
+
+@article{daredia2022prenatal,
+  title={Prenatal and Birth Associations of Epigenetic Gestational Age Acceleration in the Center for the Health Assessment of Mothers and Children of Salinas (CHAMACOS) Cohort},
+  author={Daredia, Shaina and Huen, Karen and {van der Laan}, Lars and Collender, Peter A and Nwanaji-Enwerem, Jamaji C and Harley, Kim and Deardorff, Julianna and Eskenazi, Brenda and Holland, Nina and Cardenas, Andres},
+  journal={Epigenetics},
+  volume={17},
+  number={13},
+  pages={2006--2021},
+  year={2022},
+  keywords={cv}
+}
+
+
+@article{vanderlaan2022epigenetic,
+  title={Epigenetic Aging Biomarkers and Occupational Exposure to Benzene, Trichloroethylene and Formaldehyde},
+  author={{van der Laan}, Lars and Cardenas, Andres and Vermeulen, Roel and Fadadu, Rohit P and Hubbard, Alan E and Phillips, Rachel V and Zhang, Luoping and Breeze, Charlotte and Hu, Wei and Wen, Cong and others},
+  journal={Environment International},
+  volume={158},
+  pages={106871},
+  year={2022},
+  keywords={cv}
+}
+
+
+@article{fong2022ensemble,
+  title={Immune Correlates Analysis of the ENSEMBLE Single Ad26.COV2.S Dose Vaccine Efficacy Clinical Trial},
+  author={Fong, Youyi and McDermott, Adrian B and Benkeser, David and Roels, Sandra and Stieh, David J and Vandebosch, An and Le Gars, Melanie and {Van Roey}, Geoffrey A and Houchens, Christopher R and Martins, Karen and {van der Laan}, Lars and others},
+  journal={Nature Microbiology},
+  volume={7},
+  number={12},
+  pages={1996--2010},
+  year={2022},
+  keywords={cv}
+}
+
+
+@article{gilbert2022mrna,
+  title={Immune Correlates Analysis of the mRNA-1273 COVID-19 Vaccine Efficacy Clinical Trial},
+  author={Gilbert, Peter B and Montefiori, David C and McDermott, Adrian B and Fong, Youyi and Benkeser, David and Deng, Weiping and Zhou, Honghong and Houchens, Christopher R and Martins, Karen and Jayashankar, Lakshmi and {van der Laan}, Lars and others},
+  journal={Science},
+  volume={375},
+  number={6576},
+  pages={43--50},
+  year={2022},
+  keywords={cv}
+}
+
+
+@article{nwanaji2021metformin,
+  title={An Epigenetic Aging Analysis of Randomized Metformin and Weight Loss Interventions in Overweight Postmenopausal Breast Cancer Survivors},
+  author={Nwanaji-Enwerem, Jamaji C and Chung, Fang Fang-Ling and {van der Laan}, Lars and Novoloaca, Alexandra and Cuenin, Cyrille and Johansson, Helena and Bonanni, Bernardo and Hubbard, Alan E and Smith, Martyn T and Hartman, Sheri J and others},
+  journal={Clinical Epigenetics},
+  volume={13},
+  number={1},
+  pages={224},
+  year={2021},
+  keywords={cv}
+}
+
+
+@article{nwanaji2021microcephaly,
+  title={Associations of DNA Methylation Mortality Risk Markers with Congenital Microcephaly from Zika Virus: A Study of Brazilian Children Less than 4 Years of Age},
+  author={Nwanaji-Enwerem, Jamaji C and {van der Laan}, Lars and Avakame, Elorm F and Scott, Kristin A and Burris, Heather H and Cardenas, Andres},
+  journal={Journal of Tropical Pediatrics},
+  volume={67},
+  number={1},
+  pages={fmab020},
+  year={2021},
+  keywords={cv}
+}
+
+
+@article{nwanaji2021maternal,
+  title={Maternal Adverse Childhood Experiences before Pregnancy Are Associated with Epigenetic Aging Changes in Their Children},
+  author={Nwanaji-Enwerem, Jamaji C and {van der Laan}, Lars and Kogut, Katherine and Eskenazi, Brenda and Holland, Nina and Deardorff, Julianna and Cardenas, Andres},
+  journal={Aging},
+  volume={13},
+  number={24},
+  pages={25653},
+  year={2021},
+  keywords={cv}
+}
+
+
+@article{cardenas2021diesel,
+  title={Controlled Human Exposures to Diesel Exhaust: A Human Epigenome-Wide Experiment of Target Bronchial Epithelial Cells},
+  author={Cardenas, Andres and Fadadu, Rohit P and {van der Laan}, Lars and Ward-Caviness, Cavin and Granger, Laura and Diaz-Sanchez, David and Devlin, Robert B and Bind, Marie-Ab{\'e}le},
+  journal={Environmental Epigenetics},
+  volume={7},
+  number={1},
+  pages={dvab003},
+  year={2021},
+  keywords={cv}
+}
+
+
+@article{nwanaji2020mars500,
+  title={A Longitudinal Epigenetic Aging and Leukocyte Analysis of Simulated Space Travel: The Mars-500 Mission},
+  author={Nwanaji-Enwerem, Jamaji C and Nwanaji-Enwerem, Uchenna and {van der Laan}, Lars and Galazka, Jonathan M and Redeker, Nancy S and Cardenas, Andres},
+  journal={Cell Reports},
+  volume={33},
+  number={10},
+  year={2020},
+  keywords={cv}
+}
+
+
+@misc{gilbert2021covpnsap,
+  title={{CoVPN} COVID-19 Vaccine Efficacy Trial Immune Correlates Statistical Analysis Plan},
+  author={Gilbert, Peter B and Fong, Youyi and Benkeser, David and Andriesen, Jessica and Borate, Bhavesh and Carone, Marco and {van der Laan}, Lars and others},
+  year={2021},
+  keywords={cv},
+  note={Statistical analysis plan}
+}
+
+
+@misc{gilbert2022covpnanalyses,
+  title={{COVID-19 Prevention Network Immune Correlates Analyses}},
+  author={Gilbert, Peter B and Fong, Youyi and Benkeser, David and Hejazi, Nima S and Borate, Bhavesh R and Yu, Chenchen and Lu, Yiwen and {van der Laan}, Lars and others},
+  year={2022},
+  publisher={Zenodo},
+  keywords={cv},
+  note={Research data and analysis materials}
 }
 
 

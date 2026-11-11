@@ -8,16 +8,14 @@ middle_name:
 last_name: van der Laan
 email: vdlaan@stanford.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  I am a postdoctoral scholar in the Department of Management Science and Engineering at Stanford University, working under Professor Vasilis Syrgkanis and supported by Netflix Research. I completed my PhD in Statistics at the University of Washington in June 2026.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: debiased machine learning, causal inference, semiparametric statistics, statistical learning and calibration, selective inference after model-selection  # add your own keywords or leave empty
+  Postdoctoral scholar in Stanford Management Science & Engineering and Stanford Causal Science Center Fellow. I work on causal inference and semiparametric statistics, with a focus on debiased machine learning, dynamic decision-making and reinforcement learning, and calibration.
+footer_text:
+keywords: causal inference, semiparametric statistics, debiased machine learning, offline reinforcement learning, off-policy evaluation, heterogeneous treatment effects, calibration  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://Larsvanderlaan.github.io # the base hostname & protocol for your site
+url: https://larsvanderlaan.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -51,7 +49,7 @@ rss_icon: false
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
@@ -62,9 +60,9 @@ max_width: 800px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://larsvanderlaan.github.io/assets/img/prof_pic1.jpg # Site-wide Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -74,9 +72,9 @@ github_username: Larsvanderlaan # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: Larsvanderlaan3 # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: lars-van-der-laan-32367615b/ # your LinkedIn user name
+linkedin_username: lars-van-der-laan-32367615b # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: 0bwP0i4AAAAJ&hl=en # your Google Scholar ID
+scholar_userid: 0bwP0i4AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -121,8 +119,6 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
-resume: cv.yml
-cv: cv.yml
 # -----------------------------------------------------------------------------
 # Collections
 # -----------------------------------------------------------------------------
@@ -138,9 +134,9 @@ collections:
     permalink: /projects/:path/
 
 announcements:
-  enabled: false
+  enabled: true
   scrollable: false # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 2 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -288,7 +284,7 @@ external_links:
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # responsive profile variants are committed directly for reliable builds
   widths:
     - 480
     - 800
