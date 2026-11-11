@@ -13,10 +13,10 @@ This page highlights selected research software accompanying my work in causal i
   <section class="software-item">
     <h2><a href="https://github.com/Larsvanderlaan/ppi-aipw">ppi-aipw</a></h2>
     <p>
-      <code>ppi-aipw</code> accompanies <em>Prediction-Powered Inference via Calibration</em>. It provides semisupervised mean inference with AIPW-style estimators and calibrated prediction scores for settings with limited labels and abundant unlabeled covariates.
+      <code>ppi-aipw</code> accompanies <em>Calibeating Prediction-Powered Inference</em>. It provides semisupervised mean inference with AIPW-style estimators and calibrated prediction scores for settings with limited labels and abundant unlabeled covariates.
     </p>
     <div class="software-links">
-      <a href="https://larsvanderlaan.github.io/ppi-aipw/paper.pdf">paper</a>
+      <a href="https://arxiv.org/pdf/2604.21260">paper</a>
       <a href="https://larsvanderlaan.github.io/ppi-aipw/">package site</a>
       <a href="https://github.com/Larsvanderlaan/ppi-aipw">code</a>
     </div>
