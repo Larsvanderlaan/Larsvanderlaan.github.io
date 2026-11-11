@@ -8,7 +8,7 @@ middle_name:
 last_name: van der Laan
 email: vdlaan@stanford.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Postdoctoral scholar in Stanford Management Science & Engineering and Stanford Causal Science Center Fellow. I work on causal inference and semiparametric statistics, with a focus on debiased machine learning, dynamic decision-making and reinforcement learning, and calibration.
+  Postdoctoral scholar in Stanford Management Science & Engineering and Stanford Causal Science Center Fellow. I work on causal inference, semiparametric statistics, debiased machine learning, dynamic decision-making, and reinforcement learning, using calibration across these areas.
 footer_text:
 keywords: causal inference, semiparametric statistics, debiased machine learning, offline reinforcement learning, off-policy evaluation, heterogeneous treatment effects, calibration  # add your own keywords or leave empty
 
