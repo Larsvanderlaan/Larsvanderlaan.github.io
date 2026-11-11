@@ -1,0 +1,341 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.70in,top=0.60in,bottom=0.62in]{geometry}
+\usepackage{fontspec}
+\setmainfont{texgyrepagella}[
+  Path=/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/tex-gyre/,
+  Extension=.otf,
+  UprightFont=*-regular,
+  BoldFont=*-bold,
+  ItalicFont=*-italic,
+  BoldItalicFont=*-bolditalic
+]
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+\usepackage[
+  backend=biber,
+  style=numeric,
+  sorting=ydnt,
+  giveninits=true,
+  maxbibnames=10,
+  minbibnames=8,
+  defernumbers=true,
+  doi=false,
+  url=false,
+  isbn=false,
+  eprint=false
+]{biblatex}
+
+\addbibresource{_bibliography/papers.bib}
+\DeclareSourcemap{%
+  \maps[datatype=bibtex]{%
+    \map{\step[fieldset=abstract,null]}%
+  }%
+}
+
+\definecolor{linkblue}{HTML}{0B57D0}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkblue,
+  linkcolor=linkblue,
+  pdfauthor={Lars van der Laan},
+  pdftitle={Lars van der Laan - Curriculum Vitae}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=1.2em,itemsep=0.10em,topsep=0.20em}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\small\thepage}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.55em}%
+  {\Large\bfseries #1}\par
+  \vspace{0.20em}%
+}
+
+\newcommand{\cvsubsection}[1]{%
+  \vspace{0.35em}%
+  {\large\bfseries #1}\par
+  \vspace{0.12em}%
+}
+
+\newcommand{\cventry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & #3 \\
+    #2 & \\
+  \end{tabularx}\par
+}
+
+\newcommand{\talk}[3]{%
+  \textbf{#1}, #2 -- \emph{#3}\par
+}
+
+% Highlight Lars in author lists while leaving other van der Laan authors unchanged.
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifdefstring{\namepartfamily}{van der Laan}
+    {\ifdefstring{\namepartgiven}{Lars}{\mkbibbold{#1}}{#1}}
+    {#1}%
+}
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifdefstring{\namepartfamily}{van der Laan}
+    {\ifdefstring{\namepartgiven}{Lars}{\mkbibbold{#1}}{#1}}
+    {#1}%
+}
+
+\AtEveryBibitem{%
+  \clearfield{abstract}%
+  \clearfield{keywords}%
+  \clearfield{note}%
+}
+\setlength{\bibitemsep}{0.33em}
+\setlength{\bibhang}{1.45em}
+
+\DeclareBibliographyCategory{preprints}
+\DeclareBibliographyCategory{conference}
+\DeclareBibliographyCategory{journal}
+\DeclareBibliographyCategory{reference}
+\DeclareBibliographyCategory{outputs}
+
+\addtocategory{preprints}{%
+  vanderlaan2026pairwise,
+  vanderlaan2026bellmanmarginalized,
+  vanderlaan2026fore,
+  andrews2026targeted,
+  van2026researcher,
+  van2025efficient,
+  van2025FQI,
+  van2025FQE,
+  van2025bellman,
+  vanderlaan2025nonparametricinstrumentalvariableinference,
+  vanderlaan2025automaticdebiasedmachinelearning,
+  vanderlaan2025automaticdoublereinforcementlearning,
+  van2024automatic,
+  van2024combining,
+  dutta2023estimating,
+  van2023adaptive,
+  van2023semiparametric,
+  van2021higher}
+
+\addtocategory{conference}{%
+  van2026calibeating,
+  van2025inverse,
+  liang2025hybrid,
+  van2025generalized,
+  van2024stabilized,
+  vanderlaan2024selfconsistent,
+  van2023causal}
+
+\addtocategory{journal}{%
+  janes2026correlates,
+  wyss2025undersmoothed,
+  van2026adaptive,
+  baek2025pegaspargase,
+  luedtke2025ensemblevariants,
+  khodasevich2025superlearner,
+  kenny2025controlled,
+  andrews2025testnegative,
+  wang2025targeted,
+  zhang2024omicron,
+  kenny2024imbokodo,
+  turley2023modifiers,
+  fong2023rsv,
+  fong2023prevent19,
+  collender2023maternal,
+  benkeser2023comparing,
+  benkeser2023azd1222,
+  van2022nonparametric,
+  daredia2022prenatal,
+  vanderlaan2022epigenetic,
+  fong2022ensemble,
+  gilbert2022mrna,
+  nwanaji2021metformin,
+  nwanaji2021microcephaly,
+  nwanaji2021maternal,
+  cardenas2021diesel,
+  nwanaji2020mars500}
+
+\addtocategory{reference}{%
+  frauen2026machine}
+
+\addtocategory{outputs}{%
+  coyle2020hal9001,
+  gilbert2021covpnsap,
+  gilbert2022covpnanalyses}
+
+\nocite{%
+  vanderlaan2026pairwise,vanderlaan2026bellmanmarginalized,
+  vanderlaan2026fore,andrews2026targeted,van2026researcher,
+  van2025efficient,van2025FQI,van2025FQE,van2025bellman,
+  vanderlaan2025nonparametricinstrumentalvariableinference,
+  vanderlaan2025automaticdebiasedmachinelearning,
+  vanderlaan2025automaticdoublereinforcementlearning,
+  liang2025hybrid,van2024automatic,van2024combining,
+  dutta2023estimating,van2023adaptive,van2023semiparametric,
+  van2021higher,van2026calibeating,van2025inverse,
+  van2025generalized,van2024stabilized,vanderlaan2024selfconsistent,
+  van2023causal,frauen2026machine,janes2026correlates,
+  wyss2025undersmoothed,van2026adaptive,baek2025pegaspargase,
+  luedtke2025ensemblevariants,khodasevich2025superlearner,
+  kenny2025controlled,andrews2025testnegative,wang2025targeted,
+  zhang2024omicron,kenny2024imbokodo,turley2023modifiers,
+  fong2023rsv,fong2023prevent19,collender2023maternal,
+  benkeser2023comparing,benkeser2023azd1222,van2022nonparametric,
+  daredia2022prenatal,vanderlaan2022epigenetic,fong2022ensemble,
+  gilbert2022mrna,nwanaji2021metformin,nwanaji2021microcephaly,
+  nwanaji2021maternal,cardenas2021diesel,nwanaji2020mars500,
+  coyle2020hal9001,gilbert2021covpnsap,gilbert2022covpnanalyses}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{22}{25}\selectfont\bfseries Lars van der Laan}\par
+  \vspace{0.20em}
+  {\large Postdoctoral Scholar, Stanford Management Science \& Engineering}\par
+  {\large Stanford Causal Science Center Fellow}\par
+  \vspace{0.25em}
+  \href{https://larsvanderlaan.github.io}{larsvanderlaan.github.io}
+  \quad $\vert$ \quad
+  \href{mailto:vdlaan@stanford.edu}{vdlaan@stanford.edu}
+  \quad $\vert$ \quad
+  \href{https://scholar.google.com/citations?user=0bwP0i4AAAAJ}{Google Scholar}
+\end{center}
+
+\cvsection{Education}
+\cventry{University of Washington}{Ph.D. in Statistics, June 2026; Advisors: Marco Carone and Alex Luedtke}{09/2021--06/2026}
+\par\vspace{0.20em}
+\noindent\emph{Dissertation: Improved Debiased Machine Learning Through Optimization and Calibration}\par
+\vspace{0.25em}
+\cventry{University of California, Berkeley}{M.A. in Statistics, May 2020}{08/2019--05/2020}
+\vspace{0.25em}
+\cventry{University of Groningen, Netherlands}{B.Sc. in Mathematics and Physics, cum laude, July 2019}{09/2016--07/2019}
+
+\cvsection{Appointments}
+\cventry{Stanford University}{Postdoctoral Scholar, Management Science \& Engineering (V. Syrgkanis; Netflix Research)}{07/2026--Present}
+\vspace{0.20em}
+\cventry{Stanford Causal Science Center}{Fellow}{07/2026--Present}
+\vspace{0.20em}
+\cventry{Netflix}{Graduate Research Fellow (with A. Bibaut and N. Kallus)}{09/2024--06/2026}
+\vspace{0.20em}
+\cventry{Netflix}{Machine Learning Research Intern}{06/2024--08/2024}
+\vspace{0.20em}
+\cventry{UC Berkeley, Computational Precision Health}{Visiting Student Researcher (with A. Alaa)}{09/2023--06/2024}
+\vspace{0.20em}
+\cventry{University of Washington}{Teaching Assistant, Ph.D. Theory Sequence}{09/2022--06/2023}
+\vspace{0.20em}
+\cventry{University of Washington}{Research Assistant, Department of Statistics}{09/2021--06/2026}
+\vspace{0.20em}
+\cventry{Fred Hutchinson Cancer Center}{Research Assistant and Research Intern (with P. Gilbert)}{09/2020--06/2024}
+\vspace{0.20em}
+\cventry{Genentech}{Research Intern (with J. Levy)}{06/2020--08/2020}
+\vspace{0.20em}
+\cventry{UC Berkeley, Environmental Health Sciences}{Research Assistant (with A. Cardenas)}{09/2020--08/2021}
+
+\cvsection{Research Interests}
+Causal inference and missing data; semiparametric statistics and debiased machine learning; statistical learning theory and heterogeneous treatment effects; policy learning, reinforcement learning, and dynamic experiments; predictive inference, uncertainty quantification, and calibration.
+
+\cvsection{Awards \& Fellowships}
+\begin{itemize}
+  \item Stanford Causal Science Center Fellowship, 2026--Present
+  \item Netflix Graduate Research Fellowship, 2024--2026 (Mentors: Aur\'elien Bibaut and Nathan Kallus)
+  \item Best Paper Award, Conference on Causal Learning and Reasoning (CLeaR), 2025
+  \item Tom Ten Have Poster Award, Honorable Mention, American Causal Inference Conference, 2025
+  \item University of Washington Statistics Department Fellowship, 2021
+\end{itemize}
+
+\cvsection{Research Publications}
+{\small
+\cvsubsection{Preprints and Working Papers}
+\printbibliography[category=preprints,heading=none]
+
+\cvsubsection{Conference Papers}
+\printbibliography[category=conference,heading=none]
+
+\cvsubsection{Journal Articles}
+\printbibliography[category=journal,heading=none]
+
+\cvsubsection{Reference Works}
+\printbibliography[category=reference,heading=none]
+
+\cvsubsection{Software, Protocols, and Research Materials}
+\printbibliography[category=outputs,heading=none]
+}
+
+{\small
+\cvsection{Talks and Presentations}
+\cvsubsection{Invited Oral Presentations}
+\talk{Online Causal Inference Seminar (OCIS), Young Researchers' Seminar}{Online, 2026}{Automatic Debiased Machine Learning for Functionals of M-estimands}
+\talk{American Causal Inference Conference (ACIC), Invited Session: An Overview of Automatic Nonparametric (Riesz) Learning for Causal Effects Estimation}{Salt Lake City, UT, 2026}{Generalized autoDML for nonparametric M-estimands}
+\talk{National Association for Business Economics (NABE)}{Seattle, WA, 2025}{Novel Reinforcement Learning Models and Applications: Semiparametric Double Reinforcement Learning with Applications to Long-Term Causal Inference}
+\talk{International Symposium on Biopharmaceutical Statistics (ISBS), Invited Session: Recent Advances in Highly Adaptive Lasso and Its Crucial Role in Causal Inference}{Baltimore, MD, 2024}{Adaptive Targeted Machine Learning of the Average Treatment Effect Using the Highly Adaptive Lasso}
+\talk{Forum on the Integration of Observational and Randomized Data (FIORD)}{Washington, DC, 2023}{Adaptive Debiased Machine Learning Using Data-Driven Model Selection Techniques}
+\talk{International Conference on Computational and Methodological Statistics}{Berlin, Germany, 2023}{Adaptive Debiased Machine Learning with Model Selection}
+\talk{Western North American Region of the International Biometric Society}{Anchorage, AK, 2023}{Nonparametric Inference on the Causal Effect of a Stochastic Threshold-Based Intervention}
+
+\cvsubsection{Invited Short Courses}
+\talk{American Causal Inference Conference (ACIC)}{Seattle, WA, 2024}{Highly Adaptive Lasso and Adaptive TMLE in Causal Inference (co-instructor with Mark van der Laan and Rachael Phillips)}
+
+\cvsubsection{Contributed Oral Presentations}
+\talk{Joint Statistical Meetings (JSM), Topic-Contributed Paper Session}{Boston, MA, 2026}{Automatic Debiased Machine Learning for Smooth Functionals of Nonparametric M-Estimands}
+\talk{American Causal Inference Conference}{Detroit, MI, 2025}{Automatic Double Reinforcement Learning in Semiparametric MDPs}
+\talk{Conference on Causal Learning and Reasoning}{Lausanne, Switzerland, 2025}{Stabilized IPW via Isotonic Calibration (Best Paper)}
+\talk{MIT Conference on Digital Experimentation}{Cambridge, MA, 2024}{Long-Term Causal Inference from Short-Term Experiments Using Reinforcement Learning}
+
+\begin{samepage}
+\cvsubsection{Seminars}
+\talk{University College London Semiparametric Statistics Reading Group}{Online, 2026}{Adaptive Debiased Machine Learning Using Data-Driven Model Selection Techniques}
+\textbf{Universit\'e de Montpellier, Julie Josse Group}, 2025\par
+\textbf{International Seminar on Selective Inference}, 2024\par
+\textbf{Stanford Causal Inference Working Group}, Stanford, CA, 2023\par
+\textbf{University of Pennsylvania Causal Inference Seminar}, Philadelphia, PA, 2023
+\end{samepage}
+
+\cvsubsection{Contributed Posters}
+\talk{NeurIPS 2026}{2026}{Calibeating Prediction-Powered Inference}
+\talk{NeurIPS 2026}{2026}{Inverse Reinforcement Learning with Just Classification and a Few Regressions}
+\talk{Stanford Causal Science Center Student Conference}{Stanford, CA, 2026}{Grounded Causal Inference}
+\talk{ICML 2025}{Vancouver, BC}{Generalized Venn and Venn-Abers Calibration}
+\talk{ACIC 2025}{Detroit, MI}{Automatic Debiased Machine Learning for Smooth Functionals of Nonparametric M-Estimands}
+\talk{ACIC 2025}{Detroit, MI}{Automatic Doubly Robust Inference via Calibration}
+\talk{NeurIPS 2024}{Vancouver, BC}{Self-Calibrating Conformal Prediction}
+\talk{ACIC 2024}{Seattle, WA}{Combining T-learning and DR-learning: A Framework for Oracle-Efficient Estimation of Causal Contrasts}
+\talk{ICML 2023}{Honolulu, HI}{Causal Isotonic Calibration for Heterogeneous Treatment Effects}
+
+\cvsection{Professional Service}
+\textbf{Reviewer:} JRSS-B, JASA, Annals of Statistics, Biometrika, Biostatistics, Journal of Applied Econometrics, EJS, JMLR, JCI, NeurIPS, ICLR, ICML
+
+\vspace{0.45em}
+\textbf{Session Organizer:}\par
+\textbf{American Causal Inference Conference}, 2024 -- \emph{Highly Adaptive Lasso and Adaptive TMLE in Causal Inference}\par
+\textbf{International Symposium on Biopharmaceutical Statistics}, 2024 -- \emph{Recent Advances in Highly Adaptive Lasso and Its Crucial Role in Causal Inference}
+
+\vspace{0.45em}
+\textbf{Session Chair:} American Causal Inference Conference, 2026
+
+\vspace{0.45em}
+\textbf{Invited Discussant:} Online Causal Inference Seminar, 2026
+
+\cvsection{Teaching Experience}
+\textbf{University of Washington}\par
+Ph.D. Theory Sequence in Statistics (STAT 581, 582, 583), Teaching Assistant, 09/2022--06/2023\par
+Wrote exams, led weekly sections, held office hours, graded assignments, and mentored graduate students.
+
+\vspace{0.45em}
+\textbf{University of California, Berkeley}\par
+Introduction to Probability and Statistics (STAT 201A, 201B), Personal Tutor for Biostatistics Group, 08/2019--05/2020
+
+\vspace{0.45em}
+\textbf{University of Groningen}\par
+Introduction to Mathematics for Biomedical Sciences, Teaching Assistant, 09/2018
+}
+
+\end{document}
