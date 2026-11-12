@@ -4,6 +4,7 @@ permalink: /publications/
 title: publications
 nav: true
 nav_order: 1
+no_tracking: true
 ---
 
 Below are selected methodological and theoretical contributions, organized by research area. For the complete publication record, including applied collaborations, see my [Google Scholar](https://scholar.google.com/citations?user=0bwP0i4AAAAJ) profile or [CV](/cv/).
